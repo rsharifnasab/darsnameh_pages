@@ -1,234 +1,205 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'><meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 <head>
-<title>ﺩﺭﺱ ﭼﻬﺎﺭﻡ- ﺍﻳﺮﺍﺩﻳﺎﺑﯽ</title>
+<title>ﺩﺭﺱ ﺳﻴﺰﺩﻫﻢ- ﻋﺒﺎﺭﺍﺕ ﻣﻨﻈﻢ Regular Expression</title>
 
 			<link type="text/css" rel="stylesheet" href="style.css" />
       <style>body {text-align: right; direction: rtl; padding-left: 5pt; padding-right: 5pt;} ul {direction: rtl;} ol { direction: rtl;}</style>
 </head>
 <body>
-<p class='headPage'>ﺩﺭﺱ ﭼﻬﺎﺭﻡ- ﺍﻳﺮﺍﺩﻳﺎﺑﯽ</p><p dir="RTL" style="text-align: justify;">
+<p class='headPage'>ﺩﺭﺱ ﺳﻴﺰﺩﻫﻢ- ﻋﺒﺎﺭﺍﺕ ﻣﻨﻈﻢ Regular Expression</p><p dir="RTL" style="text-align: justify;">
 	<strong style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻣﻘﺪﻣﻪ</strong><br />
-	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺧﻄﺎﻫﺎ ﺑﺨﺶ ﺑﺪﻭﻥ ﺗﻔﮑﻴﮏ ﻭ ﺩﻭﺭﯼ ﻧﺎﭘﺬﻳﺮ ﺩﺭ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﻫﺴﺘﻨﺪ. ﺍﻳﻦ ﻣﺴﺌﻠﻪ ﺑﺮﺍﯼ ﻫﻤﻪ ﺍﻓﺮﺍﺩﯼ ﮐﻪ ﺭﻭ ﺑﻪ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﻣﯽ&zwnj;ﺁﻭﺭﻧﺪ ﻣﺸﺘﺮﮎ ﺍﺳﺖ. ﺍﻟﺒﺘﻪ ﻫﺮ ﭼﻘﺪﺭ ﺗﺠﺮﺑﻪ ﻣﺎ ﺩﺭ ﻧﻮﺷﺘﻦ ﮐﺪﻫﺎ ﺑﺎﻻﺗﺮ ﻣﯽ&zwnj;ﺭﻭﺩ، ﺍﺣﺘﻤﺎﻻ ﺍﺯ ﺗﻌﺪﺍﺩ ﺧﻄﺎﻫﺎ ﻭ ﺍﻳﺮﺍﺩﻫﺎ ﺩﺭ ﺑﺮﻧﺎﻣﻪ&zwnj;ﻫﺎﻳﻤﺎﻥ ﮐﺎﺳﺘﻪ ﻣﯽ&zwnj;ﺷﻮﺩ. ﺍﻣﺎ ﻓﺮﺍﻣﻮﺵ ﻧﮑﻨﻴﺪ ﮐﻪ ﺍﻳﻦ ﺟﺰﻭﯼ ﺍﺯ ﺳﺎﺧﺖ ﺳﻴﺴﺘﻢ ﺍﺳﺖ ﻭ ﻧﻮﺷﺘﻦ ﺑﺮﻧﺎﻣﻪ ﺑﺪﻭﻥ ﺍﻳﺮﺍﺩ ﺗﻘﺮﻳﺒﺎ ﻏﻴﺮ ﻣﻤﮑﻦ ﺍﺳﺖ. &nbsp;ﺑﺮﺍﯼ ﺍﻳﻨﮑﻪ ﺍﻳﻦ ﺍﺩﻋﺎ ﺭﺍ ﺭﻭﺷﻦ&zwnj;ﺗﺮ ﺑﻴﺎﻥ ﮐﻨﻴﻢ ﻭ ﺑﻴﺸﺘﺮ ﻣﻮﺭﺩ ﻗﺒﻮﻝ ﺷﻤﺎ ﻗﺮﺍﺭ ﮔﻴﺮﺩ، ﺑﻪ ﺗﺠﺮﺑﻪ ﺧﻮﺩﺗﺎﻥ ﺩﺭ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺑﺮﻧﺎﻣﻪ&zwnj;ﻫﺎ ﻭ ﻳﺎ ﺍﺑﺰﺍﺭﮎ&zwnj;ﻫﺎﯼ ﻧﻮﺷﺘﻪ ﺷﺪﻩ ﺭﺟﻮﻉ ﮐﻨﻴﺪ. ﺑﺪﻭﻥ ﺷﮏ ﺩﺭ ﻃﻮﻝ ﮐﺎﺭ ﺑﺎ ﺑﺮﻧﺎﻣﻪ&zwnj;ﻫﺎﯼ ﻣﺘﻌﺪﺩ ﺑﺎﺭﻫﺎ ﻭ ﺑﺎﺭﻫﺎ ﺑﻪ ﺍﻳﺮﺍﺩ&zwnj;ﻫﺎ ﺑﺮﺧﻮﺭﺩﻳﺪ، ﺷﺎﻳﺪ ﮐﻠﻤﻪ </span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">Bug</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"> ﻳﺎ ﺍﺷﮑﺎﻝ ﺑﺮﺍﻳﺘﺎﻥ ﺍﺯ&nbsp; ﺍﻳﻦ ﺟﻬﺖ&nbsp; ﺁﺷﻨﺎ ﺑﻪ ﻧﻈﺮ ﺁﻳﺪ. ﺩﺭ ﺍﻳﻦ ﺩﺭﺱ ﻧﮕﺎﻫﯽ ﺑﻪ ﺩﻻﻳﻞ ﻭ ﻳﺎ ﻣﻮﺟﺒﺎﺕ ﺍﺷﮑﺎﻟﻬﺎ ﻭ ﺍﺛﺮﺍﺕ ﺁﻧﻬﺎ ﺩﺭ ﺗﺎﺭﻧﻤﺎﻫﺎ ﭘﺮﺩﺍﺧﺘﻪ ﻭ ﺗﮑﻨﻴﮏ&zwnj;ﻫﺎﻳﯽ ﺭﺍ ﺑﺮﺍﯼ ﻳﺎﻓﺘﻦ ﻭ ﺭﻓﻊ ﺁﻧﻬﺎ ﺑﺮﺭﺳﯽ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></p>
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺩﺭ ﺩﻭ ﺩﺭﺱ ﻗﺒﻠﯽ ﺑﺎ ﭼﻨﺪ ﻧﻮﻉ ﺑﺮﺍﯼ ﺑﺮﺭﺳﯽ ﺩﺍﺩﻩ&zwnj;ﻫﺎﯼ ﺍﺭﺳﺎﻝ ﺷﺪﻩ ﺗﻮﺳﻂ ﮐﺎﺭﺑﺮﺍﻥ ﺁﺷﻨﺎ ﺷﺪﻳﻢ. ﻳﺎﺩ ﮔﺮﻓﺘﻴﻢ ﮐﻪ ﺑﺎﻳﺪ ﻫﻤﻴﺸﻪ ﺍﻳﻦ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﺭﺍ ﺑﺮﺭﺳﯽ ﮐﺮﺩ ﻭ ﺑﺪﻭﻥ ﺑﺮﺭﺳﯽ ﺩﻗﻴﻖ ﺁﻧﻬﺎ ﺍﺟﺎﺯﻩ ﻭﺍﺭﺩ ﺷﺪﻥ ﺑﻪ ﭘﺎﻳﮕﺎﻩ ﺻﺎﺩﺭ ﻧﮑﻨﻴﻢ. ﺩﺭ ﺍﻳﻦ ﺩﺭﺱ ﺑﺎ ﻣﺒﺤﺚ ﺗﺎﺯﻩ&zwnj;ﺍﯼ ﺑﻪ ﻧﺎﻡ ﻋﺒﺎﺭﺕ ﻣﻨﻈﻢ ﺁﺷﻨﺎ ﻣﯽ&zwnj;ﺷﻮﻳﻢ.</span></p>
 <p dir="RTL" style="text-align: justify;">
 	&nbsp;</p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺍﻧﻮﺍﻉ ﺧﻄﺎﻫﺎ</strong><br />
-	ﺩﺭ ﺍﺑﺘﺪﺍ ﺑﺎﻳﺪ ﺫﮐﺮ ﮐﺮﺩ ﮐﻪ ﻋﺎﻣﻞ ﻳﺎ ﻣﺤﻞ ﺍﺷﮑﺎﻝ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺩﺭ ﻫﺮ ﻗﺴﻤﺘﯽ ﺍﺯ ﺗﺎﺭﻧﻤﺎ ﺑﺎﺷﺪ. ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﺩﺭ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎﯼ ﺍﭺ&zwnj;ﺗﯽ&zwnj;ﺍﻡ&zwnj;ﺍﻝ، ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﻭ ﻳﺎ ﺍﺱ&zwnj;ﮐﻴﻮ&zwnj; ﺍﻝ. ﻣﻌﻤﻮﻻ ﺧﻄﺎﻫﺎﯼ ﺍﭺ&zwnj;ﺗﯽ&zwnj;ﺍﻡ&zwnj;ﺍﻝ ﺁﺳﺎﻥ&zwnj;ﺗﺮﻳﻦ ﺩﺭ ﺭﺩﻳﺎﺑﯽ ﻭ ﺭﻓﻊ ﻫﺴﺘﻨﺪ، ﭼﺮﺍﮐﻪ ﺷﻤﺎ ﻧﺘﻴﺠﻪ ﺧﻄﺎ ﺭﺍ ﺩﺭ ﺻﻔﺤﻪ ﻣﺮﻭﺭﮔﺮ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ ﻭ ﺍﺣﺘﻤﺎﻻ ﺧﻴﻠﯽ ﺭﺍﺣﺖ ﺁﻥ ﺭﺍ ﺑﺮﻃﺮﻑ ﻣﯽ&zwnj;ﮐﻨﻴﺪ.</span></span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻋﺒﺎﺭﺍﺕ ﻣﻨﻈﻢ</strong><br />
+	ﻋﺒﺎﺭﺍﺕ ﻣﻨﻈﻢ ﻳﮏ ﺗﮑﻨﻴﮏ ﺍﺳﺖ ﮐﻪ ﺗﻮﺳﻂ ﺁﻥ ﻣﯽ&zwnj;ﺷﻮﺩ ﻳﮏ ﻣﺘﻦ ﺭﺍ ﺑﺮ ﺍﺳﺎﺱ ﺍﻟﮕﻮﯼ ﺩﻟﺨﻮﺍﻩ ﺑﺮﺭﺳﯽ ﮐﺮﺩ. ﺷﻴﻮﻩ ﮐﺎﺭ ﺁﻥ ﺍﻳﻦ ﺍﺳﺖ ﮐﻪ ﻣﺎ ﺍﺑﺘﺪﺍ ﻳﮏ ﺍﻟﮕﻮ ﺗﻌﺮﻳﻒ ﻣﯽ&zwnj;ﮐﻨﻴﻢ ﻭ ﺑﻌﺪ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﺭﺍ ﺑﺮ ﺍﺳﺎﺱ ﺁﻥ ﺍﻟﮕﻮ ﺍﺭﺯﻳﺎﺑﯽ ﻣﯽ&zwnj;ﮐﻨﻴﻢ. ﻳﻌﻨﯽ ﺑﺎ ﺗﻮﺟﻪ ﺑﻪ ﺍﻟﮕﻮﯼ ﺗﻌﺮﻳﻒ ﺷﺪﻩ٬ ﻣﺎﻫﻴﺖ ﺩﺍﺩﻩ&zwnj; ﺭﺍ ﺟﺴﺘﺠﻮ ﮐﺮﺩﻩ ﻭ ﺍﮔﺮ ﻫﻤﺨﻮﺍﻧﯽ ﺩﺍﺷﺖ ﻣﻬﺮ ﺗﺎﻳﻴﺪ ﺑﻪ ﺁﻥ ﻣﯽ&zwnj;ﺯﻧﻴﻢ. ﺑﻪ ﺯﺑﺎﻥ ﺳﺎﺩﻩ&zwnj;ﺗﺮ ﻣﯽ&zwnj;ﺷﻮﺩ٬ ﺟﺴﺘﺠﻮﯼ ﻳﮏ ﻣﺘﻦ ﺑﺮﺍﯼ ﺍﻳﻨﮑﻪ ﺑﺒﻴﻨﻴﻢ ﺁﻳﺎ ﺑﺎ ﺍﻟﮕﻮﯼ ﺗﻌﺮﻳﻒ ﺷﺪﻩ ﻣﺎ ﻣﯽ&zwnj;ﺧﻮﺍﻧﺪ ﻳﺎ ﻧﻪ؟ ﺍﺟﺎﺯﻩ ﺑﺪﻫﻴﺪ ﺑﺎ ﻳﮏ ﻣﺜﺎﻝ ﺍﻳﻦ ﻣﻘﻮﻟﻪ ﺭﺍ ﺑﻬﺘﺮ ﺑﻴﺎﻥ ﮐﻨﻴﻢ. ﻓﺮﺽ ﮐﻨﻴﺪ ﮐﻪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﺪ ﺑﺒﻴﻨﻴﺪ ﮐﻪ ﺁﻳﺎ ﺩﺭﻭﻥ ﮐﻠﻤﺎﺕ ﻭﺭﻭﺩﯼ ﺣﺮﻑ <span dir="LTR">b</span> ﻭﺟﻮﺩ ﺩﺍﺭﺩ ﻳﺎ ﻧﻪ. ﺑﺮﺍﯼ ﺍﻳﻦ ﮐﺎﺭ ﻳﮏ ﺍﻟﮕﻮ ﻣﯽ&zwnj;ﺳﺎﺯﻳﻢ ﮐﻪ ﮐﻠﻤﻪ&zwnj;ﻫﺎﯼ ﻭﺭﻭﺩﯼ ﺭﺍ ﺑﺎ ﺍﻟﮕﻮﯼ ﻣﺎ ﻣﻘﺎﻳﺴﻪ ﮐﻨﺪ ﻭ ﺩﺭ ﺻﻮﺭﺕ ﺑﺮﺍﺑﺮﯼ (ﻭﺟﻮﺩ <span dir="LTR">b</span> ﺩﺭ ﻣﺘﻦ ﻣﻮﺭﺩ ﻧﻈﺮ) ﺧﺮﻭﺟﯽ &laquo;۱&raquo; ﺑﻪ ﻣﻌﻨﯽ ﻣﺜﺒﺖ ﺑﺪﻫﺪ.</span></span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;ﺧﻄﺎﻫﺎﯼ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺷﺎﻳﺪ ﺑﻴﺸﺘﺮﻳﻦ ﺑﺎﺷﻨﺪ ﭼﺮﺍ ﮐﻪ ﺍﻳﻦ ﺑﺮﻧﺎﻣﻪ ﺩﺭ ﺍﺻﻞ ﻫﺴﺘﻪ ﺍﺻﻠﯽ ﺗﺎﺭﻧﻤﺎ ﺭﺍ ﺗﺸﮑﻴﻞ ﻣﯽ&zwnj;ﺩﻫﺪ. ﺍﻳﻦ ﺧﻄﺎﻫﺎ ﺑﻪ ﺳﻪ ﺩﺳﺘﻪ ﻋﻤﻮﻣﯽ ﺯﻳﺮ ﺗﻘﺴﻴﻢ ﻣﯽ&zwnj;ﺷﻮﻧﺪ:</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">Syntactical</span></strong> <strong>ﻳﺎ ﺧﻄﺎﯼ ﺩﺳﺘﻮﺭﯼ: </strong>ﺷﺎﻳﺪ ﺑﻴﺸﺘﺮﻳﻦ ﺗﻌﺪﺍﺩ ﺧﻄﺎﻫﺎ، ﺍﻳﺮﺍﺩﻫﺎﯼ ﺩﺳﺘﻮﺭﯼ ﺩﺭ ﻣﻴﺎﻥ ﮐﺪ&zwnj;ﻫﺎﯼ ﺷﻤﺎ ﺑﺎﺷﻨﺪ ﮐﻪ ﺑﺮﺍﺣﺘﯽ ﻫﻢ ﻗﺎﺑﻞ ﭘﻴﺪﺍ ﮐﺮﺩﻥ ﻭ ﺍﺷﮑﺎﻝ ﺯﺩﺍﻳﯽ ﻫﺴﺘﻨﺪ. ﻣﺜﻼ ﻓﺮﺍﻣﻮﺵ ﮐﺮﺩﻥ ﻋﻼﻣﺖ <span dir="LTR">$</span> ﻭﻳﺎ <span dir="LTR">;</span> ﮐﻪ ﺍﺟﺎﺯﻩ ﺍﺟﺮﺍﯼ ﮐﺪ ﺭﺍ ﻧﻤﯽ&zwnj;ﺩﻫﻨﺪ ﻭ ﺑﺎﻳﺪ ﺍﺑﺘﺪﺍ ﺁﻧﻬﺎ ﺭﺍ ﺩﺭﺳﺖ ﮐﺮﺩ. ﺍﻟﺒﺘﻪ ﻣﺸﺎﻫﺪﻩ ﺍﻳﻦ ﺧﻄﺎﻫﺎ ﻭﺍﺑﺴﺘﻪ ﺑﻪ ﻓﻌﺎﻝ ﺑﻮﺩﻥ ﻗﺴﻤﺖ ﻧﻤﺎﻳﺶ ﺍﻳﺮﺍﺩﻫﺎ ﺩﺭ ﭘﻴﮑﺮﺑﻨﺪﯼ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺷﻤﺎ ﺍﺳﺖ (ﺩﺭ ﺍﺩﺍﻣﻪ ﺩﺭﺱ ﺑﻪ ﺍﻳﻦ ﻧﮑﺘﻪ ﻫﻢ ﭘﺮﺩﺍﺧﺘﻪ ﺧﻮﺍﻫﺪ ﺷﺪ).</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">Run-time</span></strong>: ﺍﻳﻦ ﺩﺳﺘﻪ ﺧﻄﺎﻫﺎ ﺑﺮﻧﺎﻣﻪ ﺭﺍ ﺍﺯ ﺍﺟﺮﺍ ﺑﺎﺯ ﻧﻤﯽ&zwnj;ﺩﺍﺭﻧﺪ، ﺑﻠﮑﻪ ﺍﺟﺮﺍﯼ ﺑﺮﻧﺎﻣﻪ ﺑﻄﻮﺭﻳﮑﻪ ﻧﻮﺷﺘﻪ ﺷﺪﻩ ﺍﻧﺠﺎﻡ ﻧﻤﯽ&zwnj;ﺷﻮﺩ ﻭ ﻣﻤﮑﻦ ﺍﺳﺖ ﺷﻤﺎ ﻧﺘﻴﺠﻪ ﻣﺘﻔﺎﻭﺕ ﺍﺯ ﺁﻧﭽﻪ ﻧﻮﺷﺘﻪ&zwnj;ﺍﻳﺪ ﺩﺭﻳﺎﻓﺖ ﮐﻨﻴﺪ. ﻣﺜﻼ ﻓﺮﺍﺧﻮﺍﻧﯽ ﺗﺎﺑﻌﯽ ﺑﺎ ﺗﻌﺪﺍﺩ ﻳﺎ ﻧﻮﻉ ﭘﺎﺭﺍﻣﺘﺮﻫﺎﯼ ﻧﺎﺩﺭﺳﺖ. ﺩﺭ ﺍﻳﻦ ﮔﺮﻭﻩ ﺍﺷﮑﺎﻝ&zwnj;ﻫﺎ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﻣﻌﻤﻮﻻ ﻳﮏ ﭘﻴﻐﺎﻡ ﺧﻄﺎ ﻣﯽ&zwnj;ﺩﻫﺪ ﮐﻪ ﺍﺷﮑﺎﻝ ﺭﺍ ﺑﻄﻮﺭ ﻣﺸﺨﺺ ﻧﺸﺎﻥ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">Logical</span></strong><strong>:</strong> ﺍﻳﻦ ﺩﺳﺘﻪ ﺍﺷﮑﺎﻟﻬﺎ ﺷﺎﻳﺪ ﺑﺪﺗﺮﻳﻦ ﺁﻧﻬﺎ ﺑﺎﺷﻨﺪ ﭼﺮﺍﮐﻪ ﻟﺰﻭﻣﺎ ﮔﺰﺍﺭﺵ ﻳﺎ ﺧﻄﺎﻳﯽ ﺍﺯ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺍﻋﻼﻡ ﻧﻤﯽ&zwnj;ﺷﻮﺩ ﻭ ﺑﺮﻧﺎﻣﻪ ﻣﺴﻴﺮ ﻋﺎﺩﯼ ﺧﻮﺩ ﺭﺍ ﻃﯽ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺍﻳﻦ ﻧﻮﻉ ﺧﻄﺎﻫﺎ ﻣﻌﻤﻮﻻ ﻣﺸﺨﺺ ﻧﻴﺴﺘﻨﺪ ﻭ ﺩﺭ ﺍﺟﺮﺍﯼ ﺑﺮﻧﺎﻣﻪ ﻫﻢ ﺗﺎﺛﻴﺮﯼ ﻧﺪﺍﺭﻧﺪ. ﭘﺲ ﭘﻴﺪﺍ ﮐﺮﺩﻧﺸﺎﻥ ﮐﻤﯽ ﺳﺨﺖ&zwnj;ﺗﺮ ﺑﻪ ﻧﻈﺮ ﻣﯽ&zwnj;ﺁﻳﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺧﻄﺎﻫﺎﯼ ﺍﺱ&zwnj; ﮐﻴﻮ ﺍﻝ: </strong>ﺧﻄﺎﻫﺎ ﺩﺭ ﺯﺑﺎﻥ ﭘﺮﺱ&zwnj;ﻭ&zwnj;ﺟﻮﯼ ﺍﺱ&zwnj;ﮐﻴﻮ ﺍﻝ ﺑﻴﺸﺘﺮ ﺑﻪ ﺷﮑﻞ ﺍﻳﺮﺍﺩﻫﺎﯼ ﺩﺳﺘﻮﺭﯼ ﻫﺴﺘﻨﺪ ﻭ ﺩﺭ ﻃﻮﻝ ﺍﺟﺮﺍﯼ ﭘﺮﺱ&zwnj;ﻭ&zwnj;ﺟﻮ ﺍﻧﺠﺎﻡ ﻭ ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﻣﯽ&zwnj;ﺷﻮﻧﺪ. ﺍﻳﺮﺍﺩﻳﺎﺑﯽ ﺩﺭ ﺍﻳﻦ ﻣﻨﻄﻘﻪ ﻫﻢ ﺳﺨﺖ ﺑﻪ ﻧﻈﺮ ﻧﻤﯽ&zwnj;ﺁﻳﻨﺪ. ﻣﺜﻼ ﺍﺷﺘﺒﺎﻩ ﺩﺭ ﻧﻮﺷﺘﻦ ﺩﺳﺘﻮﺭﯼ ﺍﺯ ﻧﻈﺮ ﺗﺮﺗﻴﺐ ﻳﺎ ﺍﺳﺘﻔﺎﺩﻩ ﻏﻠﻂ ﺍﺯ ﮐﻠﻤﺎﺕ ﭘﻴﺶ ﻓﺮﺽ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﺯ ﺧﻄﺎﻫﺎﯼ ﻭﺍﺿﺢ ﻭ ﺗﮑﺮﺍﺭﯼ، ﭘﻴﻐﺎﻡ ﻋﺪﻡ ﺩﺳﺘﺮﺳﯽ ﺑﻪ ﭘﺎﻳﮕﺎﻩ ﻭ ﻳﺎ ﺳﻄﺢ ﺩﺳﺘﺮﺳﯽ ﺍﺳﺖ ﮐﻪ ﺩﺭ ﻗﺴﻤﺖ&zwnj;ﻫﺎﯼ ﺁﻳﻨﺪﻩ ﺑﻴﺸﺘﺮ ﺍﺯ ﺁﻧﻬﺎ ﺻﺤﺒﺖ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	&nbsp;</p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺍﻳﺮﺍﺩﻳﺎﺑﯽ ﺍﺑﺘﺪﺍﻳﯽ</strong><br />
-	ﻟﺮﯼ ﺍﻟﻤﻦ ﺩﺭ ﮐﺘﺎﺏ ﺧﻮﺩ ﻣﯽ&zwnj;ﮔﻮﻳﺪ: ﻣﻌﻤﻮﻝ&zwnj;ﺗﺮﻳﻦ ﺭﺍﻩ ﺑﺮﺍﯼ ﺍﻳﺮﺍﺩﻳﺎﺑﯽ ﺍﻳﻦ&zwnj;ﺳﺖ ﮐﻪ ﺩﺭ ﺯﻣﺎﻥ ﺧﺴﺘﮕﯽ ﺯﻳﺎﺩ ﮐﻤﯽ ﺍﺯ ﺭﺍﻳﺎﻧﻪ ﺧﻮﺩ ﺩﻭﺭﯼ ﮐﻨﻴﺪ. ﺍﺳﺘﺮﺍﺣﺖ ﮐﻮﺗﺎﻩ ﻭ ﺗﺎﺯﻩ ﮐﺮﺩﻥ ﺫﻫﻦ ﺑﻬﺘﺮﻳﻦ ﻭ ﺍﺑﺘﺪﺍﻳﯽ&zwnj;ﺗﺮﻳﻦ ﺭﺍﻩ ﺍﻳﺮﺍﺩﻳﺎﺑﯽ ﺍﺳﺖ. ﺍﻳﺸﺎﻥ ﺩﺭ ﮐﺘﺎﺏ ﺧﻮﺩ ﻓﻬﺮﺳﺘﯽ ﺍﺯ ﻣﻮﺍﺭﺩﯼ ﮐﻪ ﺑﺎﻳﺪ ﺻﻮﺭﺕ ﺑﮕﻴﺮﺩ ﺁﻭﺭﺩﻩ&zwnj;ﺍﻧﺪ ﮐﻪ ﻣﺎ ﻫﻢ ﺑﻪ ﺁﻧﻬﺎ ﺍﺷﺎﺭﻩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۱. ﺍﻃﻤﻴﻨﺎﻥ ﭘﻴﺪﺍ ﮐﻨﻴﺪ ﮐﻪ ﺑﺮﮔﻪ ﺩﺭﺳﺖ ﺭﺍ ﺍﺟﺮﺍ ﻣﯽ&zwnj;ﮐﻨﻴﺪ. ﻣﻤﮑﻦ ﺍﺳﺖ ﺷﻤﺎ ﮐﺪﻫﺎﯼ ﺻﻔﺤﻪ&zwnj;ﺍﯼ ﺭﺍ ﺭﻓﻊ ﺍﺷﮑﺎﻝ ﮐﻨﻴﺪ ﺍﻣﺎ ﺩﺭ ﺑﺮﮔﻪ ﺧﻮﺩ ﻧﺘﻴﺠﻪ ﺁﻥ ﺭﺍ ﻧﺒﻴﻨﻴﺪ. ﺍﻳﻦ ﺑﺨﺎﻃﺮ ﺍﻳﻦ&zwnj;ﺳﺖ ﮐﻪ ﺻﻔﺤﻪ ﺷﻤﺎ ﺑﻪ ﻏﻴﺮ ﺍﺯ ﺁﻥ ﺑﺮﮔﻪ&zwnj;ﺍﻳﺴﺖ ﮐﻪ ﺍﺷﮑﺎﻝ ﻳﺎﺑﯽ ﮐﺮﺩﻩ&zwnj;ﺍﻳﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۲. ﻫﻤﻴﺸﻪ ﺍﺯ ﺛﺒﺖ ﮐﺮﺩﻥ ﺁﺧﺮﻳﻦ ﺗﻐﻴﻴﺮﺍﺕ ﺍﻧﺠﺎﻡ ﺷﺪﻩ ﺍﻃﻤﻴﻨﺎﻥ ﺣﺎﺻﻞ ﮐﻨﻴﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۳. ﺍﺯ ﺁﻧﺠﺎﻳﯽ ﮐﻪ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﻳﮏ ﺯﺑﺎﻥ ﺳﻤﺖ ﺳﺮﻭﺭ ﺍﺳﺖ، ﺑﺎﻳﺪ ﺗﻤﺎﻡ ﻓﺎﻳﻞ&zwnj;ﻫﺎﯼ ﺷﻤﺎ ﺗﻮﺳﻂ <span dir="LTR">URL</span> ﺍﺟﺮﺍ ﺷﻮﻧﺪ. ﺍﻳﻦ ﻳﻌﻨﯽ ﺍﻳﻨﮑﻪ ﺍﮔﺮ ﺍﺯ ﻣﺜﻼ <span dir="LTR">&nbsp;WAMP</span>ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﻴﺪ، ﻓﺎﻳﻠﻬﺎﯼ ﺷﻤﺎ ﺑﺎﻳﺪ ﺩﺭ ﭘﻮﺷﻪ <span dir="LTR">WWW</span> ﺑﺎﺷﻨﺪ ﻭ ﺷﻤﺎ ﺑﺎ ﻧﺸﺎﻧﯽ ﺍﻳﻨﺘﺮﻧﺘﯽ ﺍﺯ ﺁﻧﻬﺎ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۴. &nbsp;ﺩﺍﻧﺴﺘﻦ ﻧﺴﺨﻪ ﻣﻮﺭﺩ ﺍﺳﺘﻔﺎﺩﻩ ﺷﺪﻩ ﺧﻴﻠﯽ ﻣﻮﺭﺩ ﺍﻫﻤﻴﺖ ﺍﺳﺖ، ﭼﺮﺍ ﮐﻪ ﺑﻌﻀﯽ ﺍﺯ ﺗﻮﺍﺑﻊ ﻣﺮﺑﻮﻁ ﺑﻪ ﻧﺴﺨﻪ&zwnj;ﻫﺎﯼ ﺁﺧﺮﻳﻦ ﻫﺴﺘﻨﺪ ﻭ ﺍﮔﺮ ﺷﻤﺎ ﺍﺯ ﻧﺴﺨﻪ&zwnj;ﻫﺎﯼ ﻗﺪﻳﻤﯽ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ ﺑﻪ ﻣﺸﮑﻞ ﻋﺪﻡ ﺳﺎﺯﮔﺎﺭﯼ ﻳﺎ ﻧﺒﻮﺩ ﺁﻥ ﺗﺎﺑﻊ ﻣﻮﺍﺟﻪ ﻣﯽ&zwnj;ﺷﻮﻳﺪ. ﻳﮑﯽ ﺍﺯ ﺑﻬﺘﺮﻳﻦ ﺍﺑﺰﺍﺭﻫﺎ ﺗﺎﺑﻊ<span dir="LTR">phpinfo() </span>&nbsp;ﺍﺳﺖ ﮐﻪ ﺍﻃﻼﻋﺎﺕ ﻣﻔﻴﺪﯼ ﺩﺭ ﺍﺧﺘﻴﺎﺭ ﺷﻤﺎ ﻗﺮﺍﺭ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۵.&nbsp; ﺑﺪﺍﻧﻴﺪ ﮐﻪ ﺍﺯ ﭼﻪ ﺳﺮﻭﻳﺲ ﺍﻧﺘﺸﺎﺭ ﻭﺏ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﻴﺪ، ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﺩﺭ <span dir="LTR">WAMP</span> ﺍﺯ <span dir="LTR">&nbsp;Apache</span> ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ ﻭ ﻳﺎ ﻭﻳﻨﺪﻭﺯ ﺧﻮﺩ ﺍﺯ <span dir="LTR">IIS</span> ﺑﻬﺮﻩ ﻣﯽ&zwnj;ﺑﺮﺩ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۶. ﻫﻤﻴﺸﻪ ﺑﺮﮔﻪ&zwnj;ﻫﺎﯼ ﺧﻮﺩ ﺭﺍ ﺩﺭ ﻣﺮﻭﺭﮔﺮﻫﺎﯼ ﻣﺘﻔﺎﻭﺕ ﺍﺟﺮﺍ ﮐﻨﻴﺪ ﺗﺎ ﺧﺮﻭﺟﯽ ﺭﺍ ﺩﺭ ﻫﻤﻪ ﺁﻧﻬﺎ ﻣﻘﺎﻳﺴﻪ ﻭ ﺩﺭ ﺻﻮﺭﺕ ﻣﺸﺎﻫﺪﻩ ﺍﺷﮑﺎﻝ ﺩﺭ ﺁﻥ ﮐﻨﻴﺪ. ﺍﻟﺒﺘﻪ ﺍﻳﻦ ﻣﺸﮑﻞ ﺑﻴﺸﺘﺮ ﺑﻪ ﺍﭺ&zwnj;ﺗﯽ&zwnj;ﺍﻡ&zwnj;ﺍﻝ ﻭ ﺳﯽ&zwnj;ﺍﺱ&zwnj;ﺍﺱ ﻣﺮﺑﻮﻁ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	&nbsp;</p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺍﺷﮑﺎﻝ ﺯﺩﺍﻳﯽ ﺩﺭ ﺍﭺ&zwnj;ﺗﯽ&zwnj;ﺍﻡ&zwnj;ﺍﻝ</strong><br />
-	۱. ﻫﻤﻴﺸﻪ ﺩﺭ ﺻﻮﺭﺕ ﻣﺸﺎﻫﺪﻩ ﺍﻳﺮﺍﺩ ﺑﻪ ﻣﻨﺒﻊ ﮐﺪﻫﺎﯼ ﺧﻮﺩ ﻣﺮﺍﺟﻌﻪ ﮐﻨﻴﺪ، ﺑﺮﺍﯼ ﺩﻳﺪﻥ ﮐﺪﻫﺎ ﮐﺎﻓﯽ&zwnj;ﺳﺖ ﮐﻪ ﺑﺮ ﺭﻭﯼ ﺻﻔﺤﻪ ﺭﺍﺳﺖ ﮐﻠﻴﮏ ﮐﺮﺩﻩ ﻭ ﺩﻳﺪﻥ ﻣﻨﺒﻊ ﺭﺍ ﺑﺰﻧﻴﺪ.</span></span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺳﺎﺧﺖ ﻳﮏ ﻋﺒﺎﺭﺕ ﻣﻨﻈﻢ٬ ﺳﺎﺧﺘﺎﺭ ﻣﻨﺤﺼﺮ ﺑﻪ ﻓﺮﺩ ﺧﻮﺩ ﺭﺍ ﺩﺍﺭﺩ٬ ﺍﻳﻦ ﻳﻌﻨﯽ ﺑﺎﻳﺪ ﺍﺯ ﻳﮏ &zwnj;ﺳﺮﯼ ﻗﻮﺍﻧﻴﻦ ﻣﺸﺨﺺ ﭘﻴﺮﻭﯼ ﮐﻨﻴﻢ. ﺍﻣﺎ ﭘﻴﺎﺩﻩ ﺳﺎﺯﯼ ﻋﺒﺎﺭﺕ ﻣﻨﻈﻢ ﺩﺭ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺗﻮﺳﻂ ﺗﻮﺍﺑﻌﯽ ﺻﻮﺭﺕ ﻣﯽ&zwnj;ﮔﻴﺮﺩ. ﺗﺎﺑﻌﯽ ﮐﻪ ﻣﺎ ﺍﺯ ﺁ&gt; ﺑﻴﺸﺘﺮ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ ﺗﺎﺑﻊ<span dir="LTR">preg_matvh() </span>&nbsp;ﺍﺳﺖ.</span></span></p>
 <div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
 	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Right Click On Page/ View Page Source</span></span></p>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( <span dir="RTL">ﺍﻟﮕﻮ</span> , <span dir="RTL">&nbsp;ﺩﺍﺩﻩ </span>&nbsp;) ;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo;/b/&rsquo; , &lsquo;babak&rsquo; );</span></span></p>
 </div>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۲. ﺍﺯ ﺍﺑﺰﺍﺭﻫﺎﯼ ﺍﻋﺘﺒﺎﺭ ﺳﻨﺠﯽ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ ﺗﺎ ﺍﻳﺮﺍﺩﻫﺎ ﺭﺍ ﺭﺍﺣﺖ ﭘﻴﺪﺍ ﮐﻨﻴﺪ.</span></span></p>
-<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">http://validator.w3.org/&nbsp;&nbsp; HTML</span></span></p>
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">http://jigsaw.w3.org/css-validator/&nbsp; CSS</span></span></p>
-</div>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﺩﺭ ﻣﺜﺎﻝ ﺑﺎﻻ ﮔﻔﺘﻪ ﺷﺪ٬ ﻳﮏ ﻋﺒﺎﺭﺕ ﻣﻨﻈﻢ ﻧﻮﺷﺘﻪ ﺷﺪﻩ ﺍﺳﺖ ﺗﺎ ﻭﺟﻮﺩ ﺣﺮﻑ <span dir="LTR">b</span> ﺭﺍ ﺩﺭ ﻣﻘﺎﺩﻳﺮ ﻭﺍﺭﺩ ﺷﺪﻩ ﺑﺮﺭﺳﯽ ﮐﻨﺪ (ﮐﻪ ﺩﺭ ﺍﻳﻨﺠﺎ <span dir="LTR">&nbsp;&lsquo;babak&rsquo;</span> ﺍﺳﺖ).</span></span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۳. ﺗﻮﺟﻪ ﺯﻳﺎﺩﯼ ﺑﻪ ﻣﺮﻭﺭﮔﺮ ﺧﻮﺩ ﺩﺍﺷﺘﻪ ﺑﺎﺷﻴﺪ، ﻓﺎﻳﺮ ﻓﺎﮐﺲ ﻭ ﮔﻮﮔﻞ ﮐﺮﻭﻡ ﻭ ... ﺍﻟﺒﺘﻪ ﻓﺎﻳﺮ ﻓﺎﮐﺲ ﻫﻤﺮﺍﻩ ﺍﺑﺰﺍﺭﮎ&zwnj;ﻫﺎﻳﯽ ﮐﻪ ﺩﺭ ﺍﺧﺘﻴﺎﺭ ﺷﻤﺎ ﻗﺮﺍﺭ ﻣﯽ&zwnj;ﺩﻫﺪ ﺍﻧﺘﺨﺎﺏ ﺧﻮﺑﯽ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺑﺎﺷﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۴. ﻫﻤﻴﺸﻪ ﺍﺯ ﭼﻨﺪﻳﻦ ﻣﺮﻭﺭﮔﺮ ﺑﺮﺍﯼ ﺑﺮﺭﺳﯽ ﮐﺎﺭﺁﻣﺪﯼ ﮐﺪﻫﺎﯼ ﺧﻮﺩ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ.</span></span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻟﮕﻮﻳﯽ ﮐﻪ ﺑﺮﺍﯼ ﺑﺮﺭﺳﯽ ﻣﯽ&zwnj;ﺳﺎﺯﻳﻢ ﺑﺎﻳﺪ ﺩﺭ ﺑﻴﻦ ﻋﻼﻣﺖ ﻧﻘﻞ ﻗﻮﻝ ﻗﺮﺍﺭ ﮔﻴﺮﺩ ﻳﺎ ﻫﻤﺎﻥ &quot; &quot; ﺧﻮﺩﻣﺎﻥ. ﺍﺑﺘﺪﺍﻳﯽ&zwnj;ﺗﺮﻳﻦ ﻭ ﺁﺧﺮﻳﻦ ﺣﺮﻑ ﺍﻳﻦ ﺍﻟﮕﻮ ﻫﻢ ﻧﺸﺎﻧﻪ ﺁﻏﺎﺯ ﻭ ﭘﺎﻳﺎﻥ ﺑﺎﺭﺕ ﻫﺴﺘﻨﺪ ﮐﻪ ﺑﻪ ﺁﻧﻬﺎ ﻧﺸﺎﻧﻪ ﻣﯽ&zwnj;ﮔﻮﻳﻴﻢ. ﺍﻳﻦ ﻧﺸﺎﻧﻪ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﻫﺮ ﮐﺎﺭﺍﮐﺘﺮﯼ ﺑﺎﺷﺪ٬ ﺍﻣﺎ ﺑﺎﻳﺪ ﮐﺎﺭﺍﮐﺘﺮﯼ ﺑﺎﺷﺪ ﮐﻪ ﺷﻤﺎ ﺩﺭ ﺩﺍﺧﻞ ﻋﺒﺎﺭﺕ ﺍﺳﺘﻔﺎﺩﻩ ﻧﻤﯽ&zwnj;ﮐﻨﻴﺪ. ﻳﻌﻨﯽ ﺍﮔﺮ ﻗﺮﺍﺭ ﺍﺳﺖ ﺩﺭ ﺩﺍﺧﻞ ﻣﻘﺪﺍﺭ ﻭﺭﻭﺩﯼ ﺩﻧﺒﺎﻝ ﻋﻼﻣﺖ ﺳﻮﺍﻝ ؟ ﺑﮕﺮﺩﻳﺪ٬ ﻧﺒﺎﻳﺪ ﺍﺯ ﺍﻳﻦ ﻋﻼﻣﺖ ﺑﺮﺍﯼ ﺁﻏﺎﺯ ﻭ ﭘﺎﻳﺎﻥ ﺍﻟﮕﻮ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ. ﺩﺭ ﻣﺜﺎﻝ ﺑﺎﻻ ﻣﺎ ﺍﺯ <span dir="LTR">/</span> ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩﻳﻢ٬ ﻣﯽ&zwnj;ﺗﻮﺍﻥ ﺍﺯ ﮐﺎﺭﺍﮐﺘﺮ&zwnj;ﻫﺎﻳﯽ ﻣﺜﻞ ! ﻳﺎ <span dir="LTR">| </span>&nbsp;ﻫﻢ ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩ. ﺑﺎﺯ ﺍﻳﻦ ﺑﺴﺘﮕﯽ ﺑﻪ ﮐﺎﺭﺑﺮﺩ ﺍﻟﮕﻮ ﺩﺍﺭﺩ.</span></span></p>
 <p dir="RTL" style="text-align: justify;">
 	&nbsp;</p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻧﻤﺎﻳﺶ ﺍﻳﺮﺍﺩﻫﺎﯼ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ</strong><br />
-	ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺧﻮﺩ ﭘﻴﺎﻣﻬﺎﯼ ﻭﺍﺿﺢ ﻭ ﮐﺎﺭﺍﻣﺪﯼ ﺭﺍ ﺩﺭ ﻫﻨﮕﺎﻡ ﺑﺮﻭﺯ ﺧﻄﺎ ﺑﻪ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﮔﺬﺍﺭﺩ. ﮐﻪ ﺍﻳﻦ ﻧﻤﺎﻳﺶ ﺑﻄﻮﺭ ﭘﻴﺶ ﻓﺮﺽ ﺧﺎﻣﻮﺵ ﺍﺳﺖ ﭼﺮﺍﮐﻪ ﺍﻳﻦ ﭘﻴﺎﻣﻬﺎ ﺑﺮﺍﯼ ﺷﻤﺎ ﻭ ﺩﺭ ﺯﻣﺎﻥ ﻧﻮﺷﺘﻦ ﮐﺪﻫﺎ ﺩﺭ ﺯﻣﺎﻥ ﺍﻣﺘﺤﺎﻥ ﻭ ﺭﻓﻊ ﺧﻄﺎ ﺍﺳﺖ ﻭ ﻧﺒﺎﻳﺪ ﺩﺭ ﺻﻮﺭﺕ ﺑﺮﻭﺯ ﺧﻄﺎ ﺑﺮﺍﯼ ﮐﺎﺭﺑﺮﺍﻥ ﺑﻪ ﻧﻤﺎﻳﺶ ﺩﺭ ﺁﻳﻨﺪ.</span></span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻗﺴﻤﺖ&zwnj;ﻫﺎﯼ ﺗﺸﮑﻴﻞ ﺩﻫﻨﺪﻩ ﺍﻟﮕﻮ ﺩﺭ ﻋﺒﺎﺭﺍﺕ ﻣﻨﻈﻢ</strong></span></span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺮﺍﯼ ﺭﺍﻩ&zwnj;ﺍﻧﺪﺍﺯﯼ ﻧﻤﺎﻳﺶ ﺧﻄﺎ&zwnj;ﻫﺎ ﺑﻪ ﺩﻭ ﺷﻴﻮﻩ ﻣﯽ&zwnj;ﺗﻮﺍﻥ ﻋﻤﻞ ﮐﺮﺩ. ﺍﺑﺘﺪﺍ ﺍﺟﺮﺍﯼ ﺁﻥ ﻓﻘﻂ ﺑﺮﺍﯼ ﻳﮏ ﺻﻔﺤﻪ ﻭ ﮐﺪﻫﺎﯼ ﺁﻥ ﻭ ﻳﺎ ﭘﻴﮑﺮ ﺑﻨﺪﯼ ﺁﻥ ﺑﺮﺍﯼ ﮐﻞ ﮐﺪﻫﺎ.</span></span></p>
-<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="RTL">ﺭﺍﻩ&zwnj;ﺍﻧﺪﺍﺯﯼ ﺑﺮﺍﯼ ﻳﮏ ﺻﻔﺤﻪ</span><br />
-		<span dir="RTL">ﺑﺮﺍﯼ ﺩﻳﺪﻥ ﺧﻄﺎﻫﺎ ﺑﺮﺍﯼ ﻳﮏ ﺻﻔﺤﻪ ﻭﻳﮋﻩ ﮐﺎﻓﯽ&zwnj;ﺳﺖ ﮐﻪ ﺍﺯ ﺩﺳﺘﻮﺭ ﺯﻳﺮ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ:</span></span></span></p>
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ini_set(&#39;display_errors&#39;, 1);</span></span></p>
-	<p dir="RTL" style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﺩﺭ ﺻﻮﺭﺕ ﺑﺮﻭﺯ ﺧﻄﺎ ﺩﺭ ﮐﺪﻫﺎﯼ ﺷﻤﺎ ﺁﻧﻬﺎ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ. ﺑﺮﺍﯼ ﻋﺪﻡ ﻧﻤﺎﻳﺶ ﻫﻢ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺑﺎ ﺗﻐﻴﻴﺮ ﻋﺪﺩ ﻳﮏ ﺑﻪ ﺻﻔﺮ ﺍﺯ ﻧﻤﺎﻳﺶ ﺧﻄﺎﻫﺎ ﺟﻠﻮﮔﻴﺮﯼ ﮐﻨﻴﺪ.</span></span></p>
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ini_set(&#39;display_errors&#39;, <span dir="RTL">0</span>);</span></span></p>
-	<p dir="RTL" style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺮﺍﯼ ﻣﺜﺎﻝ ﺗﮑﻪ ﮐﺪ ﺯﻳﺮ ﺭﺍ ﺩﺭ ﺻﻔﺤﻪ ﻗﺮﺍﺭ ﺩﻫﻴﺪ ﻭ ﺟﺎﯼ ﻋﺪﺩ 1 ﻭ 0 ﺭﺍ ﺗﻐﻴﻴﺮ ﺩﻫﻴﺪ ﺗﺎ ﻧﺘﻴﺠﻪ ﺭﺍ ﻣﺸﺎﻫﺪﻩ ﻓﺮﻣﺎﻳﻴﺪ.</span></span></p>
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ini_set (&#39;display_errors&#39;, 1);</span></span></p>
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp; foreach ($var as $v) {}</span></span></p>
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;$result = 1/0;</span></span></p>
-</div>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>- ﻧﺸﺎﻧﻪ ﻳﺎ ﺁﻏﺎﺯ ﻭ ﭘﺎﻳﺎﻥ ﺍﻟﮕﻮ </strong><strong><span dir="LTR">&nbsp;Delimiter</span></strong></span></span><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻗﺒﻼ ﻫﻢ ﮔﻔﺘﻴﻢ ﺑﺎﻳﺪ ﺍﺯ ﻳﮏ ﮐﺎﺭﺍﮐﺘﺮ ﻳﮑﺴﺎﻥ (ﻳﮑﯽ ﺩﺭ ﺁﻏﺎﺯ ﻭ ﻳﮑﯽ ﺩﺭ ﭘﺎﻳﺎﻥ) ﺑﺮﺍﯼ ﻣﺸﺨﺺ ﮐﺮﺩﻥ ﺷﺮﻭﻉ ﻭ ﭘﺎﻳﺎﻥ ﺍﻟﮕﻮ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﻢ. ﮐﺎﺭﺍﮐﺘﺮﻫﺎﻳﯽ ﻣﺎﻧﻨﺪ</span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">/, |, ? </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﻳﺎ </span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"># </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﺑﺴﺘﻪ ﺑﻪ ﺍﻳﻨﮑﻪ ﺍﮔﺮ ﺩﺭ ﺩﺍﺧﻞ ﻣﺘﻦ ﻭﺭﻭﺩﯼ ﺩﻧﺒﺎﻝ ﺁﻧﻬﺎ ﻧﮕﺮﺩﻳﻢ٬ ﺍﻧﺘﺨﺎﺏ ﺧﻮﺑﯽ ﻫﺴﺘﻨﺪ.</span></p>
 <p dir="RTL" style="text-align: justify;">
-	&nbsp;</p>
+	<strong style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">- ﻟﻔﻆ&zwnj;ﻫﺎ </strong><strong style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><span dir="LTR">&nbsp;Literal</span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻟﻔﻆ&zwnj;ﻫﺎ ﺩﺭ ﺍﺻﻞ ﻫﻤﺎﻥ ﺣﺮﻭﻑ ﻳﺎ ﮐﺎﺭﺍﮐﺘﺮﻫﺎﻳﯽ ﻫﺴﺘﻨﺪ ﮐﻪ ﻣﺎ ﺩﺭ ﺩﺍﺧﻞ ﻣﺘﻦ ﺩﻧﺒﺎﻝ ﺁﻧﻬﺎ ﻫﺴﺘﻴﻢ٬ ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﺍﮔﺮ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﺪ ﻭﺟﻮﺩ</span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">asd </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﺭﺍ ﺩﺍﺧﻞ ﻣﺘﻨﯽ ﺟﺴﺘﺠﻮ ﮐﻨﻴﺪ٬</span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">asd </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﻫﻤﺎﻥ ﻟﻔﻆ ﺷﻤﺎ ﺍﺳﺖ.</span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﭘﻴﮑﺮﺑﻨﺪﯼ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ</strong><br />
-	ﺑﺮﺍﯼ ﭘﻴﮑﺮﺑﻨﺪﯼ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺑﺎﻳﺪ ﻓﺎﻳﻞ<span dir="LTR">php.ini </span>&nbsp;ﺭﺍ ﭘﻴﺪﺍﮐﺮﺩﻩ ﮐﻪ ﺳﺎﺩﻩ&zwnj;ﺗﺮﻳﻦ ﮐﺎﺭ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺗﺎﺑﻊ <span dir="LTR">phpinfo() </span>&nbsp;ﺍﺳﺖ. ﺑﻌﺪ ﺍﺯ ﺍﺟﺮﺍﯼ ﺍﻳﻦ ﺗﺎﺑﻊ ﺩﺭ ﺑﺮﮔﻪ ﺧﻮﺩ ﺑﻪ ﺩﻧﺒﺎﻝ <span dir="LTR">Loaded Configuration File</span> ﺩﺭ ﻗﺴﻤﺖ ﺍﺑﺘﺪﺍﻳﯽ ﺍﻃﻼﻋﺎﺕ ﺑﺮﻭﻳﺪ. ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﺑﺮﺍﯼ ﻣﺎ ﺁﺩﺭﺱ ﺯﻳﺮ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ:</span></span></p>
-<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">I:wampinapacheapache2.2.22in</span></span></p>
-</div>
+	<strong style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">- ﮐﺎﺭﺍﮐﺘﺮﻫﺎﯼ ﻭﻳﮋﻩ </strong><strong style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><span dir="LTR">&nbsp;Metacharacter</span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﮐﺎﺭﺍﮐﺘﺮﻫﺎﯼ ﻭﻳﮋﻩ٬ ﮐﺎﺭﺍﮐﺘﺮﻫﺎﻳﯽ ﻫﺴﺘﻨﺪ ﮐﻪ ﻣﺎ ﺩﺭ ﺩﺍﺧﻞ ﻣﺘﻦ ﺩﺭ ﺟﺴﺘﺠﻮﯼ ﺁﻧﻬﺎ ﻧﻴﺴﺘﻴﻢ ﻭ ﺁﻧﻬﺎ ﺑﺮﺍﯼ ﻣﺎ ﻣﻌﻨﯽ ﻭﻳﮋﻩ&zwnj;ﺍﯼ ﺩﺍﺭﻧﺪ٬ ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﻋﻼﻣﺖ ^ ﻳﺎ. ﻳﺎ ﻋﻼﻣﺖ&zwnj;ﻫﺎﯼ ( ) ﺍﺯ ﺍﻳﻦ ﮐﺎﺭﺍﮐﺘﺮﻫﺎﯼ ﻭﻳﮋﻩ ﻫﺴﺘﻨﺪ. ﻣﺜﻠﻦ ﻋﻼﻣﺖ &quot;.&quot; ﺑﺎ ﻫﺮ ﮐﺎﺭﺍﮐﺘﺮﯼ ﺑﺮﺍﺑﺮﯼ ﻣﯽ&zwnj;ﮐﻨﺪ. ﻭﻗﺘﯽ ﺩﺭ ﺍﻟﮕﻮ ﺍﺯ &quot;.&quot; ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ٬ ﺍﻳﻦ ﻳﻌﻨﯽ ﺩﺭ ﺟﺎﯼ &quot;.&quot; ﻫﺮ ﮐﺎﺭﺍﮐﺘﺮﯼ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺑﺎﺷﺪ٬</span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">a </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﻳﺎ</span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"> c </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ـ&nbsp; ﻳﺎ ﻫﺮ ﮐﺎﺭﺍﮐﺘﺮ ﺩﻳﮕﺮ. ﻋﻼﻣﺖ ^ ﻫﻢ ﻳﻌﻨﯽ ﺁﻏﺎﺯ ﺍﻟﮕﻮﯼ ﻣﺘﻨﯽ ﻣﺎ. ﺑﻄﻮﺭ ﻣﺜﺎﻝ</span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">^a </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﻳﻌﻨﯽ ﻫﺮ ﻣﺘﻨﯽ ﮐﻪ ﺑﺎ</span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">a </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﺁﻏﺎﺯ ﺷﻮﺩ. ﺩﺭ ﺯﻳﺮ ﻓﻬﺮﺳﺘﯽ ﺍﺯ ﭼﻨﺪ ﮐﺎﺭﺍﮐﺘﺮﻫﺎﯼ ﻭﻳﮋﻩ ﺑﺎ ﻣﻌﻨﯽ ﺁﻧﻬﺎ ﻣﯽ&zwnj;ﺁﻭﺭﻳﻢ:</span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﻓﺎﻳﻞ ﺭﺍ ﺑﺎ ﻳﮏ ﻭﻳﺮﺍﻳﺸﮕﺮ ﺑﺎﺯ ﮐﻨﻴﺪ، ﺑﺮﺍﯼ ﮐﺎﺭ ﺑﺎ ﺍﻳﻦ ﻓﺎﻳﻞ ﺑﺎﻳﺪ ﺑﻪ ﭼﻨﺪ ﻧﮑﺘﻪ ﺗﻮﺟﻪ ﮐﻨﻴﺪ:</span></span></p>
-<ul dir="rtl">
-	<li style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺑﺎﻻﯼ ﺻﻔﺤﻪ ﺍﻃﻼﻋﺎﺗﯽ ﺩﺭ ﻣﻮﺭﺩ ﺍﻳﻦ ﻓﺎﻳﻞ ﻭﺟﻮﺩ ﺩﺍﺭﺩ ﮐﻪ ﻓﻘﻂ ﺑﺮﺍﯼ ﺁﮔﺎﻫﯽ ﺍﺳﺖ.</span></span></li>
-	<li style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻋﻼﻣﺖ <span dir="LTR">;</span> ﺑﺮﺍﯼ ﮔﺬﺍﺷﺘﻦ ﻣﺘﻦ ﺍﺳﺖ ﻭ ﻫﺮ ﭼﻴﺰ ﺑﻌﺪ ﺍﺯ ﺁﻥ ﺑﻪ ﻋﻨﻮﺍﻥ ﮐﺪ ﺍﺟﺮﺍ ﻧﻤﯽ&zwnj;ﺷﻮﺩ.</span></span></li>
-	<li style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺳﺘﻮﺭ ﻋﻤﻞ ﻧﺤﻮﻩ ﻋﻤﻠﮑﺮﺩ ﻫﺮ ﺩﺳﺘﻮﺭﯼ ﺗﻮﺿﻴﺢ ﺩﺍﺩ ﺷﺪﻩ ﺍﺳﺖ.</span></span></li>
-	<li style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺗﻼﺵ ﮐﻨﻴﺪ ﺑﺠﺎﯼ ﺗﻐﻴﻴﺮﺍﺕ ﺍﺑﺘﺪﺍ ﺩﺳﺘﻮﺭﻫﺎﯼ ﻗﺪﻳﻤﯽ ﺭﺍ ﺑﺎ ﻳﮏ <span dir="LTR">;</span> ﺑﺼﻮﺭﺕ ﻏﻴﺮ ﻓﻌﺎﻝ ﻭ ﻣﺘﻦ ﺩﺭ ﺑﻴﺎﻭﺭﻳﺪ ﻭ ﺑﻌﺪ ﺯﻳﺮ ﺁﻥ ﺩﺳﺘﻮﺭ ﻣﻮﺭﺩ ﻧﻈﺮ ﺧﻮﺩ ﺭﺍ ﺑﻨﻮﻳﺴﻴﺪ.</span></span></li>
-	<li style="text-align: justify;">
-		<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺩﺭ ﺯﻣﺎﻥ ﻧﻮﺷﺘﻦ ﻫﺮ ﺩﺳﺘﻮﺭﯼ ﺑﺎ ﺍﺿﺎﻓﻪ ﮐﺮﺩﻥ ﺗﻮﺿﻴﺢ ﻭ ﺩﻟﻴﻞ ﺍﻳﻦ ﮐﺎﺭ ﺍﻳﻦ ﺭﺍﻩ ﺭﺍ ﺑﺮﺍﯼ ﻓﻬﻢ ﺭﺍﺣﺘﺘﺮ ﺩﺭ ﺁﻳﻨﺪﻩ ﺑﺎﺯ ﮐﻨﻴﺪ ﺗﺎ ﺍﮔﺮ ﺧﻮﺩ ﺷﻤﺎ ﻳﺎ ﮐﺲ ﺩﻳﮕﺮﯼ ﺑﻪ ﺳﺮﺍﻍ ﺍﻳﻦ ﻓﺎﻳﻞ ﺭﻓﺖ ﺑﺮﺍﺣﺘﯽ ﻗﺎﺑﻞ ﺩﺭﮎ ﺑﺎﺷﺪ.</span></li>
-</ul>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">^</span>: ﺁﻏﺎﺯ ﺭﺷﺘﻪ ﻣﻮﺭﺩ ﻧﻈﺮ ﺭﺍ ﺑﻴﺎﻥ ﻣﯽ&zwnj;ﮐﻨﺪ ﮐﻪ ﺩﺭ ﺍﻟﮕﻮ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺮﺍﯼ ﺗﻐﻴﻴﺮ ﻗﺴﻤﺖ ﻧﺸﺎﻥ ﺩﺍﺩﻥ ﺧﻄﺎﻫﺎ ﺑﺪﻧﺒﺎﻝ ﮔﺰﻳﻨﻪ <span dir="LTR">Display_Errors</span> ﺑﮕﺮﺩﻳﺪ. ﺩﺭ ﺣﺎﻝ ﺣﺎﺿﺮ ﺍﻳﻦ ﮔﺰﻳﻨﻪ ﺑﺮﺍﺑﺮ <span dir="LTR">Off</span> ﺧﻮﺍﻫﺪ ﺑﻮﺩ ﮐﻪ ﺑﺎﻳﺪ ﺑﺼﻮﺭﺕ <span dir="LTR">On</span> ﺩﺭ ﺑﻴﺎﻭﺭﻳﺪ. ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﮔﻔﺘﻴﻢ ﺑﺠﺎﯼ ﺗﻐﻴﻴﺮﺍﺕ ﺧﻂ ﺟﺪﻳﺪﯼ ﺍﻳﺠﺎﺩ ﮐﻨﻴﺪ ﻣﺎﻧﻨﺪ ﺯﻳﺮ:</span></span></p>
-<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">; display_errors = Off &nbsp;//<span dir="RTL"> ﻋﻼﻣﺖ&nbsp; ﻗﺒﻞ ﺍﺯ ﺩﺳﺘﻮﺭ ﮐﺎﺭ ﻏﻴﺮ ﻓﻌﺎﻝ ﮐﺮﺩﻥ ﺭﺍ ﺍﻧﺠﺎﻡ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></span></p>
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">; <span dir="RTL">ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﺑﺼﻮﺭﺕ ﻓﻌﺎﻝ ﺩﺭ ﺁﻣﺪﻩ</span></span></span></p>
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">display_errors = On</span></span></p>
-</div>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">$</span>: ﭘﺎﻳﺎﻥ ﺭﺷﺘﻪ ﻣﻮﺭﺩ ﺍﺳﺘﻔﺎﺩﻩ ﺩﺭ ﺍﻟﮕﻮ</span></span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺎ ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﺷﻤﺎ ﺍﻣﮑﺎﻥ ﻧﻤﺎﻳﺶ ﺧﻄﺎﻫﺎ ﺭﺍ ﺑﺮﺍﯼ ﮐﻞ ﺳﻴﺴﺘﻢ ﺧﻮﺩ ﺭﺍﻩ ﺍﻧﺪﺍﺯﯼ ﮐﺮﺩﻳﺪ.</span></span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">. : ﻫﺮ ﮐﺎﺭﺍﮐﺘﺮ ﺗﻨﻬﺎﻳﯽ</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">|</span> : ﺍﻧﺘﺨﺎﺏ ﺑﻴﻦ ﺩﻭ ﻭﺍﮊﻩ٬ ﺑﻄﻮﺭ ﻣﺜﺎﻝ <span dir="LTR">&nbsp;a | S </span>ﻳﻌﻨﯽ ﻳﺎ <span dir="LTR">&nbsp;a</span> ﻳﺎ <span dir="LTR">&nbsp;s</span></span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">[]</span>: ﺍﻳﻦ ﺩﻭ ﮐﺎﺭﺍﮐﺘﺮ ﺁﻏﺎﺯ ﻭ ﭘﺎﻳﺎﻥ ﻳﮏ ﻣﺠﻤﻮﻋﻪ ﻳﺎ ﻟﻴﺴﺖ ﺍﺯ ﻣﻮﺍﺭﺩ ﻣﻮﺭﺩ ﺍﺳﺘﻔﺎﺩﻩ ﺩﺭ ﺍﻟﮕﻮ ﺭﺍ ﺑﻴﺎﻥ ﻣﯽ&zwnj;ﮐﻨﻨﺪ٬ ﮐﻪ ﺑﻪ ﺁﻥ ﮐﻼﺱ ﻣﯽ&zwnj;ﮔﻮﻳﻴﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">؟ : ﻣﻌﻨﯽ ﺻﻔﺮ ﻳﺎ ﻳﮏ ﮐﺎﺭﺍﮐﺘﺮ ﺭﺍ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">*</span> : ﻣﻌﻨﯽ ﺻﻔﺮ ﮐﺎﺭﺍﮐﺘﺮ ﻳﺎ ﺑﻴﺸﺘﺮ</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">+: ﻳﮏ ﮐﺎﺭﺍﮐﺘﺮ ﻳﺎ ﺑﻴﺸﺘﺮ</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">{}: ﺷﺮﻭﻉ ﻭ ﭘﺎﻳﺎﻥ ﻳﮏ ﻣﺤﺪﻭﺩﻩ ﺑﺮﺍﯼ ﺟﺴﺘﺠﻮ ﺭﺍ ﺗﻌﻴﻴﻦ ﻣﯽ&zwnj;ﮐﻨﻨﺪ. ﻣﺜﻼ<span dir="LTR">{x,y} </span>&nbsp;ﻳﻌﻨﯽ ﮐﻪ ﺍﺯ<span dir="LTR">x </span>&nbsp;ﺗﺎ&nbsp; <span dir="LTR">y</span> ﺭﺍ ﺟﺴﺘﺠﻮ ﮐﻦ. ﻓﺮﺽ ﮐﻨﻴﺪ ﮐﻪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﺍﺯ<span dir="LTR"> a </span>&nbsp;<span dir="LTR">&nbsp;d </span>ﺭﺍ ﺟﺴﺘﺠﻮ ﮐﻨﻴﻢ٬ ﭘﺲ ﻣﯽ&zwnj;ﺷﻮﺩ. <span dir="LTR">&nbsp;{a , d } </span>.</span></span></p>
 <p dir="RTL" style="text-align: justify;">
 	&nbsp;</p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺍﻧﻮﺍﻉ ﻧﻤﺎﻳﺶ ﺧﻄﺎﻫﺎ</strong><br />
-	ﺑﻄﻮﺭ ﮐﻠﯽ ﻧﻤﺎﻳﺶ ﺧﻄﺎﻫﺎ ﺑﻪ ﭼﻨﺪ ﻗﺴﻤﺖ ﺗﻘﺴﻴﻢ ﻣﯽ&zwnj;ﺷﻮﻧﺪ:</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۱. ﺗﻮﺟﻪ (<span dir="LTR">Notices</span>): ﮐﻪ ﻟﺰﻭﻣﺎ ﻣﺸﮑﻞ ﻧﻤﯽ&zwnj;ﺗﻮﺍﻧﻨﺪ ﺑﺎﺷﻨﺪ ﻭ ﺍﺟﺮﺍﯼ ﮐﺪ ﺭﺍ ﻣﺎﻧﻊ ﻧﻤﯽ&zwnj;ﺷﻮﻧﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۲. ﺍﺧﻄﺎﺭ (<span dir="LTR">Warnings</span>): ﻣﺸﮑﻠﯽ ﺭﺍ ﻧﺸﺎﻥ ﻣﯽ&zwnj;ﺩﻫﻨﺪ ﺍﻣﺎ ﺍﺟﺮﺍﯼ ﮐﺪ ﺭﺍ ﻣﺘﻮﻗﻒ ﻧﻤﯽ&zwnj;ﮐﻨﻨﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۳. ﺍﻳﺮﺍﺩ (<span dir="LTR">Errors</span>): ﺍﻳﻦ ﺍﻳﺮﺍﺩﻫﺎ ﺍﺟﺮﺍﯼ ﮐﺪ ﺭﺍ ﻣﺘﻮﻗﻒ ﻣﯽ&zwnj;ﮐﻨﻨﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺣﺘﯽ ﺑﺎ ﺭﺍﻩ ﺍﻧﺪﺍﺭﯼ ﻧﻤﺎﻳﺶ ﺧﻄﺎﻫﺎ ﺑﺎﺯ ﺷﻤﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺑﺎ ﺍﻧﺠﺎﻡ ﺗﻐﻴﻴﺮﺍﺗﯽ ﻧﺤﻮﻩ ﻧﻤﺎﻳﺶ ﻭ ﻳﺎ ﺳﻄﺢ ﻧﻤﺎﻳﺶ ﺧﻄﺎﻫﺎ ﺭﺍ ﮐﻨﺘﺮﻝ ﮐﻨﻴﺪ. ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺗﺎﺑﻊ <span dir="LTR">error_reporting( )</span> ﻭ ﭘﺎﺭﺍﻣﺘﺮﯼ ﮐﻪ ﻓﺮﺳﺘﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺳﻄﺢ ﻧﻤﺎﻳﺶ ﺧﻄﺎﻫﺎ ﺭﺍ ﺗﻐﻴﻴﺮ ﺩﻫﻴﺪ. ﺩﺭ ﺯﻳﺮ ﺑﻪ ﭘﺎﺭﺍﻣﺘﺮﻫﺎ ﻭ ﺗﺎﺛﻴﺮﺍﺗﺸﺎﻥ ﺗﻮﺟﻪ ﮐﻨﻴﺪ:</span></span></p>
-<table align="center" border="1" cellpadding="0" cellspacing="0" dir="rtl">
-	<tbody>
-		<tr>
-			<td style="width:151px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﺎﻡ ﭘﺎﺭﺍﻣﺘﺮ ﺛﺎﺑﺖ</span></span></p>
-			</td>
-			<td style="width:487px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻋﻤﻞ</span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:151px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">E_ERROR</span></span></span></p>
-			</td>
-			<td style="width:487px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﻤﺎﻳﺶ ﺧﻄﺎﻫﺎﯼ <span dir="LTR">Fatal run-time errors</span> ﻭ ﺟﻠﻮﮔﻴﺮﯼ ﺍﺯ ﺍﺟﺮﺍ</span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:151px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">E_WARNING</span></span></span></p>
-			</td>
-			<td style="width:487px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﻤﺎﻳﺶ ﺍﺧﻄﺎﺭﻫﺎﯼ <span dir="LTR">Run-time warnings</span></span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:151px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">E_NOTICE</span></span></span></p>
-			</td>
-			<td style="width:487px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﻤﺎﻳﺶ ﺗﻮﺟﻪ ﻫﺎ</span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:151px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">E_DEPRECATED</span></span></span></p>
-			</td>
-			<td style="width:487px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﻤﺎﻳﺶ ﺍﺧﻄﺎﺭ ﺩﺭ ﻣﻮﺭﺩ ﮐﺪﻫﺎﻳﯽ ﮐﻪ ﺩﺭ ﻧﺴﺨﻪ ﺁﻳﻨﺪﻩ ﮐﺎﺭﺑﺮﺩ ﻧﺪﺍﺭﻧﺪ</span></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width:151px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">E_ALL</span></span></span></p>
-			</td>
-			<td style="width:487px;height:38px;">
-				<p dir="RTL" style="text-align: justify;">
-					<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﻤﺎﻳﺶ ﻫﻤﻪ ﺧﻄﺎﻫﺎ، ﺍﺧﻄﺎﺭﻫﺎ ﻭ ﺗﻮﺟﻪ&zwnj;ﻫﺎ</span></span></p>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺮﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﻋﺒﺎﺭﺍﺕ ﮐﺎﻓﯽ&zwnj;ﺳﺖ ﮐﻪ ﺁﻧﻬﺎ ﺭﺍ ﺩﺭ ﺩﺭ ﺩﺍﺧﻞ ﺗﺎﺑﻊ ﺑﻪ ﻋﻨﻮﺍﻥ ﭘﺎﺭﺍﻣﺘﺮ ﻗﺮﺍﺭ ﺩﻫﻴﺪ ﻣﺎﻧﻨﺪ:</span></span></p>
-<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
-	<p style="text-align: justify;">
-		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">error_reporting (E_ALL)</span></span></p>
-</div>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﺤﻮﻩ ﮐﺎﺭ ﺍﻳﻦ ﺗﺎﺑﻊ ﺑﻪ ﺍﻳﻦ ﺷﮑﻞ ﺍﺳﺖ ﮐﻪ ﺑﺎ ﺗﻮﺟﻪ ﺑﻪ ﭘﺎﺭﺍﻣﺘﺮ ﻓﺮﺳﺘﺎﺩﻩ ﺷﺪﻩ، ﺧﻄﺎﻫﺎﯼ ﻣﺮﺑﻮﻁ ﺑﻪ ﺁﻥ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ. ﺍﻟﺒﺘﻪ ﺑﺮﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﭘﺎﺭﺍﻣﺘﺮﻫﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻥ ﺍﺯ ﺍﻋﺪﺍﺩ ﻫﻢ ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩ ﮐﻪ ﺑﺨﺎﻃﺮ ﺗﻐﻴﻴﺮ ﺍﻳﻦ ﺍﻋﺪﺍﺩ ﺩﺭ ﻧﺴﺨﻪ&zwnj;ﻫﺎﯼ ﻣﺘﻔﺎﻭﺕ ﭘﻴﺸﻨﻬﺎﺩ ﻣﯽ&zwnj;ﺷﻮﺩ ﮐﻪ ﺍﺯ ﻫﻤﻴﻦ ﻋﺒﺎﺭﺍﺕ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ.</span></span></p>
-<p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻳﮑﯽ ﺍﺯ ﮐﺎﺭﻫﺎﻳﯽ ﮐﻪ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺍﻧﺠﺎﻡ ﺩﻫﻴﺪ ﻗﺮﺍﺭ ﺩﺍﺩﻥ ﺗﺎﺑﻊ ﻧﻤﺎﻳﺶ ﺩﻫﻨﺪﻩ ﺍﻳﺮﺍﺩ ﺩﺭ ﻳﮏ ﻓﺎﻳﻞ ﻭ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺁﻥ ﺩﺭ ﻫﺮ ﮐﺠﺎ ﮐﻪ ﺧﻮﺍﺳﺘﻴﺪ ﺑﺎ ﻭﺍﺭﺩ ﮐﺮﺩﻥ ﺁﻥ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺗﺎﺑﻊ <span dir="LTR">include()</span>.</span></span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻣﺘﻦ ﻣﻮﺭﺩ ﻫﺪﻑ </strong><strong><span dir="LTR">&nbsp;Target String</span></strong><br />
+	ﺩﺭ ﺍﺻﻞ ﻫﻤﺎﻥ ﻣﺘﻨﯽ ﺍﺳﺖ ﮐﻪ ﻣﺎ ﺁﻥ ﺭﺍ ﺟﺴﺘﺠﻮ ﻣﯽ&zwnj;ﮐﻨﻴﻢ٬ ﻳﻌﻨﯽ ﻣﺘﻨﯽ ﮐﻪ ﻭﺍﺭﺩ ﻣﯽ&zwnj;ﺷﻮﺩ ﻭ ﻣﺎ ﺁﻥ ﺭﺍ ﻧﺴﺒﺖ ﺑﻪ ﺍﻟﮕﻮﻳﻤﺎﻥ ﺑﺮﺭﺳﯽ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></span></p>
 <p dir="RTL" style="text-align: justify;">
 	&nbsp;</p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺗﮑﻨﻴﮏ&zwnj;ﻫﺎﯼ ﺭﻓﻊ ﺍﺷﮑﺎﻝ</strong></span></span><br />
-	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻣﻬﻤﺘﺮﻳﻦ ﻗﺴﻤﺖ ﺩﺭ ﺭﻓﻊ ﺍﺷﮑﺎﻝ ﻫﻤﺎﻧﺎ ﭘﻴﺪﺍ ﮐﺮﺩﻥ ﺁﻥ ﺍﺳﺖ ﭼﺮﺍ ﮐﻪ ﻭﻗﺘﯽ ﺍﺯ ﻣﺤﻞ ﺍﻳﺮﺍﺩ ﺁﮔﺎﻫﯽ ﭘﻴﺪﺍ ﮐﻨﻴﺪ ﺧﻴﻠﯽ ﺭﺍﺣﺖ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺁﻥ ﺭﺍ ﺑﺮ ﻃﺮﻑ ﮐﻨﻴﺪ. ﺩﺭ ﺯﻳﺮ ﻓﻬﺮﺳﺘﯽ ﺍﺯ ﻣﻮﺍﺭﺩﯼ ﮐﻪ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺑﺮﺍﯼ ﺣﻠﻮﮔﻴﺮﯼ ﻭ ﺭﻓﻊ ﺍﻳﺮﺍﺩ ﺍﻧﺠﺎﻡ ﺑﺪﻫﻴﺪ ﺁﻭﺭﺩﻩ ﺷﺪﻩ ﺍﺳﺖ:</span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻋﺒﺎﺭﺍﺕ ﺟﺴﺘﺠﻮ </strong><strong><span dir="LTR">&nbsp;Search Expression</span></strong><br />
+	ﻋﺒﺎﺭﺗﯽ ﮐﻪ ﻣﺎ ﺑﻪ ﻋﻨﻮﺍﻥ ﺍﻟﮕﻮ ﻣﯽ&zwnj;ﺳﺎﺯﻳﻢ ﻭ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﺁﻥ ﺭﺍ ﺩﺭ ﻣﺘﻦ&zwnj;ﻫﺎ ﺟﺴﺘﺠﻮ ﮐﻨﻴﻢ. ﺑﻪ ﺁﻧﻬﺎ ﻋﺒﺎﺭﺍﺕ ﻣﻨﻈﻢ ﻫﻢ ﻣﯽ&zwnj;ﮔﻮﻳﻴﻢ.</span></span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۱. ﻫﺮﮔﺰ ﻋﻼﻣﺖ<span dir="LTR"> ; </span>ﺭﺍ ﺩﺭ ﺁﺧﺮ ﻫﺮ ﺩﺳﺘﻮﺭ ﻓﺮﺍﻣﻮﺵ ﻧﮑﻨﻴﺪ.</span></span></p>
+	&nbsp;</p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۲. ﺗﻮﺟﻪ ﺧﻮﺩ ﺭﺍ ﺟﻠﺐ ﻋﻼﻣﺖ&zwnj;ﻫﺎﯼ ﺩﻭ ﺗﺎﻳﯽ ﻣﺎﻧﻨﺪ &quot;&quot; ﻭ () ﮐﻨﻴﺪ ﺗﺎ ﻣﺸﮑﻞ ﻋﺪﻡ ﺗﻄﺎﺑﻖ ﭘﻴﺶ ﻧﻴﺎﻳﺪ.</span></span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺩﻧﺒﺎﻟﻪ ﻓﺮﺍﺭ </strong><strong><span dir="LTR">Escape Sequence</span></strong><br />
+	ﺍﮔﺮ ﺑﺨﻮﺍﻫﻴﻢ ﺍﺯ ﻳﮑﯽ ﺍﺯ ﮐﺎﺭﺍﮐﺘﺮﻫﺎﯼ ﻭﻳﮋﻩ&zwnj; ﺑﻪ ﻋﻨﻮﺍﻥ ﻟﻔﻈﯽ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﻢ٬ ﺑﺎﻳﺪ ﺁﻥ ﺭﺍ ﺷﺎﻣﻞ ﺩﻧﺒﺎﻟﻪ ﻓﺮﺍﺭ ﮐﻨﻴﻢ. ﺍﻳﻦ ﮐﺎﺭ ﺭﺍ ﺑﺎ ﮔﺬﺍﺷﺘﻦ ﻳﮏ <span dir="LTR">&ldquo;&rdquo;</span> ﻗﺒﻞ ﺍﺯ ﮐﺎﺭﺍﮐﺘﺮ ﺍﻧﺠﺎﻡ ﻣﯽ&zwnj;ﺩﻫﻴﻢ. ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﻓﺮﺽ ﮐﻨﻴﺪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﺩﻧﺒﺎﻝ<span dir="LTR">(a) </span>&nbsp;ﺩﺭ ﺩﺍﺧﻞ ﻣﺘﻨﯽ ﺑﮕﺮﺩﻳﻢ٬ ﺑﺮﺍﯼ ﺍﻳﻦ ﮐﺎﺭ ﺑﺎﻳﺪ ﻗﺒﻞ ﺍﺯ ﺍﻳﻦ ﺩﻭ ﮐﺎﺭﺍﮐﺘﺮ ﻭﻳﮋﻩ &quot;()&quot; ﻋﻼﻣﺖ ﻗﺮﺍﺭ ﺩﻫﻴﻢ٬ ﮐﻪ ﻣﯽ&zwnj;ﺷﻮﺩ: <span dir="LTR">(a)</span></span></span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۳. ﺍﺯ ﺗﺮﮐﻴﺐ ﻋﻼﻣﺖ ﻧﻘﻞ ﻗﻮﻝ ﺗﮏ <span dir="LTR">&nbsp;&#39; &#39; </span>&nbsp;ﻭ ﺩﻭﺗﺎﻳﯽ <span dir="LTR">&nbsp;&quot;&quot; </span>&nbsp;ﺩﺭ ﺯﻣﺎﻧﻬﺎﯼ ﻣﻘﺘﻀﯽ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ.</span></span></p>
+	&nbsp;</p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۴. ﺍﺯ <span dir="LTR">Display_Errors</span> ﺩﺭ ﺯﻣﺎﻥ ﻻﺯﻡ ﺑﻬﺮﻩ ﺑﺒﺮﻳﺪ<span dir="LTR">.</span></span></span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﮐﺎﺭﺍﮐﺘﺮﻫﺎﯼ ﺍﺻﻼﺡ ﮐﻨﻨﺪﻩ </strong><strong><span dir="LTR">&nbsp;Modifiers</span></strong><br />
+	ﺍﻳﻦ ﮐﺎﺭﺍﮐﺘﺮﻫﺎ ﮐﻪ ﺩﺭ ﺁﺧﺮ ﺍﻟﮕﻮ ﻭ ﺑﻌﺪ ﺍﺯ ﻧﺸﺎﻧﮕﺮ ﭘﺎﻳﺎﻥ ﺍﻟﮕﻮ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﻧﺪ٬ ﺑﺮﺍﯼ ﺍﺻﻼﺡ ﻭ ﻳﺎ ﺳﺎﺩﻩ&zwnj;ﺗﺮ ﮐﺮﺩﻥ ﺍﻟﮕﻮ ﺑﮑﺎﺭ ﻣﯽ&zwnj;ﺭﻭﻧﺪ. ﻣﻌﺮﻭﻑ&zwnj;ﺗﺮﻳﻦ ﺍﻳﻦ ﮐﺎﺭﺍﮐﺘﺮ&zwnj;ﻫﺎ٬ ﮐﺎﺭﺍﮐﺘﺮ<span dir="LTR">i </span>&nbsp;ﺍﺳﺖ. ﺍﻳﻦ ﮐﺎﺭﺍﮐﺘﺮ ﺍﺟﺎﺯﻩ ﻣﯽ&zwnj;ﺩﻫﺪ ﮐﻪ ﺣﺎﻟﺖ ﺣﺴﺎﺳﻴﺖ ﺑﻪ ﺑﺰﺭﮔﯽ ﻳﺎ ﮐﻮﭼﮑﯽ ﺩﺭ ﺣﺮﻭﻑ ﺍﺯ ﺑﻴﻦ ﺑﺮﻭﺩ. ﺩﺭ ﺍﺩﺍﻣﻪ٬ ﺩﺭ ﻣﺜﺎﻟﯽ ﺑﻴﺸﺘﺮ ﺑﺎ ﺍﻳﻦ ﮐﺎﺭﺍﮐﺘﺮ ﺁﺷﻨﺎ ﻣﯽ&zwnj;ﺷﻮﻳﻢ.</span></span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۵. ﻫﻤﻴﺸﻪ ﺩﺭ ﮐﺪﻫﺎﯼ ﺧﻮﺩ ﺍﺯ ﻣﺘﻦ&zwnj;ﻫﺎﯼ ﺗﻮﺿﻴﺢ ﺩﻫﻨﺪﻩ ﮐﺪ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ<span dir="LTR">.</span></span></span></p>
+	&nbsp;</p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺁﻧﭽﻪ ﺩﺭ ﺍﻳﻦ ﺩﺭﺱ ﮔﻔﺘﻪ ﺷﺪ ﺗﮑﻨﻴﮏ&zwnj;ﻫﺎﯼ ﺳﺎﺩﻩ&zwnj;ﺍﯼ ﺑﺮﺍﯼ ﻳﺎﻓﺘﻦ ﻭ ﺭﻓﻊ ﺍﻳﺮﺍﺩ ﺑﻮﺩ. ﺑﺎﻳﺪ ﺑﺪﺍﻧﻴﺪ ﮐﻪ ﺍﺷﮑﺎﻝ ﺯﺩﺍﻳﯽ ﻳﮑﯽ ﺍﺯ ﺍﺟﺰﺍ ﺟﺪﺍ ﻧﺸﺪﻧﯽ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﻭ ﺩﺭ ﺣﻘﻴﻘﺖ ﻳﮏ ﻣﻬﺎﺭﺕ ﻻﺯﻡ ﻣﯽ&zwnj;ﺑﺎﺷﺪ ﮐﻪ ﺑﺎ ﮐﺴﺐ ﺗﺠﺮﺑﻪ ﺩﺭ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﺑﻪ ﺁﻥ ﻫﻢ ﺧﻮﺍﻫﻴﺪ ﺭﺳﻴﺪ.</span></span></p>
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺳﺎﺧﺖ ﻋﺒﺎﺭﺍﺕ ﻣﻨﻈﻢ</strong><br />
+	ﺍﺯ ﺁﻧﺠﺎ ﮐﻪ ﺑﻬﺘﺮﻳﻦ ﺭﺍﻩ ﻳﺎﺩﮔﻴﺮﯼ ﻫﺮ ﭼﻴﺰﯼ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺁﻥ ﺍﺳﺖ٬ ﻣﺎ ﺑﺎ ﺳﺎﺧﺘﻦ ﻧﻤﻮﻧﻪ&zwnj;ﻫﺎﻳﯽ ﺍﺯ ﻋﺒﺎﺭﺍﺕ ﻣﻨﻈﻢ٬ ﻓﺮﺍﮔﻴﺮﯼ ﺁﻥ&zwnj;ﻫﺎ ﺭﺍ ﺩﺭ ﻣﺜﺎﻝ&zwnj;ﻫﺎ ﺁﺳﺎﻥ&zwnj;ﺗﺮ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></span></p>
 <p dir="RTL" style="text-align: justify;">
-	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺩﺭﺱ ﺑﻌﺪﯼ ﺑﻪ ﺳﺮﺍﻍ ﺗﮑﻨﻴﮏ&zwnj;ﻫﺎﯼ ﭘﻴﺸﺮﻓﺘﻪ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﺩﺭ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺧﻮﺍﻫﻴﻢ ﺭﻓﺖ.</span></span></p></body></html>
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﺜﺎﻝ ۱: <span dir="LTR">[0-9]</span></span></span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻳﻦ ﻳﮏ ﮐﻼﺱ ﺭﺍ ﺑﻪ ﻋﻨﻮﺍﻥ ﺍﻟﮕﻮ ﺗﻌﺮﻳﻒ ﻣﯽ&zwnj;ﮐﻨﺪ ﮐﻪ ﻫﺮ ﺷﻤﺎﺭﻩ&zwnj;ﺍﯼ ﺩﺭ ﺁﻥ ﻗﺎﺑﻞ ﺟﺴﺘﺠﻮ ﺍﺳﺖ. &nbsp;ﺑﺮﺍﯼ ﺩﺍﺷﺘﻦ ﻳﮏ ﻋﺪﺩ ﭘﻨﺞ ﺭﻗﻤﯽ ﺑﻪ ﺷﮑﻞ ﺯﻳﺮ ﻋﻤﻞ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">$value = $_POST[&lsquo;age&rsquo;];</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo;!^[0-9]{5}$!&rsquo; , $value ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﻋﺒﺎﺭﺕ ﺭﺍ ﻣﯽ&zwnj;ﺗﻮﺍﻥ ﺑﻪ ﺷﮑﻞ ﺩﻳﮕﺮﯼ ﻧﻮﺷﺖ٬ ﺍﺳﺎﺳﺎ ﺷﺶ ﺍﻟﮕﻮﯼ ﮐﻼﺳﯽ ﻭﺟﻮﺩ ﺩﺍﺭﻧﺪ ﮐﻪ ﺩﺍﺭﺍﯼ ﻣﻌﺪﻝ ﻫﺴﺘﻨﺪ. ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﺍﻟﮕﻮﯼ ﺑﺎﻻ ﻣﻌﺎﺩﻟﯽ ﻣﺎﻧﻨﺪ ﺯﻳﺮ ﺩﺍﺭﺩ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo;!^d{5}$!&rsquo; , $value ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺣﺎﻝ ﻓﺮﺽ ﮐﻨﻴﺪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﻳﮏ ﻋﺪﺩ ﺑﺎ ﺻﻔﺮ ﻳﺎ ﺭﻗﻢ ﺑﻴﺸﺘﺮ ﺩﺍﺷﺘﻪ ﺑﺎﺷﻴﻢ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo;!^[0-9]*!&rsquo; , $value ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻭﺟﻮﺩ ﻋﻼﻣﺖ <span dir="LTR">*</span> ﺭﻗﻢ ﻋﺪﺩ ﺭﺍ ﺍﺯ ﺻﻔﺮﻳﺎ ﺑﻴﺸﺘﺮ ﺣﺴﺎﺏ ﻣﯽ&zwnj;ﺁﻭﺭﺩ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺣﺎﻝ ﻓﺮﺽ ﮐﻨﻴﺪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﻳﮏ ﺭﺷﺘﻪ&zwnj;ﺍﯼ ﺭﺍ ﮐﻪ ﺑﺎ ﻳﮏ ﻋﺪﺩ ﭘﻨﺞ ﺭﻗﻤﯽ ﺁﻏﺎﺯ ﻭ ﺑﺎ ﻳﮏ ﻋﺪﺩ ﺳﻪ ﺭﻗﻤﯽ ﭘﻴﺎﻳﺎﻥ ﻳﺎﺑﺪ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo;!^(d{5})(d{3})$!&rsquo; , $value ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺍﻟﮕﻮ ﺍﺯ ﺩﻭ ﻗﺴﻤﺖ ﮐﻪ ﺩﺭ ﺩﺍﺧﻞ ﭘﺮﺍﻧﺘﺰ ﺗﻌﺮﻳﻒ ﺷﺪﻩ&zwnj;ﺍﻧﺪ ﺗﺸﮑﻴﻞ ﺷﺪﻩ ﺍﺳﺖ. ﻗﺴﻤﺖ ﺍﺑﺘﺪﺍﻳﯽ ﮐﻪ ﺑﺎ ﻋﻼﻣﺖ<span dir="LTR">^ </span>&nbsp;(ﻧﺸﺎﻥ ﺁﻏﺎﺯ ﺭﺷﺘﻪ) ﻣﺸﺨﺺ ﺍﺳﺖ٬ ﻳﮏ ﻋﺪﺩ ﭘﻨﺞ ﺭﻗﻤﯽ ﺭﺍ ﺟﺴﺘﺠﻮ ﻣﯽ&zwnj;ﮐﻨﺪ ﻭ ﻗﺴﻤﺖ ﺩﻭﻡ ﮐﻪ ﺩﺭ ﺍﻧﺘﻬﺎﯼ ﺭﺷﺘﻪ ﺑﺎﻳﺪ ﺟﺴﺘﺠﻮ ﺷﻮﺩ ﺑﺎ ﻋﻼﻣﺖ <span dir="LTR">$</span> (ﻋﻼﻣﺖ ﭘﺎﻳﺎﻥ ﺭﺷﺘﻪ) ﺗﻌﺮﻳﻒ ﺷﺪﻩ ﺍﺳﺖ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﺜﺎﻝ ۲: <span dir="LTR">[a-z]</span></span></span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻳﻦ ﮐﻼﺱ ﺍﻟﮕﻮ ﺷﺎﻣﻞ ﺗﻤﺎﻡ ﮐﻠﻤﺎﺕ ﺑﺎ ﺣﺮﻭﻑ ﮐﻮﭼﮏ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo;/<span dir="RTL">^</span>[a-z]/&rsquo;, $value ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﺜﺎﻝ ۳: <span dir="LTR">(sh)</span></span></span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﺯ ﭘﺮﺍﻧﺘﺰ ﺑﺮﺍﯼ ﺩﺍﺷﺘﻦ ﻳﮏ ﺗﺮﮐﻴﺐ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ٬ ﺑﻄﻮﺭ ﻣﺜﺎﻝ:</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo;/<span dir="RTL">^</span>(sh)<span dir="RTL">+</span>/&rsquo;, $value ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺍﻟﮕﻮ ﺭﺷﺘﻪ&zwnj;ﺍﯼ ﺭﺍ ﺩﺭ ﻧﻈﺮ ﺩﺍﺭﺩ ﺍﺯ ﺗﺮﮐﻴﺐ<span dir="LTR">sh </span>&nbsp;ﮐﻪ ﺣﺪﺍﻗﻞ (ﺑﺨﺎﻃﺮ ﻭﺟﻮﺩ +)٬ ﺗﺮﮐﻴﺐ<span dir="LTR">sh </span>&nbsp;ﻳﮑﺒﺎﺭ ﺩﺭ ﺁﻥ ﺍﺳﺘﻔﺎﺩﻩ ﺷﺪﻩ ﺍﺳﺖ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﺜﺎﻝ ۴: <span dir="LTR">[0-9a-zA-Z]</span></span></span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﮐﻼﺱ ﺑﺎﻻ ﺗﻤﺎﻡ ﺣﺮﻭﻑ ﻭ ﺍﻋﺪﺍﺩ ﭼﻪ ﺑﺰﺭﮒ ﻭ ﭼﻪ ﮐﻮﭼﮏ ﺭﺍ ﺩﺭ ﺑﺮ ﻣﯽ&zwnj;ﮔﻴﺮﺩ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo;#<span dir="RTL">^</span>[0-9a-zA-Z]#&rsquo;, $value ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﺜﺎﻝ ۵: ﺍﻟﮕﻮﯼ ﻧﺎﻡ</span></span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﺟﺎﺯﻩ ﺑﺪﻫﻴﺪ ﮐﻪ ﺍﺯ ﺍﻳﻨﺠﺎ ﺑﻪ ﺑﻌﺪ ﭼﻨﺪ ﻣﺜﺎﻝ ﺣﺮﻓﻪ&zwnj;ﺍﯼ ﮐﻪ ﺷﻤﺎ ﺑﺘﻮﺍﻧﻴﺪ ﺩﺭ ﺳﻴﺴﺘﻢ ﺳﺎﺧﺘﻪ ﺷﺪﻩ ﺑﮑﺎﺭ ﮔﻴﺮﻳﺪ٬ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﻢ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻓﺮﺽ ﮐﻨﻴﺪ ﮐﻪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﺪ ﺗﺮﮐﻴﺐ ﻧﺎﻡ ﮐﺎﺭﺑﺮﺍﻥ ﺩﺭ ﺣﺎﻝ ﺛﺒﺖ ﻧﺎﻡ ﺭﺍ ﺑﺎ ﺍﻟﮕﻮﯼ ﺧﻮﺩ ﻣﺸﺨﺺ ﮐﻨﻴﺪ. ﺩﺭ ﺍﻳﻦ ﺍﻟﮕﻮ٬ ﻧﺎﻡ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺍﺯ ﺣﺮﻭﻑ ﮐﻮﭼﮏ ﻳﺎ ﺑﺰﺭﮒ ﺑﺎ ﺗﻌﺪﺍﺩ ﺣﺮﻑ ﺣﺪﺍﻗﻞ ۳ ﻭ ﺣﺪﺍﮐﺜﺮ ۱۵ ﺗﺸﮑﻴﻞ ﺷﺪﻩ ﺑﺎﺷﺪ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">$name = $_POST[&lsquo;name&rsquo;] ;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo; /^[a-zA-Z]{3,15}$/&rsquo; , $name&nbsp; ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﮑﺘﻪ&zwnj;ﺍﯼ ﮐﻪ ﺩﺭ ﺍﻳﻨﺠﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻥ ﺍﺷﺎﺭﻩ ﮐﺮﺩ٬ ﺟﻠﻮﮔﻴﺮﯼ ﺍﺯ ﺗﮑﺮﺍﺭ ﺣﺮﻭﻑ ﺍﺳﺖ٬ ﻳﻌﻨﯽ ﺑﺠﺎﯼ ﺍﻳﻨﮑﻪ ﻫﺮ ﺑﺎﺭ ﺑﮕﻮﻳﻴﻢ ﺣﺮﻭﻑ ﮐﻮﭼﮏ ﻭ ﺣﺮﻭﻑ ﺑﺰﺭﮒ٬ ﺑﺎ ﻳﮏ ﺗﮑﻨﻴﮏ ﻫﺮ ﺩﻭ ﺻﻮﺭﺕ ﺭﺍ ﺩﺭ ﻧﻈﺮ ﻣﯽ&zwnj;ﮔﻴﺮﻳﻢ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">$name = $_POST[&lsquo;nam&rsquo;] ;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo; /^[a-z]{3,15}$/i&rsquo; , $name&nbsp; ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﺩﺭ ﺍﻟﮕﻮﯼ ﺗﺎﺯﻩ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ٬ ﻳﮑﯽ ﺍﺯ ﺳﺮﯼ ﺣﺮﻭﻑ ﺍﻟﻔﺒﺎ ﺭﺍ ﺣﺬﻑ ﮐﺮﺩﻩ&zwnj;ﺍﻳﻢ ﻭ ﺑﺠﺎﯼ ﺁﻥ ﺩﺭ ﺁﺧﺮ ﺍﻟﮕﻮ ﺍﺯ ﻋﻼﻣﺖ<span dir="LTR"> I </span>ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩﻩ&zwnj;ﺍﻳﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﺜﺎﻝ ۶: ﺍﻟﮕﻮﯼ ﭘﺴﻮﺭﺩ</span></span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺑﺮﺍﯼ ﺩﺭﺳﺖ ﮐﺮﺩﻥ ﻳﮏ ﺍﻟﮕﻮﯼ ﭘﺴﻮﺭﺩ ﺑﻪ ﺷﮑﻞ ﺯﻳﺮ ﻋﻤﻞ ﻣﯽ&zwnj;ﮐﻨﻴﻢ:</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">$password = $_POST[&lsquo;password&rsquo;] ;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">Preg_match ( &lsquo; /^w{5,20}$/&rsquo; , $password&nbsp; ) ;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺍﻟﮕﻮ ﺑﺮﺍﯼ ﭘﺴﻮﺭﺩ ﺑﻪ ﺷﮑﻞ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﻣﻌﺎﺩﻝ ﮐﻼﺱ ﺑﺮﺍﯼ ﺗﻤﺎﻡ ﺣﺮﻭﻑ ﻭ ﺍﻋﺪﺍﺩ ﺳﺎﺧﺘﻪ ﺷﺪﻩ ﺍﺳﺖ. ﻳﻌﻨﯽ ﺗﻤﺎﻡ ﺣﺮﻭﻑ ﻭ ﺍﻋﺪﺍﺩ ﺑﻪ ﻋﻼﻭﻩ ـ. ﺩﺭ ﺍﺩﺍﻣﻪ ﺑﻴﺸﺘﺮ ﻣﻌﺪﻝ&zwnj;ﻫﺎ ﺭﺍ ﺑﺮﺭﺳﯽ ﺧﻮﺍﻫﻴﻢ ﮐﺮﺩ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻧﮑﺘﻪ: </strong>ﺍﻳﻦ ﻃﻮﺭ ﻧﻴﺴﺖ ﮐﻪ ﺷﻤﺎ ﻧﻴﺎﺯ ﺑﻪ ﺣﻔﻆ ﮐﺮﺩﻥ ﺗﻤﺎﻡ ﺍﻳﻦ ﮐﺎﺭﺍﮐﺘﺮ&zwnj;ﻫﺎ ﻭ ﺍﻟﮕﻮ&zwnj;ﻫﺎ ﺩﺍﺷﺘﻪ ﺑﺎﺷﻴﺪ. ﮐﺎﻓﻴﺴﺖ ﮐﻪ ﻓﻘﻂ ﺑﺎ ﺁﻧﻬﺎ ﺁﺷﻨﺎﻳﯽ ﻻﺯﻡ ﺭﺍ ﭘﻴﺪﺍ ﮐﺮﺩﻩ ﻭ ﺑﻌﺪ ﺍﺯ ﺭﻭﯼ ﻳﮏ ﻣﻨﺒﻊ ﺩﺭﺳﺖ٬ ﺍﻗﺪﺍﻡ ﺑﻪ ﺳﺎﺧﺘﻦ ﺍﻟﮕﻮ ﺧﻮﺩ ﮐﻨﻴﺪ. ﺑﻪ ﻋﻼﻭﻩ٬ ﺳﺎﺧﺘﻦ ﺍﻟﮕﻮ ﺑﺮﺍﯼ ﻫﺮ ﺭﺷﺘﻪ&zwnj;ﺍﯼ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺑﻪ ﺻﻮﺭﺕ&zwnj;ﻫﺎﯼ ﻣﺨﺘﻠﻒ ﺍﻧﺠﺎﻡ ﮔﻴﺮﺩ٬ ﭘﺲ ﻧﻴﺎﺯﯼ ﺑﻪ ﺩﺍﺷﺘﻦ ﻳﮏ ﺍﻟﮕﻮ ﺑﻪ ﻋﻨﻮﺍﻥ ﺗﮏ ﻧﻤﻮﻧﻪ ﺳﺎﺧﺘﻪ ﺷﺪﻩ ﻧﻴﺴﺖ٬ ﮐﺎﻓﯽ&zwnj;ﺳﺖ ﮐﻪ ﻓﻘﻂ ﻗﻮﺍﻧﻴﻦ ﺭﺍ ﺭﻋﺎﻳﺖ ﮐﻨﻴﺪ٬ ﺁﻧﮕﺎﻩ ﺷﻤﺎ ﺑﺮ ﺍﺳﺎﺱ ﺷﻴﻮﻩ ﺧﻮﺩ ﺍﻟﮕﻮﯼ ﻣﻮﺭﺩ ﻧﻈﺮ ﺧﻮﺩ ﺭﺍ ﺧﻮﺍﻫﻴﺪ ﺳﺎﺧﺖ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻣﻌﺎﺩﻝ ﺩﺭ ﺳﺎﺧﺖ ﮐﻼﺱ&zwnj;ﻫﺎ</strong><br />
+	ﺍﮔﺮ ﻳﺎﺩﺗﺎﻥ ﺑﺎﺷﺪ ﮔﻔﺘﻴﻢ ﮐﻪ ﺷﺶ ﮐﻼﺱ ﻭﺟﻮﺩ ﺩﺍﺭﻧﺪ ﮐﻪ ﺑﺮﺍﯼ ﺁﻧﻬﺎ ﻣﻌﺪﻝ ﺳﺎﺧﺘﻪ ﺷﺪﻩ ﺍﺳﺖ٬ ﺍﻳﻦ ﮐﺎﺭ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻟﮕﻮ&zwnj;ﻫﺎ ﺭﺍ ﺭﺍﺣﺖ&zwnj;ﺗﺮ ﻣﯽ&zwnj;ﮐﻨﺪ٬ ﭼﺮﺍﮐﻪ ﻧﻴﺎﺯﯼ ﺑﻪ ﺳﺎﺧﺘﻦ ﺍﻟﮕﻮ&zwnj;ﻫﺎﯼ ﺩﺭﺍﺯ ﻧﺪﺍﺭﻳﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">[0-9] </span>&nbsp;ﻣﻌﺎﺩﻝ<span dir="LTR">d </span>:</strong>&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻳﻦ ﺍﻟﮕﻮ ﮐﻪ ﺑﻪ ﻣﻌﻨﯽ ﻫﺮ ﻋﺪﺩﯼ ﺍﺳﺖ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">[f v]</span>&nbsp; ﻣﻌﺎﺩﻝ <span dir="LTR">&nbsp;s</span>:</strong>&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻳﻦ ﺍﻟﮕﻮ ﺑﻪ ﻣﻌﻨﯽ ﻫﺮ ﻓﻀﺎﯼ ﺧﺎﻟﯽ ﺍﺳﺖ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">[A-Za-z0-9_]</span>&nbsp;ﻣﻌﺎﺩﻝ<span dir="LTR">w </span>:</strong>&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺑﻪ ﻣﻌﻨﯽ ﻫﺮ ﮐﻠﻤﻪ&zwnj;ﺍﯼ ﺍﺳﺖ٬ ﺩﺭ ﻧﻮﺷﺘﻦ ﺍﻟﮕﻮﯼ ﭘﺴﻮﺭﺩ ﺍﺯ ﺍﻳﻦ ﻣﻌﺎﺩﻝ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">[^0-9] </span>&nbsp;ﻣﻌﺎﺩﻝ<span dir="LTR">D </span>:</strong>&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﺍﻟﮕﻮ ﺑﻪ ﻣﻌﻨﯽ ﻫﻴﭻ ﻋﺪﺩ ﺍﺳﺖ. ﻳﻌﻨﯽ ﺍﻳﻨﮑﻪ ﻋﺪﺩﯼ ﻧﺒﺎﺷﺪ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻧﮑﺘﻪ: </strong>ﺩﺭ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﻋﻼﻣﺖ ^ ﮔﻔﺘﻴﻢ ﮐﻪ ﻧﺸﺎﻥ ﺩﻫﻨﺪﻩ ﺍﺑﺘﺪﺍﯼ ﺭﺷﺘﻪ ﺍﺳﺖ٬ ﺍﻳﻦ ﺩﺭ ﺯﻣﺎﻧﯽ ﺍﺳﺖ ﮐﻪ ﺍﻳﻦ ﻋﻼﻣﺖ ﺑﻴﺮﻭﻥ ﻋﻼﻣﺖ&zwnj;ﻫﺎﯼ <span dir="LTR">[]</span> ﻗﺮﺍﺭ ﮔﻴﺮﺩ. ﺍﮔﺮ ﺍﻳﻦ ﻋﻼﻣﺖ ﺩﺭ ﺩﺍﺧﻞ ﺩﻭ ﻋﻼﻣﺖ <span dir="LTR">[^]</span>ﻗﺮﺍﺭ ﮔﻴﺮﺩ ﺑﻪ ﻣﻨﻔﯽ ﮐﻨﻨﺪﻩ ﺗﺒﺪﻳﻞ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">[^f v] </span>&nbsp;ﻣﻌﺎﺩﻝ<span dir="LTR">S </span>:</span></span></strong><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺑﻪ ﻣﻌﻨﯽ ﻧﺒﻮﺩﻥ ﻓﻀﺎﯼ ﺧﺎﻟﯽ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ. ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ ﻋﻼﻣﺖ ^ ﺩﺍﺧﻞ ﺩﻭ ﻋﻼﻣﺖ </span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">[]</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"> ﻗﺮﺍﺭ ﮔﺮﻓﺘﻪ ﺍﺳﺖ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">[^A-Za-z0-9_]</span>&nbsp;ﻣﻌﺎﺩﻝ <span dir="LTR">&nbsp;W </span>:&nbsp;</span></span></strong><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻳﻦ ﺍﻟﮕﻮ ﺩﺭﺳﺖ ﺑﺮ ﻋﮑﺲ ﺍﻟﮕﻮﯼ ﺑﺎﻻﻳﯽ ﮐﻪ ﮔﻔﺘﻴﻢ ﺩﺭ ﺩﺍﺧﻞ ﭘﺴﻮﺭﺩ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ ﺍﺳﺖ. ﻳﻌﻨﯽ ﻫﻴﭻ ﮐﺎﺭﺍﮐﺘﺮ ﮐﻠﻤﻪ&zwnj;ﺍﯼ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﻳﮕﺮ ﺗﻮﺍﺑﻊ ﻣﻮﺭﺩ ﺍﺳﺘﻔﺎﺩﻩ ﺩﺭ ﻋﺒﺎﺭﺍﺕ ﻣﻨﻈﻢ:</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">Preg_split()</span></strong><br />
+	ﺍﻳﻦ ﺗﺎﺑﻊ ﻳﮏ ﺭﺷﺘﻪ ﺭﺍ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﻳﮏ ﺍﻟﮕﻮﯼ ﻋﺒﺎﺭﺕ ﻣﻨﻈﻢ ﺗﮑﻪ ﺗﮑﻪ ﻣﯽ ﮐﻨﺪ ﻭ ﺣﺎﺻﻞ ﺭﺍ ﺑﻪ ﺻﻮﺭﺕ ﻳﮏ ﺁﺭﺍﻳﻪ ﺑﺎﺯﮔﺸﺖ ﻣﯽ ﺩﻫﺪ<span dir="LTR">.</span></span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">preg_replace()</span></strong><br />
+	&nbsp;ﺍﻟﮕﻮﯼ ﻋﺒﺎﺭﺕ ﻣﻨﻈﻢ ﺭﺍ ﺩﺭ ﻳﮏ ﺭﺷﺘﻪ ﺟﺴﺘﺠﻮ ﮐﺮﺩﻩ ﻭ ﺁﻥ ﺭﺍ ﺩﺭ ﻣﺘﻨﯽ ﮐﻪ ﺑﻪ ﺁﻥ ﺩﺍﺩﻩ ﻣﯽ ﺷﻮﺩ ﺟﺎﺑﺠﺎ ﻣﯽ ﮐﻨﺪ<span dir="LTR">.</span></span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">preg_grep() </span></strong><br />
+	ﺍﻟﮕﻮﯼ ﻋﺒﺎﺭﺕ ﻣﻨﻈﻢ ﺭﺍ ﺩﺭ ﺗﻤﺎﻡ ﻋﻨﺎﺻﺮ ﻳﮏ ﺁﺭﺍﻳﻪ ﺟﺴﺘﺠﻮ ﮐﺮﺩﻩ ﻭ ﻣﻮﺍﺭﺩ ﻳﺎﻓﺖ ﺷﺪﻩ ﺭﺍ ﺑﻪ ﺻﻮﺭﺕ ﻳﮏ ﺁﺭﺍﻳﻪ ﺑﺎﺯﮔﺸﺖ ﻣﯽ ﺩﻫﺪ<span dir="LTR">.</span></span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻳﺎﺩﮔﻴﺮﯼ ﻓﻨﻮﻥ ﺍﻟﮕﻮ ﺳﺎﺯﯼ ﭼﻴﺰﯼ&zwnj;ﺳﺖ ﮐﻪ ﺷﻤﺎ ﺑﺎﻳﺪ ﺩﺭ ﻃﻮﻝ ﺯﻣﺎﻥ٬ ﺑﺎ ﺗﻤﺮﻳﻦ ﻭ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺁﻧﻬﺎ ﺩﺭ ﺳﻴﺴﺘﻢ&zwnj;ﻫﺎﯼ ﺧﻮﺩ ﺑﺪﺍﻥ ﺗﺒﺤﺮ ﭘﻴﺪﺍ ﮐﻨﻴﺪ. ﭘﺲ ﺩﺭ ﺍﻳﻨﺠﺎ ﺍﺯ ﺷﺮﺡ ﺑﻴﺸﺘﺮ ﺧﻮﺩﺩﺍﺭﯼ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></span></p></body></html>

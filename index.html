@@ -1,12 +1,43 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Index</title>
-    </head>
-    <body>
-        body
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+
+<body>
+    </ul>
+</body>
+
+<script charset="utf-8">
+    async function list_directory(user, repo) {
+        const url = `https://api.github.com/repos/${user}/${repo}/git/trees/gh-pages`;
+        const list = await fetch(url).then(res => res.json());
+        const ans = list.tree
+            .filter(node => node.type === "tree")
+            .map(node => node.path);
+        return ans;
+    }
+
+    window.addEventListener("load", async () => {
+        l = await list_directory("rsharifnasab", "darsnameh_pages");
+        console.log(l)
+
+        ul = document.createElement("ul")
+        ul = document.body.appendChild(ul);
+
+        l.forEach(item => {
+            a = document.createElement("a");
+            a.innerText = item
+            a.href = `./${item}/index.html`
+            li = document.createElement("li");
+            li.appendChild(a)
+
+            ul.appendChild(li);
+        })
+    });
+</script>
+
 </html>
