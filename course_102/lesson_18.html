@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'><meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<head>
+<title>ﺩﺭﺱ ﺳﻮﻡ- ﻭﻳﮋﮔﯽ this$</title>
+
+			<link type="text/css" rel="stylesheet" href="style.css" />
+      <style>body {text-align: right; padding-left: 5pt; padding-right: 5pt;} p {text-align: right; direction: rtl;} ul {direction: rtl;} ol { direction: rtl;}</style>
+</head>
+<body>
+<p class='headPage'>ﺩﺭﺱ ﺳﻮﻡ- ﻭﻳﮋﮔﯽ this$</p><div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﭘﻴﺶ&zwnj;ﮔﻔﺘﺎﺭ:&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺩﺭ ﺩﺭﺱ ﭘﻴﺸﻴﻦ ﺑﻪ ﺩﻭ ﻣﻔﻬﻮﻡ &nbsp;&quot;ﮐﻼﺱ&quot; ﻭ &quot;ﺷﺊ&quot; ﺍﺯ ﻣﻔﺎﻫﻴﻢ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﺷﺊ&zwnj;ﮔﺮﺍ ﺍﺷﺎﺭﻩ ﮐﺮﺩﻳﻢ. ﮔﻔﺘﻴﻢ ﮐﻪ ﮐﻼﺱ ﻧﻘﺶ ﻳﮏ ﻃﺮﺡ ﻳﺎ ﻧﻘﺸﻪ ﺭﺍ ﺑﺮﺍﯼ ﻣﺎ ﺑﺎﺯﯼ ﻣﯽ&zwnj;ﮐﻨﺪ ﻭ ﻣﺎ ﺑﺮ ﺍﺳﺎﺱ ﮐﻼﺱ ﺗﻌﺮﻳﻒ ﺷﺪﻩ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﻢ ﺷﺊ&zwnj;ﻫﺎﻳﯽ ﺭﺍ ﺑﺴﺎﺯﻳﻢ. ﮔﻔﺘﻴﻢ ﮐﻪ ﺩﺭ ﮐﻼﺱ&zwnj;ﻫﺎ ﺍﺯ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎ (ﻣﺘﻐﻴﻴﺮﻫﺎ ﺩﺭ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﺭﻭﺍﻝ&zwnj;ﮔﻮﻧﻪ) ﻭ ﻋﻤﻞ&zwnj;ﻫﺎ ﻳﺎ ﻣﺘﺪﻫﺎ (ﺗﻮﺍﺑﻊ ﺩﺭ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﺭﻭﺍﻟﮕﻮﻧﻪ) ﺑﺮﺍﯼ ﻧﮕﻬﺪﺍﺭﯼ ﻭ ﻋﻤﻞ ﺑﺮ ﺭﻭﯼ ﺩﺍﺩﻩ&zwnj;ﻫﺎﻳﻤﺎﻥ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ. ﺑﻄﻮﺭ ﺧﻼﺻﻪ ﺑﺎ ﺳﻪ ﻣﻔﻬﻮﻡ public ،private &nbsp;ﻭ protected ﻫﻢ ﺁﺷﻨﺎ ﺷﺪﻳﻢ. ﺩﺭ ﺁﺧﺮ ﺑﺮﺍﯼ ﻧﻤﻮﻧﻪ ﺩﻭ ﮐﻼﺱ car &nbsp;ﻭ &nbsp;HelloWorld &nbsp;ﺭﺍ ﺗﻌﺮﻳﻒ ﮐﺮﺩﻳﻢ ﻭ ﺷﺊ&zwnj;ﻫﺎﻳﯽ ﺍﺯ ﺁﻥ&zwnj;ﻫﺎ ﺳﺎﺧﺘﻴﻢ. ﺩﺭ ﺍﻳﻦ ﺩﺭﺱ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﺑﺎ ﻣﻔﻬﻮﻡ ﺩﻳﮕﺮﯼ ﺍﺯ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﺷﺊ&zwnj;ﮔﺮﺍ ﺩﺭ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺁﺷﻨﺎ ﺷﻮﻳﻢ.</span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻭﻳﮋﮔﯽ this$</strong> &nbsp;</span></span></div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">this$ &nbsp;ﺧﻮﺩ ﻳﮏ ﺧﺎﺻﻴﺖ ﺍﺳﺖ ﮐﻪ &nbsp;ﺍﻳﻦ ﻗﺎﺑﻠﻴﺖ ﺭﺍ ﺑﻪ ﺑﺮﻧﺎﻣﻪ&zwnj;ﻧﻮﻳﺲ ﻣﯽ&zwnj;ﺩﻫﺪ ﺗﺎ ﺑﺘﻮﺍﻧﺪ ﺍﺯ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎﯼ (ﻣﺘﻐﻴﺮﻫﺎﯼ) ﺗﻌﺮﻳﻒ ﺷﺪﻩ ﮐﻼﺱ ﺩﺭ ﺩﺍﺧﻞ ﻫﻤﺎﻥ ﮐﻼﺱ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﺪ. ﺑﻪ&zwnj;ﻃﻮﺭ ﻣﻌﻤﻮﻝ ﺷﻤﺎ ﺑﺮﺍﯼ ﻧﻮﺷﺘﻦ ﺑﺮﻧﺎﻣﻪ ﺧﻮﺩ ﺩﺭ ﺩﺍﺧﻞ ﻳﮏ ﮐﻼﺱ ﺍﺯ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎ ﻭ ﻋﻤﻞ&zwnj;ﻫﺎﯼ ﻣﺘﻌﺪﺩﯼ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﻴﺪ، ﺣﺎﻝ ﺍﮔﺮ ﺑﺨﻮﺍﻫﻴﺪ ﺍﺯ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎﯼ ﺗﻌﺮﻳﻒ ﺷﺪﻩ، ﺩﺭ ﺩﺍﺧﻞ ﻋﻤﻞ (ﻣﺘﺪ)&zwnj;ﻫﺎﯼ ﺧﻮﺩ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ ﺣﺘﻤﺎ ﺑﺎﻳﺪ ﺍﺯ this$ ﺑﻬﺮﻩ ﺑﺒﺮﻳﺪ ﻭ ﻧﻤﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺑﺪﻭﻥ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺁﻥ ﻣﺴﺘﻘﻴﻤﺎ ﺑﻪ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎ ﺩﺳﺘﺮﺳﯽ ﺩﺍﺷﺘﻪ ﺑﺎﺷﻴﺪ.</span></span></div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺩﻭ ﻧﻤﻮﻧﻪ ﮐﻼﺳﯽ ﮐﻪ ﺩﺭ ﺩﺭﺱ ﭘﻴﺸﻴﻦ ﻧﻮﺷﺘﻴﻢ ﺍﺯ ﻋﻤﻞ&zwnj;ﻫﺎ (ﻣﺘﺪﻫﺎ) ﻭ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎ ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩﻳﻢ، ﺍﻣﺎ ﺍﮔﺮ ﻳﮏ ﺑﺎﺭ ﺩﻳﮕﺮ ﺑﻪ ﺁﻥ ﺭﺟﻮﻉ ﮐﻨﻴﺪ ﻣﺘﻮﺟﻪ ﻣﯽ&zwnj;ﺷﻮﻳﺪ ﮐﻪ ﺩﺭ ﻫﻴﭻ ﮐﺪﺍﻡ ﺍﺯ ﻋﻤﻞ&zwnj;ﻫﺎ ﺍﺯ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎﻳﯽ ﮐﻪ ﭘﻴﺶ ﺍﺯ ﻋﻤﻞ ﺗﻌﺮﻳﻒ ﺷﺪﻩ&zwnj;ﺍﻧﺪ، ﺍﺳﺘﻔﺎﺩﻩ ﻧﺸﺪﻩ ﺍﺳﺖ. ﺍﮔﺮ ﺑﺨﻮﺍﻫﻴﻢ ﺩﺭ ﺩﺍﺧﻞ ﻳﮏ ﮐﻼﺱ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎﻳﯽ ﺭﺍ ﺗﻌﺮﻳﻒ ﮐﺮﺩﻩ ﻭ ﭘﺲ ﺍﺯ ﺁﻥ ﺩﺭ ﺩﺍﺧﻞ ﻋﻤﻞ (ﻣﺘﺪ) ﺍﺯ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﻢ ﺑﺎﻳﺪ ﺍﺯ this$ &nbsp;ﺑﻪ ﺷﮑﻞ ﺯﻳﺮ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﻢ:</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<div>
+		<span style="font-family:tahoma,geneva,sans-serif;"><span style="font-size:13px;">$this -&gt;property; // &nbsp;ﺑﻪ ﺍﻳﻦ ﺗﺮﺗﻴﺐ ﺍﺯ ﻭﻳﮋﮔﯽ ﮐﻪ ﺩﺭ ﻫﻤﻴﻦ ﮐﻼﺱ ﺗﻌﺮﻳﻒ ﺷﺪﻩ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ ﺷﻮﺩ</span></span></div>
+</div>
+<div>
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻧﮑﺘﻪ:</strong> ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ ﺩﺭ ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩﻥ ﺍﺯ ﻭﻳﮋﮔﯽ ﺑﻪ ﮐﻤﮏ this$ &nbsp;ﻫﻤﺎﻧﻨﺪ ﺯﻣﺎﻧﯽ ﮐﻪ ﺍﺯ ﺷﺊ ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩﻳﻢ ﻋﻤﻠﮕﺮ (&lt;-) ﺭﺍ ﺑﮑﺎﺭ ﺑﺮﺩﻳﻢ.</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻧﮑﺘﻪ ﻣﻬﻢ:</strong> ﺍﮔﺮ ﺩﺍﺧﻞ ﻳﮏ ﮐﻼﺱ ﻭﻳﮋﮔﯽ ﺭﺍ ﺗﻌﺮﻳﻒ ﮐﻨﻴﺪ، ﻻﺯﻡ ﻧﻴﺴﺖ ﺣﺘﻤﺎ ﺑﻪ ﺁﻥ ﻣﻘﺪﺍﺭﯼ ﺍﺧﺘﺼﺎﺹ ﺩﻫﻴﺪ ﺍﻣﺎ ﺍﮔﺮ ﺑﺨﻮﺍﻫﻴﺪ ﺩﺍﺧﻞ ﺁﻥ ﺩﺍﺩﻩ&zwnj;ﺍﯼ ﺑﺮﻳﺰﻳﺪ ﺑﺎﻳﺪ ﺁﻥ ﺩﺍﺩﻩ ﺣﺘﻤﺎ ﻳﮏ ﻣﻘﺪﺍﺭ ﺛﺎﺑﺖ ﺑﺎﺷﺪ ﻭ ﻧﻤﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﻧﺘﻴﺠﻪ ﻳﮏ ﻋﺒﺎﺭﺕ ﺩﻳﮕﺮ ﺭﺍ ﺩﺍﺧﻞ ﺁﻥ ﺑﺮﻳﺰﻳﺪ.</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">public <span class="Apple-tab-span" style="white-space:pre"> </span> $name ; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">public <span class="Apple-tab-span" style="white-space:pre"> </span> $name = &quot;ﺩﺭﺳﻨﺎﻣﻪ&quot; ; &nbsp; &nbsp; &nbsp;&nbsp;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">public <span class="Apple-tab-span" style="white-space:pre"> </span> $num = 2 ;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></div>
+	<div>
+		<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">public </span><span class="Apple-tab-span" style="font-family: tahoma, geneva, sans-serif; font-size: 13px; white-space: pre;"> </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"> $square ; &nbsp;</span></div>
+</div>
+<div dir="rtl">
+	<br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻫﺮ ﭼﻬﺎﺭﺗﺎﯼ ﺑﺎﻻ ﺩﺭﺳﺖ ﻫﺴﺘﻨﺪ.&nbsp;</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></div>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">$square = &nbsp;$num &nbsp;* &nbsp;$num ; &nbsp; &nbsp;</span></span></div>
+</div>
+<div>
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻣﺎ ﻧﻤﻮﻧﻪ ﺁﺧﺮ ﻏﻠﻂ ﺍﺳﺖ. </span></span></div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp;&nbsp;</span></span></div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺮﺍﯼ ﺩﺭﮎ ﺑﻬﺘﺮ ﺷﻴﻮﻩ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﻭﻳﮋﮔﯽ ﺑﻪ ﻧﻤﻮﻧﻪ ﮐﺪﻫﺎﯼ ﺯﻳﺮ ﺩﻗﺖ ﮐﻨﻴﺪ. ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﻳﮏ ﮐﻼﺱ ﻧﻮﺷﺘﻪ ﻭ ﺍﺯ ﺁﻥ ﺷﺊ&zwnj;ﺍﯼ ﺑﺴﺎﺯﻳﻢ. ﺩﺭ ﺩﺍﺧﻞ ﺍﻳﻦ ﮐﻼﺱ ﺍﺯ ﻭﻳﮋﮔﯽ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">this$</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﺍﺳﺘﻔﺎﺩﻩ ﺧﻮﺍﻫﻴﻢ ﮐﺮﺩ. ﺷﻤﺎ ﻫﻢ ﺑﺎﻳﺪ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﮐﺪﻫﺎﯼ ﺯﻳﺮ ﺑﺮﺍﯼ ﺧﻮﺩﺗﺎﻥ ﺍﻳﻦ ﻧﻤﻮﻧﻪ ﺭﺍ ﺑﺮﻧﺎﻣﻪ&zwnj;ﻧﻮﻳﺴﯽ ﮐﺮﺩﻩ ﻭ ﺩﺭ Wampserver &nbsp;ﮐﻪ ﺩﺭ ﺭﺍﻳﺎﻧﻪ ﺷﺨﺼﯽ ﺧﻮﺩ ﻧﺼﺐ ﮐﺮﺩﻩ&zwnj;ﺍﻳﺪ، ﻧﺘﻴﺠﻪ ﺁﻥ ﺭﺍ ﺑﺒﻴﻨﻴﺪ. ﺍﺑﺘﺪﺍ ﻳﮏ ﭘﺮﻭﻧﺪﻩ ﺑﺎ ﻧﺎﻡ &nbsp;rectangle.php &nbsp; (ﺑﻪ ﻣﻌﻨﯽ ﭼﻬﺎﺭ ﺿﻠﻌﯽ :ﻣﺮﺑﻊ ﻳﺎ ﻣﺴﺘﻄﻴﻞ) ﺑﺴﺎﺯﻳﺪ. ﺍﻳﻦ ﭘﺮﻭﻧﺪﻩ ﺣﺎﻭﯼ ﮐﺪﻫﺎﯼ ﮐﻼﺱ rectangle ﺧﻮﺍﻫﺪ ﺑﻮﺩ. ﺳﭙﺲ ﮐﺪﻫﺎ ﺭﺍ ﺩﺍﺧﻞ ﭘﺮﻭﻧﺪﻩ ﻗﺮﺍﺭ ﺩﻫﻴﺪ:</span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div>
+	<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&lt;?php // ﺗﻼﺵ ﻣﯽ&zwnj;ﮐﻨﻴﻢ ﮐﻪ ﺷﺮﺣﯽ ﮐﻮﺗﺎﻩ ﺍﺯ ﮐﺪﻫﺎ ﺭﺍ ﺑﻴﻦ ﺧﻄﻮﻁ ﺑﺪﻫﻴﻢ</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">/* &nbsp;ﺍﻳﻦ ﺑﺮﮔﻪ ﮐﻼﺱ ﭼﻬﺎﺭ ﺿﻠﻌﯽ ﻣﺎ ﺭﺍ ﺷﺎﻣﻞ ﻣﯽ&zwnj;ﺷﻮﺩ</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp;* &nbsp;ﺍﻳﻦ ﮐﻼﺱ ﺣﺎﻭﯼ ﺩﻭ ﻭﻳﮋﮔﯽ ﭘﻬﻨﺎ ﻭ ﺩﺭﺍﺯﺍ ﺍﺳﺖ</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp;* &nbsp;ﺍﻳﻦ ﮐﻼﺱ ﺩﺍﺭﺍﯼ ﭼﻬﺎﺭ ﻋﻤﻞ (ﻣﺘﺪ) ﺍﺳﺖ:&nbsp;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp;* &nbsp;- setSize()ﺍﻳﻦ ﻋﻤﻞ (ﻣﺘﺪ) ﺑﺮﺍﯼ ﮔﺮﻓﺘﻦ &nbsp;ﺍﻧﺪﺍﺯﻩ&zwnj;ﻫﺎﯼ ﺩﺭﺍﺯﺍ ﻭ ﭘﻬﻨﺎ&nbsp;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp;* &nbsp;- getArea() &nbsp; ﺍﻳﻦ ﻋﻤﻞ (ﻣﺘﺪ) ﺑﺮﺍﯼ ﻣﺤﺎﺳﺒﻪ ﻣﺴﺎﺣﺖ ﭼﻬﺎﺭ ﺿﻠﻌﯽ&nbsp;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp;* &nbsp;- getPerimeter() &nbsp;ﺍﻳﻦ ﻋﻤﻞ (ﻣﺘﺪ) ﺑﺮﺍﯼ ﻣﺤﺎﺳﺒﻪ ﻣﺤﻴﻂ ﭼﻬﺎﺭﺿﻠﻌﯽ&nbsp;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp;* &nbsp;- isSquare() &nbsp;ﺍﻳﻦ ﻋﻤﻞ (ﻣﺘﺪ) ﺑﺮﺍﯼ ﺍﻳﻨﮑﻪ ﺑﺒﻴﻨﻴﻢ ﭼﻬﺎﺭﺿﻠﻌﯽ ﻣﺮﺑﻊ ﺍﺳﺖ ﻳﺎ ﻧﻪ &nbsp; */</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">class Rectangle //ﮐﻼﺱ ﺭﺍ ﺗﻌﺮﻳﻒ ﻣﯽ&zwnj;ﮐﻨﻴﻢ</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">{</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; // ﺩﺭ ﺯﻳﺮ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎﯼ ﺩﺭﺍﺯﺍ ﻭ ﭘﻬﻨﺎ ﺭﺍ ﺗﻌﺮﻳﻒ ﻣﯽ&zwnj;ﮐﻨﻴﻢ ﮐﻪ ﻣﻘﺪﺍﺭ ﺻﻔﺮ ﺭﺍ ﺑﻪ ﺁﻧﻬﺎ ﺍﺧﺘﺼﺎﺹ ﺩﺍﺩﻩ&zwnj;ﺍﻳﻢ&nbsp;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; public $width = 0;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; public $height = 0;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; // &nbsp;$w, $h &nbsp;ﻋﻤﻞ ﺑﺮﺍﯼ ﮔﺮﻓﺘﻦ ﺍﻧﺪﺍﺯﻩ&zwnj;ﻫﺎﯼ ﭘﻬﻨﺎ ﻭ ﺩﺭﺍﺯﺍ. ﺍﻳﻦ ﻋﻤﻞ ﺩﺍﺭﺍﯼ ﺩﻭ ﻭﻳﮋﮔﯽ ﺍﺳﺖ ﮐﻪ ﺩﺍﺭﺍﯼ ﻣﻘﺪﺍﺭ ﺻﻔﺮ ﻫﺴﺘﻨﺪ:</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; function setSize($w = 0, $h = 0)</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; {</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; $this-&gt;width &nbsp;= $w; // ﺍﺳﺘﻔﺎﺩﻩ ﺷﺪﻩ ﺍﺳﺖ $this &nbsp; ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ ﺑﺮﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﻭﻳﮋﮔﯽ ﭘﻬﻨﺎ ﺍﺯ &nbsp;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; $this-&gt;height = $h; // &nbsp;ﻣﺎﻧﻨﺪ ﭘﻬﻨﺎ&nbsp;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; }</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; // &nbsp;ﻋﻤﻞ (ﻣﺘﺪ) ﺑﺮﺍﯼ ﻣﺤﺎﺳﺒﻪ ﻭ ﺑﺎﺯﮔﺮﺩﺍﻧﺪﻥ ﻣﺴﺎﺣﺖ&nbsp;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; function getArea()</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; {</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; return ($this-&gt;width * $this-&gt;height);</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; }</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; // ﻋﻤﻞ (ﻣﺘﺪ) ﺑﺮﺍﯼ ﻣﺤﺎﺳﺒﻪ ﻭ ﺑﺎﺯﮔﺮﺩﺍﻧﺪﻥ ﻣﺤﻴﻂ</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; function getPerimeter()</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; {</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; return (($this-&gt;width + $this-&gt;height) * 2);</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; }</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; // ﻋﻤﻞ (ﻣﺘﺪ) ﺑﺮﺍﯼ ﺍﻳﻨﮑﻪ ﺑﻔﻬﻤﻴﻢ ﺁﻳﺎ ﭼﻬﺎﺭ ﺿﻠﻌﯽ ﻣﺮﺑﻊ ﺍﺳﺖ ﻳﺎ ﻧﻪ</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; function isSquare()</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; {</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; if ($this-&gt;width == $this-&gt;height) {</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return true; // ﺑﺎﺯﮔﺸﺖ ﺩﺭﺳﺖ ﺑﺮﺍﯼ ﺍﻳﻨﮑﻪ ﻧﺸﺎﻥ ﺩﻫﺪ ﭼﻬﺎﺭﺿﻠﻌﯽ ﻣﺮﺑﻊ ﺍﺳﺖ</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; } else {</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return false; // ﺑﺎﺯﮔﺸﺖ ﻏﻠﻂ ﺑﺮﺍﯼ ﺍﻳﻨﮑﻪ ﻧﺸﺎﻥ ﺩﻫﺪ ﭼﻬﺎﺭﺿﻠﻌﯽ ﻣﺮﺑﻊ ﻧﻴﺴﺖ &nbsp;</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; }</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; }</span></div>
+		<div>
+			<span style="font-family:tahoma,geneva,sans-serif;">} // ﭘﺎﻳﺎﻥ ﮐﻼﺱ</span></div>
+	</div>
+</div>
+<div dir="rtl">
+	<br />
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﮑﺎﺕ ﻣﺮﺑﻮﻁ ﺑﻪ ﮐﺪﻫﺎﯼ ﮐﻼﺱ:</span></span></strong></div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺩﺭﻭﻥ ﻋﻤﻞ (ﻣﺘﺪ) setSize ﺩﻭ ﻭﺭﻭﺩﯼ (ﺁﺭﮔﻮﻣﺎﻥ ﻳﺎ argument ) ﻭﺟﻮﺩ ﺩﺍﺭﻧﺪ w$ ﻭ h$ ﮐﻪ ﺑﻪ ﺁﻥ&zwnj;ﻫﺎ</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﻣﻘﺪﺍﺭ ﺻﻔﺮ ﺩﺍﺩﻩ ﺷﺪﻩ ﺍﺳﺖ. ﺩﺭ ﺯﻣﺎﻧﯽ ﮐﻪ ﺍﻳﻦ ﻋﻤﻞ (ﻣﺘﺪ) ﻓﺮﺍﺧﻮﺍﻧﺪﻩ ﻣﯽ&zwnj;ﺷﻮﺩ ﺍﻳﻦ ﺩﻭ ﻭﺭﻭﺩﯼ ﺩﺭ ﻭﻳﮋﮔﯽ&zwnj;</span></div>
+<div dir="rtl">
+	<font face="tahoma, geneva, sans-serif"><span style="font-size: 13px;">this-&gt;width$ ﻭ this-&gt;height$ ﻗﺮﺍﺭ ﻣﯽ&zwnj;ﮔﻴﺮﻧﺪ.&nbsp;</span></font></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺩﺭﻭﻥ ﺩﻳﮕﺮ ﻋﻤﻞ&zwnj;ﻫﺎ (ﻣﺘﺪ&zwnj;ﻫﺎ) ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ، ﻋﻤﻞ&zwnj;ﻫﺎ (ﻣﺘﺪﻫﺎ) ﺍﺯ ﻃﺮﻳﻖ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">this$&nbsp;</span><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﻪ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎﯼ width$ &nbsp;ﻭ height$ ﺩﺳﺘﺮﺳﯽ ﭘﻴﺪﺍ ﻣﯽ&zwnj;ﮐﻨﻨﺪ. ﺑﻪ ﺍﻳﻦ ﻃﺮﻳﻖ: &nbsp;this-&gt;width$ ﻳﺎ this-&gt;height$.</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﻪ&zwnj;ﮐﺎﺭﺑﺮﺩﻥ ﻣﺘﺪﻫﺎﯼ &nbsp;set ﻭ get ﮐﻪ ﻋﻤﻠﻴﺎﺗﯽ ﻣﺎﻧﻨﺪ setSize ﻭ getArea ﻳﺎ getPerimeter ﺭﺍ ﺍﻧﺠﺎﻡ ﻣﯽ&zwnj;ﺩﻫﻨﺪ ﻳﮏ ﺭﺍﻩ ﻣﻌﻤﻮﻝ ﺩﺭ ﺑﺮﻧﺎﻣﻪ&zwnj;ﻫﺎﻳﯽ ﺍﺳﺖ ﮐﻪ ﭼﻨﻴﻦ ﻋﻤﻠﻴﺎﺕ&zwnj;ﻫﺎﻳﯽ ﺭﺍ ﻻﺯﻡ ﺩﺍﺭﻧﺪ. ﻣﺘﺪﻫﺎﻳﯽ ﮐﻪ ﺑﺎ set ﺷﺮﻭﻉ ﻣﯽ&zwnj;ﺷﻮﻧﺪ ﺑﻄﻮﺭ ﻣﻌﻤﻮﻝ ﺑﺮﺍﯼ ﺍﺧﺘﺼﺎﺹ ﺩﺍﺩﻥ &quot;ﺩﺍﺩﻩ&quot; ﺑﻪ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎﯼ ﮐﻼﺱ ﻭ ﻣﺘﺪﻫﺎﻳﯽ ﮐﻪ ﺑﺎ get ﺷﺮﻭﻉ ﻣﯽ&zwnj;ﺷﻮﻧﺪ ﺑﺮﺍﯼ ﺑﺎﺯﮔﺮﺩﺍﻧﺪﻥ ﻣﻘﺪﺍﺭﻫﺎﯼ ﻭﻳﮋﮔﯽ&zwnj;ﻫﺎ ﻳﺎ ﻣﺤﺎﺳﺒﺎﺗﯽ ﮐﻪ ﺩﺭ ﺑﺮﻧﺎﻣﻪ ﺍﻧﺠﺎﻡ ﻣﯽ&zwnj;ﺷﻮﻧﺪ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﻧﺪ.</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻋﻤﻞ&zwnj;ﻫﺎ (ﻣﺘﺪ&zwnj;ﻫﺎ) ﻣﯽ&zwnj;ﺗﻮﺍﻧﻨﺪ ﺩﺭ ﺩﺍﺧﻞ ﺑﺮﻧﺎﻣﻪ ﻫﻤﺪﻳﮕﺮ ﺭﺍ ﻓﺮﺍﺧﻮﺍﻧﯽ ﮐﻨﻨﺪ، ﺍﻟﺒﺘﻪ ﻓﺮﺍﻣﻮﺵ ﻧﮑﻨﻴﺪ ﮐﻪ ﺍﻳﻦ ﮐﺎﺭ ﻫﻢ ﺑﺎﻳﺪ ﺗﻮﺳﻂ this</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">$&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻧﺠﺎﻡ ﮔﻴﺮﺩ. ﺍﻟﺒﺘﻪ ﺷﺎﻳﺪ ﺑﺘﻮﺍﻥ ﮔﻔﺖ ﮐﻪ ﺍﻳﻦ ﺣﺮﮐﺖ ﺩﺭ ﺩﻧﻴﺎﯼ ﺑﺮﻧﺎﻣﻪ&zwnj;ﻧﻮﻳﺴﯽ ﺣﺮﻓﻪ&zwnj;ﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﻧﻤﯽ&zwnj;ﺷﻮﺩ ﻣﮕﺮ ﺍﻳﻨﮑﻪ ﻫﻴﭻ ﭼﺎﺭﻩ&zwnj;ﺍﯼ ﻧﺒﺎﺷﺪ ﻳﺎ ﺍﺯ ﺍﻳﻦ ﻃﺮﻳﻖ ﺑﺘﻮﺍﻥ ﺑﻪ ﺧﺮﻭﺟﯽ ﺧﻮﺑﯽ ﺩﺳﺖ ﻳﺎﻓﺖ. ﺑﻪ&zwnj;ﻫﺮﺣﺎﻝ ﺿﺮﻭﺭﯼ ﻧﻴﺴﺖ ﺍﻣﺎ ﺷﺪﻧﯽ ﺍﺳﺖ.</span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﻮﺭﺩ ﻣﻬﻢ ﺩﻳﮕﺮ ﺩﺭ ﻣﻮﺭﺩ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﺷﺊ&zwnj;ﮔﺮﺍ ﺍﻳﻦ ﺍﺳﺖ ﮐﻪ ﺷﻤﺎ ﺑﺎ ﺗﻌﺮﻳﻒ ﮐﻼﺱ ﻭ ﺳﺎﺧﺖ ﻳﮏ ﺷﺊ ﺍﺯ ﺁﻥ ﺩﺭ ﺍﺻﻞ ﺗﻮﺍﻧﺎﻳﯽ ﺳﺎﺧﺖ ﻧﻮﻉ ﺩﺍﺩﻩ ﻣﻮﺭﺩ ﺩﻟﺨﻮﺍﻩ ﺧﻮﺩ ﺭﺍ ﭘﻴﺪﺍ ﻣﯽ&zwnj;ﮐﻨﻴﺪ. ﺯﻣﺎﻧﯽ ﮐﻪ ﻳﮏ ﮐﻼﺱ ﺭﺍ ﺗﻌﺮﻳﻒ ﻣﯽ&zwnj;ﮐﻨﻴﺪ ﺍﻳﻦ ﻗﺎﺑﻠﻴﺖ ﮐﻪ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﻫﺮ ﻧﻮﻉ &quot;ﺩﺍﺩﻩ&quot; ﺭﺍ ﺑﺮﺍﯼ ﺧﻮﺩ ﻭ ﺑﺮ ﺣﺴﺐ ﻧﻴﺎﺯ ﺑﺮﻧﺎﻣﻪ ﺧﻮﺩ ﺩﺭ ﺁﻥ ﮐﻼﺱ ﻗﺮﺍﺭ ﺩﻫﻴﺪ، ﺷﻤﺎ ﺭﺍ ﺗﻮﺍﻧﻤﻨﺪ ﺩﺭ ﺗﻮﻟﻴﺪ ﻳﮏ ﺑﺮﻧﺎﻣﻪ ﻣﻨﻈﻢ ﻭ ﻣﺴﺘﺤﮑﻢ ﻣﯽ&zwnj;ﮐﻨﺪ.</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺮﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩﻥ ﺍﺯ ﺍﻳﻦ ﮐﻼﺱ ﺑﺎﻳﺪ ﺷﺊ&zwnj;ﺍﯼ ﺍﺯ ﺁﻥ ﺑﺴﺎﺯﻳﻢ. ﺍﻳﻦ ﺑﺎﺭ ﺑﺮﺧﻼﻑ ﺩﻭ ﻧﻤﻮﻧﻪ&zwnj;ﺍﯼ ﮐﻪ ﺩﺭ ﺩﺭﺱ ﭘﻴﺸﻴﻦ ﺳﺎﺧﺘﻴﻢ، ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﮐﻼﺱ ﺭﺍ ﺩﺭ ﭘﺮﻭﻧﺪﻩ (ﻓﺎﻳﻞ) ﺩﻳﮕﺮﯼ ﺑﺴﺎﺯﻳﻢ ﻭ ﺁﻥ ﺭﺍ ﻭﺍﺭﺩ ﭘﺮﻭﻧﺪﻩ&zwnj;ﺍﯼ &nbsp;ﮐﻨﻴﻢ ﮐﻪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ. ﭘﺮﻭﻧﺪﻩ ﺩﻳﮕﺮﯼ ﺑﺎ ﻧﺎﻡ &nbsp;rectangle1.php ﻣﯽ&zwnj;ﺳﺎﺯﻳﻢ ﻭ ﮐﺪﻫﺎﯼ ﺯﻳﺮ ﺭﺍ ﺩﺍﺧﻞ ﺁﻥ ﻣﯽ&zwnj;ﻧﻮﻳﺴﻴﻢ:</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;!doctype html&gt;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;html lang=&quot;fa&quot;&gt;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;head&gt;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &lt;meta charset=&quot;utf-8&quot;&gt;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; &lt;title&gt; &nbsp; &nbsp; ﭼﻬﺎﺭ ﺿﻠﻌﯽ &lt;/title&gt;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/head&gt;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;body&gt;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php&nbsp;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">/* &nbsp;ﺍﻳﻦ ﺑﺮﮔﻪ ﺍﺯ ﮐﻼﺳﯽ ﮐﻪ ﭘﻴﺶ ﺍﺯ ﺍﻳﻦ ﺳﺎﺧﺘﻴﻢ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﺪ&nbsp;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">*/</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">// &nbsp;ﺍﺑﺘﺪﺍ ﺑﺮﮔﻪ ﮐﻼﺱ ﺭﺍ ﺑﺮﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩﻥ ﻭﺍﺭﺩ ﺍﻳﻦ ﺑﺮﮔﻪ ﮐﻨﻴﻢ&nbsp;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">require &nbsp;(&#39;Rectangle.php&#39;) ;</span></span></div>
+	<div dir="rtl">
+		&nbsp;</div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">// ﻣﺘﻐﻴﺮﻫﺎﯼ ﭘﻬﻨﺎ ﻭ ﺩﺭﺍﺯﺍ ﺭﺍ ﺩﺭ ﺍﻳﻦ ﺑﺮﮔﻪ ﺳﺎﺧﺘﻪ ﻭ ﺑﻪ ﺁﻧﻬﺎ ﻣﻘﺪﺍﺭ ﻣﯽ&zwnj;ﺩﻫﻴﻢ&nbsp;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">$width = 33 ;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">$height = 22 ;</span></span></div>
+	<div dir="rtl">
+		&nbsp;</div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">// ﻣﻘﺪﺍﺭ ﭘﻬﻨﺎ ﻭ ﺩﺭﺍﺯﺍ ﺭﺍ ﭼﺎﭖ ﻣﯽ&zwnj;ﮐﻨﻴﻢ&nbsp;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">echo &quot;&lt;h2&gt; &nbsp; &nbsp;$width &nbsp; &nbsp; &nbsp; &nbsp; ﭘﻬﻨﺎ: &nbsp; $height ﺩﺭﺍﺯﺍ: &lt;/h2&gt;&quot;;</span></span></div>
+	<div dir="rtl">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;</span></span></div>
+	<div dir="rtl">
+		&nbsp;</div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">// ﻳﮏ ﺷﺊ&zwnj;ﺍﺯ ﮐﻼﺱ ﺧﻮﺩ ﻣﯽ&zwnj;ﺳﺎﺯﻳﻢ</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">$r = new Rectangle();</span></span></div>
+	<div dir="rtl">
+		&nbsp;</div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">// ﺣﺎﻝ ﻣﻘﺪﺍﺭ ﻣﺘﻐﻴﺮﻫﺎ ﺭﺍ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺷﺊ ﺑﻪ ﻋﻤﻞ ﺍﺧﺘﺼﺎﺹ ﻣﯽ&zwnj;ﺩﻫﻴﻢ</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">$r-&gt;setSize($width, $height);</span></span></div>
+	<div dir="rtl">
+		&nbsp;</div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">// ﺩﺭ ﺍﻳﻦ ﻗﺴﻤﺖ ﻣﺴﺎﺣﺖ ﺭﺍ ﭼﺎﭖ ﻣﯽ&zwnj;ﮐﻨﻴﻢ</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">echo &#39;&lt;p&gt; &nbsp; &nbsp;ﻣﺴﺎﺣﺖ &nbsp; &#39; . $r-&gt;getArea() . &#39;&lt;/p&gt;&#39;;</span></span></div>
+	<div dir="rtl">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp;&nbsp;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">// ﺩﺭ ﺍﻳﻦ ﻗﺴﻤﺖ ﻣﺤﻴﻂ ﺭﺍ ﭼﺎﭖ ﻣﯽ&zwnj;ﮐﻨﻴﻢ</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">echo &#39;&lt;p&gt; &nbsp; &nbsp;ﻣﺤﻴﻂ &nbsp; &#39; . $r-&gt;getPerimeter() . &#39;&lt;/p&gt;&#39;;</span></span></div>
+	<div dir="rtl">
+		&nbsp;</div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">// ﺑﺮﺍﯼ ﻓﻬﻤﻴﺪﻥ ﻣﺮﺑﻊ ﺑﻮﺩﻥ ﻳﺎ ﻧﺒﻮﺩﻥ ﭼﻨﺪﺿﻠﻌﯽ ﺍﺯ ﻋﻤﻠﯽ ﮐﻪ ﺑﻪ ﺍﻳﻦ ﻣﻨﻈﻮﺭ ﻧﻮﺷﺘﻴﻢ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ&nbsp;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">echo &#39;&lt;p&gt;ﺍﻳﻦ ﭼﻬﺎﺭ ﺿﻠﻌﯽ ﻳﮏ ﻣﺮﺑﻊ &#39;;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">if ($r-&gt;isSquare()) {</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; echo &#39;ﺍﺳﺖ&#39;;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">} else {</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp; &nbsp; echo &#39;ﻧﻴﺴﺖ&#39;;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">}</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">echo &#39;.&lt;/p&gt;&#39;;</span></span></div>
+	<div dir="rtl">
+		&nbsp;</div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">// ﺷﺊ ﺭﺍ ﭘﺎﮎ ﻣﯽ&zwnj;ﮐﻨﻴﻢ</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">unset($r);</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">?&gt;</span></span></div>
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/body&gt; &lt;/html&gt;</span></span></div>
+</div>
+<div>
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻧﮑﺘﻪ:</strong> ﻣﺎ ﺑﺮﺍﯼ ﺍﻳﻦ ﻗﺴﻤﺖ ﺍﺯ ﺩﻭ ﭘﺮﻭﻧﺪﻩ (ﻓﺎﻳﻞ) ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩﻳﻢ. ﻳﮑﯽ ﺑﺮﺍﯼ ﺗﻌﺮﻳﻒ ﮐﺮﺩﻥ ﮐﻼﺱ ﻭ ﺩﻳﮕﺮﯼ ﺳﺎﺧﺘﻦ ﺷﺊ. ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ ﺩﺭ ﺍﺑﺘﺪﺍﯼ ﭘﺮﻭﻧﺪﻩ ﮐﻼﺱ rectangle1.php &nbsp;ﺭﺍ ﻭﺍﺭﺩ ﮐﺮﺩﻩ&zwnj;ﺍﻳﻢ:</span></span><br />
+	&nbsp;</div>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">require(&#39;Rectangle.php&#39;) ;</span></span></div>
+</div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﻗﺖ ﮐﻨﻴﺪ ﮐﻪ ﻫﺮ ﺩﻭ ﭘﺮﻭﻧﺪﻩ ﺑﺎﻳﺪ ﺩﺭ ﻳﮏ ﭘﻮﺷﻪ ﻗﺮﺍﺭ ﮔﻴﺮﻧﺪ. ﺍﮔﺮ ﭘﺮﻭﻧﺪﻩ ﮐﻼﺱ ﺭﺍ ﺩﺭ ﭘﻮﺷﻪ ﺩﻳﮕﺮﯼ ﮔﺬﺍﺷﺘﻴﺪ ﺣﺘﻤﺎ ﺑﺎﻳﺪ ﻧﺸﺎﻧﯽ ﺁﻥ ﺭﺍ ﺑﻪ ﮐﺪ ﻭﺍﺭﺩ ﮐﻨﻨﺪﻩ ﮐﻼﺱ ﺍﺿﺎﻓﻪ ﮐﻨﻴﺪ. ﺑﺮﺍﯼ ﻧﻤﻮﻧﻪ:</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<div>
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">require (&#39;class/Rectangle.php&#39;) ;</span></span></div>
+</div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻧﮑﺘﻪ:</strong> ﮐﻼﺳﯽ ﮐﻪ ﺩﺭ ﺍﻳﻦ ﺩﺭﺱ ﺗﻌﺮﻳﻒ ﺷﺪ ﻳﮏ ﮐﻼﺱ ﮐﺎﻣﻞ ﻧﻴﺴﺖ ﺍﻣﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻥ ﮔﻔﺖ ﮐﻪ ﺑﺮﺍﯼ ﻳﺎﺩﮔﻴﺮﯼ ﻭ ﺷﺮﻭﻉ ﮐﺎﺭ ﮐﻼﺱ ﺑﺪﯼ ﻧﻴﺴﺖ. ﺩﺭ ﺍﻳﻦ ﮐﻼﺱ ﻣﻔﻬﻮﻡ &quot; ﮐﭙﺴﻮﻟﻪ ﺳﺎﺯﯼ&quot; ﻳﺎ &nbsp;Encapsulation &nbsp;ﮐﻪ (ﺩﺭ ﺩﺭﺱ ﻧﺨﺴﺖ ﺑﻪ ﺁﻥ ﮐﻤﯽ&zwnj;ﺍﺷﺎﺭﻩ ﮐﺮﺩﻳﻢ) ﻳﮑﯽ ﺍﺯ ﻣﻔﺎﻫﻴﻢ ﺍﺻﻠﯽ ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﺷﺊ&zwnj;ﮔﺮﺍ ﺍﺳﺖ ﺩﺭ ﺁﻥ ﭘﻴﺎﺩﻩ ﺳﺎﺯﯼ ﺷﺪﻩ ﺍﺳﺖ.</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻧﮑﺘﻪ:</strong> ﺍﺳﺘﻔﺎﺩﻩ ﻧﮑﺮﺩﻥ ﺍﺯ ﮐﺪﻫﺎﯼ HTML ﺩﺭ ﮐﻼﺱ&zwnj;ﻫﺎﯼ ﺳﺎﺧﺘﻪ ﺷﺪﻩ ﻳﮏ ﺷﻴﻮﻩ ﺧﻮﺏ ﺑﺮﺍﯼ ﻃﺮﺍﺣﯽ ﻳﮏ ﺳﻴﺴﺘﻢ ﻣﻨﺎﺳﺐ ﺍﺳﺖ.</span></span></div>
+<div dir="rtl">
+	&nbsp;</div>
+<div dir="rtl">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺣﺎﻝ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﮐﺪﻫﺎﯼ ﺑﺎﻻ ﺍﻳﻦ ﻣﻔﻬﻮﻡ ﺭﺍ ﺗﻤﺮﻳﻦ ﮐﻨﻴﺪ ﻭ ﺑﺮﺍﯼ ﺗﺒﺤﺮ ﻳﺎﻓﺘﻦ، ﺧﻮﺩﺗﺎﻥ ﺷﺮﻭﻉ ﺑﻪ ﺗﻌﺮﻳﻒ ﮐﻼﺱ&zwnj;ﻫﺎﯼ ﻣﺸﺎﺑﻪ ﺍﻣﺎ ﺑﺎ ﮐﺎﺭﮐﺮﺩ ﻣﺘﻔﺎﻭﺕ ﮐﻨﻴﺪ ﻭ ﺍﺯ ﺧﻼﻗﻴﺖ&zwnj;ﻫﺎﯼ ﺑﺮﻧﺎﻣﻪ&zwnj;ﻧﻮﻳﺴﯽ ﺧﻮﺩ ﺑﺮﺍﯼ ﺳﺎﺧﺘﻦ ﻧﻤﻮﻧﻪ&zwnj;ﻫﺎﯼ ﺩﻳﮕﺮ ﺑﻬﺮﻩ ﺑﺒﺮﻳﺪ.</span></span></div>
+<div>
+	&nbsp;</div></body></html>

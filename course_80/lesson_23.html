@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'><meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<head>
+<title>ﺩﺭﺱ ﭼﻬﺎﺭﻡ- ﺳﺎﺧﺖ header.php ﻭ footer.php ﻭ index.php</title>
+
+			<link type="text/css" rel="stylesheet" href="style.css" />
+      <style>body {text-align: right; direction: rtl; padding-left: 5pt; padding-right: 5pt;} ul {direction: rtl;} ol { direction: rtl;}</style>
+</head>
+<body>
+<p class='headPage'>ﺩﺭﺱ ﭼﻬﺎﺭﻡ- ﺳﺎﺧﺖ header.php ﻭ footer.php ﻭ index.php</p><p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭﺱ ﻗﺒﻞ ﺻﺮﻑ ﺗﻮﺿﻴﺢ ﻣﺨﺘﺼﺮﯼ ﺍﺯ ﺳﺎﺧﺘﺎﺭ ﭘﻮﺷﻪ&zwnj;ﻫﺎﯼ ﻭﺭﺩﭘﺮﺱ، ﺳﺎﺧﺖ ﻓﺎﻳﻞ&zwnj;ﻫﺎﯼ ﺷﻴﻮﻩ ﺩﻫﯽ ﻭ ﻗﺪﻡ ﺍﺑﺘﺪﺍﻳﯽ ﺩﺭ ﻣﻌﺮﻓﯽ ﭘﻮﺳﺘﻪ&zwnj;ﻣﺎﻥ ﺑﻪ ﻭﺭﺩﭘﺮﺱ ﺷﺪ. ﺩﺭ ﺍﻳﻦ ﺩﺭﺱ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﺑﺎ ﺳﻪ ﻓﺎﻳﻞ ﺩﻳﮕﺮ ﺁﺷﻨﺎ ﺷﻮﻳﻢ ﮐﻪ ﺗﻮﺳﻂ ﺁﻧﻬﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﻢ ﻫﺴﺘﻪ ﺍﺻﻠﯽ ﭘﻮﺳﺘﻪ ﺭﺍ ﺗﮑﻤﻴﻞ ﮐﻨﻴﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><b>ﺳﺎﺧﺖ ﻓﺎﻳﻞ </b><b><span dir="LTR">&nbsp;header.php</span></b></span></span><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻓﺎﻳﻞ ﺳﺮﺍﻳﻨﺪ ﺗﻘﺮﻳﺒﻦ ﺗﻮﺳﻂ ﻫﻤﻪ ﺩﻳﮕﺮ ﻓﺎﻳﻞ&zwnj;ﻫﺎ ﻳﺎ ﺍﻟﮕﻮﻫﺎ ﺩﺭ ﺑﺎﻻﯼ ﻫﺮ ﺻﻔﺤﻪ ﻓﺮﺍﺧﻮﺍﻥ ﻣﯽ&zwnj;ﺷﻮﺩ. ﺑﺎ ﺍﻳﻦ ﮐﺎﺭ ﻣﺎ ﺍﺯ ﺗﮑﺮﺍﺭ ﮐﺪﻫﺎﻳﯽ ﮐﻪ ﺑﺎﻳﺪ ﺩﺭ ﺗﻤﺎﻡ ﺻﻔﺤﻪ&zwnj;ﻫﺎ ﺑﺎﺷﻨﺪ ﺟﻠﻮﮔﻴﺮﯼ ﻣﯽ&zwnj;ﮐﻨﻴﻢ. ﻓﺎﻳﻠﯽ ﺑﺎ ﻧﺎﻡ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">header.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺑﺴﺎﺯﻳﺪ ﻭ ﮐﺪﻫﺎﯼ ﺯﻳﺮ ﺭﺍ ﺩﺭ ﺁﻥ ﺑﻨﻮﻳﺴﻴﺪ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">/**</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;* <span dir="RTL">ﺳﺮﺍﻳﻨﺪ ﭘﻮﺳﺘﻪ ﺩﺭﺳﻨﺎﻣﻪ</span></span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;*/</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">?&gt;&lt;!DOCTYPE html&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;html &lt;?php language_attributes(); ?&gt;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp; &lt;head&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta charset=&quot;&lt;?php bloginfo(&#39;charset&#39;); ?&gt;&quot; /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;&lt;?php bloginfo(&#39;html_type&#39;);?&gt;&quot; /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta name=&quot;description&quot; content=&quot;&lt;?php bloginfo(&quot;description&quot;); ?&gt;&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;title&gt;&lt;?php&nbsp; bloginfo(&#39;name&#39;);?&gt; &lt;/title&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;&lt;?php bloginfo(&#39;name&#39;); ?&gt; RSS Feed&quot;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; href=&quot;&lt;?php bloginfo(&#39;rss2_url&#39;); ?&gt;&quot; /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel=&quot;profile&quot; href=&quot;http://gmpg.org/xfn/11&quot; /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel=&quot;pingback&quot; href=&quot;&lt;?php bloginfo(&#39;pingback_url&#39;); ?&gt;&quot; /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php bloginfo(&quot;template_directory&quot;); ?&gt;/style.css&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel=&quot;profile&quot; href=&quot;http://gmpg.org/xfn/11&quot; /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel=&quot;shortcut icon&quot; href=&quot;&lt;?php bloginfo(&#39;template_directory&#39;); ?&gt;/img/darsnameh.ico&quot; /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php wp_head(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp; &lt;/head&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp; &lt;body &lt;?php body_class(); ?&gt;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id=&quot;primary&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;header id=&quot;header&quot; &gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;nav role=&quot;navigation&quot; class=&quot;&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php wp_nav_menu(array(&#39;theme_location&#39; =&gt; &#39;primary&#39;)); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/nav&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h1&gt;&lt;a href=&quot;&lt;?php bloginfo(&#39;url&#39;); ?&gt;&quot; title=&quot;&lt;?php bloginfo(&#39;name&#39;); ?&gt;&quot; name=&quot;top&quot;&gt;&lt;?php bloginfo(&#39;name&#39;); ?&gt;&lt;/a&gt;&lt;/h1&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h3&gt;&nbsp;&nbsp; &lt;span&gt;&lt;?php bloginfo(&#39;description&#39;); ?&gt;&lt;/span&gt;&lt;/h3&gt;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/header&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id=&quot;main&quot;&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺗﻮﺿﻴﺢ ﮐﺪﻫﺎﻳﯽ ﮐﻪ ﺩﺭ ﺍﻳﻦ ﻓﺎﻳﻞ ﻗﺮﺍﺭ ﻣﯽ&zwnj;ﺩﻫﻴﻢ ﺑﺎﻳﺪ ﺑﻪ ﺍﻳﻦ ﻧﮑﺘﻪ ﺍﺷﺎﺭﻩ ﮐﻨﻴﻢ ﮐﻪ ﻳﺎﺩﮔﻴﺮﯼ ﮐﺪﻫﺎﯼ ﻣﺮﺑﻮﻁ ﺑﻪ ﺑﻪ ﺍﭺ ﺗﯽ ﺍﻡ ﺍﻝ ﺑﺮ ﻋﻬﺪﻩ ﺧﻮﺩ ﺷﻤﺎ ﺍﺳﺖ. ﻣﺎ ﻓﻘﻂ ﺑﻪ ﻣﻮﺍﺭﺩﯼ ﮐﻪ ﺑﻪ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎﯼ ﻭﺭﺩﭘﺮﺱ ﻣﺮﺑﻮﻁ ﻣﯽ&zwnj;ﺷﻮﺩ، ﻣﯽ&zwnj;ﭘﺮﺩﺍﺯﻳﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><b>ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎ</b></span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;html &lt;?php language_attributes(); ?&gt;&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺑﻌﺪ ﺍﺯ ﺍﺟﺮﺍ ﺷﺪﻥ ﺑﻪ ﺷﮑﻞ ﺯﻳﺮ ﭘﺪﻳﺪﺍﺭ ﻣﯽ&zwnj;ﺷﻮﺩ. ﺑﺮﺍﯼ ﺩﻳﺪﻥ ﺍﻳﻦ ﮐﺪ ﮐﺎﻓﻴﺴﺖ ﺑﺮ ﺭﻭﯼ ﻣﺮﻭﺭﮔﺮ ﺧﻮﺩ ﮐﻠﻴﮏ ﺭﺍﺳﺖ ﮐﺮﺩﻩ ﻭ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">View page source&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺭﺍ ﺍﻧﺘﺨﺎﺏ ﮐﻨﻴﺪ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;html dir=&quot;rtl&quot; lang=&quot;fa-IR&quot;&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺮﭼﺴﺐ ﺑﺎﻻ ﺑﻄﻮﺭ ﺧﻮﺩﮐﺎﺭ ﻭ ﺍﺯ ﺭﻭﯼ ﺯﺑﺎﻥ ﺍﻧﺘﺨﺎﺑﯽ ﺳﻴﺴﺘﻢ ﻭﺭﺩﭘﺮﺱ، ﭼﻴﺪﻣﺎﻥ ﮐﻠﯽ (ﭼﺐ ﺑﻪ ﺭﺍﺳﺖ ﻳﺎ ﺑﺮﻋﮑﺲ) ﺗﺎﺭﻧﻤﺎ ﻭ ﺯﺑﺎﻧﯽ ﮐﻪ ﺑﺎﻳﺪ ﮐﺪﻫﺎ ﺗﻮﺳﻂ ﻣﺮﻭﺭﮔﺮ ﺗﺮﺟﻤﻪ ﺷﻮﻧﺪ ﺭﺍ&nbsp; ﺑﺮ ﻣﯽ&zwnj;ﮔﺰﻳﻨﺪ. ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ ﺩﺭ ﻣﺜﺎﻝ ﻣﺎ ﺟﻬﺖ ﺑﻪ ﺷﮑﻞ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">rtl&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺭﺍﺳﺖ ﺑﻪ ﭼﭗ ﻭ ﺯﺑﺎﻥ ﺗﺮﺟﻤﻪ ﭘﺎﺭﺳﯽ ﺍﻧﺘﺨﺎﺏ ﺷﺪﻩ ﺍﺳﺖ. ﺍﻳﻦ ﺑﻪ ﺩﻟﻴﻞ ﺍﺳﺖ ﮐﻪ ﺑﺮﺍﯼ ﺳﻴﺴﺘﻢ ﻭﺭﺩﭘﺮﺳﯽ ﮐﻪ ﻣﺎ ﺑﻪ ﻫﻤﺮﺍﻩ ﺩﻭﺭﻩ ﺁﻣﻮﺯﺷﯽ ﻣﺸﻐﻮﻝ ﺑﻪ ﺳﺎﺧﺘﻦ ﭘﻮﺳﺘﻪ ﻫﺴﺘﻴﻢ، ﺯﺑﺎﻥ ﭘﺎﺭﺳﯽ ﺗﻨﻈﻴﻢ ﺷﺪﻩ ﺍﺳﺖ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;meta charset=&quot;&lt;?php bloginfo(&#39;charset&#39;); ?&gt;&quot; /&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺧﺮﻭﺟﯽ ﺑﺮﭼﺴﺐ ﺑﺎﻻ ﺗﻨﻈﻴﻢ ﻣﺠﻤﻮﻋﻪ ﮐﺎﺭﺍﮐﺘﺮ ﻳﺎ ﻧﻮﻉ ﮐﺎﺭﮐﺘﺮ ﺍﺳﺘﻔﺎﺩﻩ ﺷﻮﻧﺪﻩ ﺭﺍ ﺑﻪ ﻣﺮﻭﺭﮔﺮ ﺩﻳﮑﺘﻪ ﻣﯽ&zwnj;ﮐﻨﺪ.</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<pre style="text-align: justify;">
+<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;meta charset=&quot;UTF-8&quot; /&gt;</span></span></pre>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻣﯽ ﺑﻴﻨﻴﺪ ﺗﻨﻈﻴﻢ ﮐﺎﺭﺍﮐﺘﺮ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">UTF-8&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﮐﻪ ﺑﺮﺍﯼ ﺯﺑﺎﻥ&zwnj;ﻫﺎﻳﯽ ﻣﺎﻧﻨﺪ ﭘﺎﺭﺳﯽ ﺗﻬﻴﻪ ﺷﺪﻩ ﺍﺳﺖ ﺩﺭ ﻣﺮﻭﺭﮔﺮ ﭘﻴﺎﺩﻩ ﺷﺪﻩ ﺍﺳﺖ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php bloginfo(&#39;html_type&#39;); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﮐﺪ ﺑﺎﻻ ﻧﻮﻉ ﻣﺤﺘﻮﺍ ﺭﺍ ﺩﺭ ﻣﺮﻭﺭﮔﺮ ﺗﻌﻴﻴﻦ ﻣﯽ&zwnj;ﮐﻨﺪ ﮐﻪ ﺧﺮﻭﺟﯽ ﺁﻥ ﻣﯽ&zwnj;ﺷﻮﺩ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<pre style="text-align: justify;">
+<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">content=&quot;text/html&quot;</span></span></pre>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php bloginfo(&quot;description&quot;); ?&gt;<span dir="RTL"> ﻭ&nbsp; </span>&lt;?php bloginfo(&quot;name&quot;); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺩﻭ ﺑﺮﭼﺴﺐ ﻧﺎﻡ ﻭ ﺗﻮﺿﻴﺤﺎﺕ ﺗﺎﺭﻧﻤﺎ ﺭﺍ ﺑﺮ ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﻨﺪ. ﺍﮔﺮ ﺑﻪ ﻗﺴﻤﺖ ﻣﺪﻳﺮﻳﺖ ﺗﺎﺭﻧﻤﺎﯼ ﺧﻮﺩ ﺩﺭ ﺑﺨﺶ &laquo;ﺗﻨﻈﻴﻤﺎﺕ&raquo; ﮔﺰﻳﻨﻪ &laquo;ﻫﻤﮕﺎﻧﯽ&raquo; ﺑﺮﻭﻳﺪ ﺑﻪ ﺩﻭ ﮐﺎﺩﺭ &laquo;ﻋﻨﻮﺍﻥ ﺳﺎﻳﺖ&raquo; ﻭ &laquo;ﻣﻌﺮﻓﯽ ﮐﻮﺗﺎﻩ&raquo; ﺑﺮ ﻣﯽ&zwnj;ﺧﻮﺭﻳﺪ. ﺩﺍﺩﻩ&zwnj;ﻫﺎﻳﯽ ﮐﻪ ﺩﺭ ﺍﻳﻦ ﺩﻭ ﮐﺎﺩﺭ ﻭﺍﺭﺩ ﻣﯽ&zwnj;ﮐﻨﻴﺪ ﺗﻮﺳﻂ ﺩﻭ ﺑﺮﭼﺴﺐ ﺑﺎﻻ ﮔﺮﻓﺘﻪ ﺷﺪﻩ ﻭ ﺩﺭ ﺗﺎﺭﻧﻤﺎ ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php bloginfo(&#39;rss2_url&#39;); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﭘﻴﻮﻧﺪ &laquo;ﺧﻮﺭﺍﮎ ﺧﻮﺍﻥ&raquo; ﺗﺎﺭﻧﻤﺎ ﺭﺍ ﺑﺮ ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php bloginfo(&#39;pingback_url&#39;); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺍﻃﻼﻋﺎﺕ ﺗﺎﺭﻧﻤﺎﯼ ﺷﻤﺎ ﺭﺍ ﺑﺮﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ ﻭ ﺑﻌﺪ ﺩﺭ ﺧﻮﺩ ﺗﺎﺭﻧﻤﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺍﺯ ﺁﻥ ﺍﻃﻼﻋﺎﺕ ﺍﺳﺘﻔﺎﺩﻩ ﮐﻨﻴﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php echo get_template_directory_uri(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php bloginfo(&#39;template_directory&#39;); ?&gt;/img/darsnameh.ico</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺎ ﻧﮕﺎﻫﯽ ﺑﺮ ﺧﺮﻭﺟﯽ ﺑﺮﭼﺴﺐ ﻫﺎﯼ ﺑﺎﻻ ﺑﻪ ﮐﺎﺭﮐﺮﺩ ﺁﻧﻬﺎ ﭘﯽ ﺧﻮﺍﻫﻴﺪ ﺑﺮﺩ. ﺍﺯ ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺩﺭ ﺟﺎﻫﺎﯼ ﺑﺴﻴﺎﺭﯼ ﺑﺮﺍﯼ ﻳﺎﻓﺘﻦ ﻭ ﺩﺍﺩﻥ ﻧﺸﺎﻧﯽ ﺭﻳﺸﻪ ﺗﺎﺭﻧﻤﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺧﻮﺍﻫﻴﻢ ﮐﺮﺩ. ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ ﻧﺸﺎﻧﯽ ﺭﻳﺸﻪ ﺭﺍ ﺑﺮﺍﯼ ﻣﺎ ﺑﺮ ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ. ﺩﺭ ﺍﺩﺍﻣﻪ ﻣﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﻢ ﺑﺎ ﺩﺍﺩﻥ ﺍﺩﺍﻣﻪ ﻧﺸﺎﻧﯽ ﺑﻪ ﺷﺌﯽ ﻣﻮﺭﺩ ﻧﻈﺮ ﺩﺳﺘﺮﺳﯽ ﭘﻴﺪﺍ ﮐﻨﻴﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">http://localhost/darsnameh/wp-content/themes/darsnameh</span></span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php &nbsp;bloginfo(&#39;url&#39;); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﺸﺎﻧﯽ ﺍﺻﻠﯽ ﺗﺎﺭﻧﻤﺎ ﺭﺍ ﺑﺎﺯ ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ. ﺑﻪ ﺧﺮﻭﺟﯽ ﺁﻥ ﺩﻗﺖ ﮐﻨﻴﺪ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">http://localhost/darsnameh</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﺸﺎﻧﯽ ﺗﺎﺭﻧﻤﺎﻳﯽ ﺍﺳﺖ ﮐﻪ ﻣﺎ ﺩﺭ ﺳﺮﻭﺭ ﻣﺤﻠﯽ ﺧﻮﺩ ﺭﺍﻩ ﺍﻧﺪﺍﺯﯼ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></span></p>
+<p dir="RTL" style="text-align: center;">
+	<img src='data:image/jpeg;base64,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' style='max-width: 525px; width: 100%' class='img' /></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php body_class(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺩﺳﺘﻮﺭ، ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎﯼ ﺑﺴﻴﺎﺭﯼ ﺍﺯ ﺳﯽ ﺍﺱ ﺍﺱ ﺭﺍ ﺑﺮﺍﯼ ﺷﻴﻮﻩ ﺩﻫﯽ ﺩﻗﻴﻖ&zwnj;ﺗﺮ ﺑﺮﺍﯼ ﺷﻤﺎ ﻓﺮﺍﻫﻢ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺧﺮﻭﺟﯽ ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺩﺭ ﺯﻳﺮ ﻧﺸﺎﻥ ﺩﻫﻨﺪﻩ ﮐﺎﺭﺑﺮﺩ ﺁﻥ ﺍﺳﺖ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<pre style="text-align: justify;">
+<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;body class=&quot;rtl home blog logged-in admin-bar &quot;&gt;</span></span></pre>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎ ﻣﯽ ﺗﻮﺍﻥ ﺷﻴﻮﻩ ﺩﻫﯽ ﺭﺍ ﻧﺴﺒﺖ ﺑﻪ ﺑﺮﮔﻪ ﺍﯼ ﮐﻪ ﮐﺎﺭﺑﺮ ﺩﺭ ﺣﺎﻝ ﺩﻳﺪﻥ ﺍﺳﺖ ﭘﻴﺎﺩﻩ ﮐﺮﺩ، ﺑﻪ ﺍﻳﻦ ﺷﮑﻞ ﭘﻮﻳﺎ ﺑﻮﺩﻥ ﺗﺎﺭﻧﻤﺎ ﺑﺴﻴﺎﺭ ﺯﻳﺒﺎﺗﺮ ﺍﺟﺮﺍ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php wp_nav_menu(array(&#39;theme_location&#39; =&gt; &#39;primary&#39;)); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﻧﺎﻭﺑﺮﯼ ﻳﺎ ﻓﻬﺮﺳﺖ ﺗﺎﺭﻧﻤﺎ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ. ﺍﻟﺒﺘﻪ ﺍﺑﺘﺪﺍ ﺍﻳﻦ ﻓﻬﺮﺳﺖ ﺑﺎﻳﺪ ﺩﺭ ﻓﺎﻳﻞ &nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">functions.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺳﺎﺧﺘﻪ ﺷﻮﺩ. ﺩﺭ ﺯﻣﺎﻥ ﺗﻮﺿﻴﺢ ﻓﺎﻳﻞ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">functions&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺑﻪ ﭼﮕﻮﻧﮕﯽ ﺳﺎﺧﺖ ﻧﺎﻭﺑﺮﯼ ﺍﺷﺎﺭﻩ ﺧﻮﺍﻫﻴﻢ ﮐﺮﺩ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php wp_head(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺩﺭ ﺍﺻﻞ ﺑﺎ ﻧﺎﻡ &laquo;ﻗﻼﺏ&raquo; ﻳﺎ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">hook&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺷﻨﺎﺧﺘﻪ ﻣﯽ&zwnj;ﺷﻮﺩ ﻭ ﺑﺎﻳﺪ ﺩﺭ ﺑﻴﻦ ﺩﻭ ﺑﺮﭼﺴﺐ ﺍﭺ ﺗﯽ ﺍﻡ ﺍﻝ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&lt;head&gt;&lt;/head&gt;&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺩﺭﺳﺖ ﻗﺒﻞ ﺍﺯ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&lt;/head&gt;&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﮔﺬﺍﺷﺘﻪ ﺷﻮﺩ. ﺗﻮﺟﻪ ﮐﻨﻴﺪ ﮐﻪ ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺑﺴﻴﺎﺭ ﻣﻬﻢ ﺍﺳﺖ ﭼﺮﺍﮐﻪ ﻗﻼﺏ ﺩﺭﻳﺎﻓﺖ ﮐﻨﻨﺪﻩ ﺍﻟﻤﺎﻥ&zwnj;ﻫﺎﯼ ﺯﻳﺎﺩﯼ ﺩﺭ &laquo;ﺳﺮﺍﻳﻨﺪ&raquo; ﺗﺎﺭﻧﻤﺎ ﺍﺳﺖ ﻭ ﺑﺪﻭﻥ ﺁﻥ ﺳﺮﺍﻳﻨﺪ ﺩﺭﺳﺖ ﺑﺎﺭ ﮔﺬﺍﺭﯼ ﻧﻤﯽ&zwnj;ﺷﻮﺩ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><b><span dir="LTR">Index.php</span></b></span></span><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻓﺎﻳﻞ ﺍﻳﻨﺪﮐﺲ ﺩﺭ ﺍﺻﻞ ﺑﺪﻧﻪ ﺍﺻﻠﯽ ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﺩﺭ ﺗﺎﺭﻧﻤﺎ ﺭﺍ ﺗﺸﮑﻴﻞ ﻣﯽ&zwnj;ﺩﻫﺪ. ﺩﺭ ﺩﺭﺱ ﻗﺒﻞ ﮔﻔﺘﻴﻢ ﮐﻪ ﺍﻳﻦ ﺑﺮﮔﻪ ﺩﻭ ﮐﺎﺭ ﺍﺻﻠﯽ ﺍﻧﺠﺎﻡ ﻣﯽ&zwnj;ﺩﻫﺪ: ﻳﮑﻢ، ﺍﻳﻦ ﺑﺮﮔﻪ ﺍﺻﻠﯽ ﺗﺎﺭﻧﻤﺎ ﺍﺳﺖ ﻭ ﻭﻗﺘﯽ ﮐﺎﺭﺑﺮﯼ ﻧﺸﺎﻧﯽ ﺗﺎﺭﻧﻤﺎﯼ ﺷﻤﺎ ﺭﺍ ﻭﺍﺭﺩ ﻣﯽ&zwnj;ﮐﻨﺪ، ﻭﺍﺭﺩ ﺍﻳﻦ ﺑﺮﮔﻪ ﻣﯽ&zwnj;ﺷﻮﺩ (ﺍﮔﺮ ﺷﻤﺎ ﺑﺮﮔﻪ&zwnj;ﻫﺎﯼ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">home.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻭ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;front-page.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﮐﻪ ﺍﺯ ﻧﻈﺮ ﺍﻭﻟﻮﻳﺖ ﺑﺎﻻ ﺁﻣﺪﻥ ﺑﺎﻻﺗﺮ ﻫﺴﺘﻨﺪ، ﺭﺍ ﻧﺪﺍﺷﺘﻪ ﺑﺎﺷﻴﺪ). ﺩﻭﻡ ﺍﻳﻨﮑﻪ ﺩﺭ ﻧﺒﻮﺩ ﺩﻳﮕﺮ ﺑﺮﮔﻪ&zwnj;ﻫﺎ ﻣﺎﻧﻨﺪ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">page.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻳﺎ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">single.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺳﻴﺴﺘﻢ ﻭﺭﺩﭘﺮﺱ ﺍﻳﻦ ﺑﺮﮔﻪ ﺭﺍ ﺑﺎﺭﮔﺬﺍﺭﯼ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺩﺭ ﺁﻥ ﺻﻮﺭﺕ ﺑﺎﻳﺪ ﺩﺭ ﺑﺮﮔﻪ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">index.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﭼﮕﻮﻧﮕﯽ ﻋﻤﻠﮑﺮﺩ ﺍﻳﻦ ﻓﺎﻳﻞ ﺑﻪ ﺟﺎﯼ ﺩﻳﮕﺮ ﺑﺮﮔﻪ&zwnj;ﻫﺎ ﺭﺍ ﺗﻌﺮﻳﻒ ﮐﻨﻴﻢ. ﻳﻌﻨﯽ ﺑﺎﻳﺪ ﺩﺭ ﺑﺮﮔﻪ ﺍﻳﻨﺪﮐﺲ ﻫﻤﻪ ﮐﺪﻫﺎﻳﯽ ﺭﺍ ﮐﻪ ﺗﺎﺭﻧﻤﺎ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﻨﺪ ﺑﮕﻨﺠﺎﻧﻴﻢ (ﺍﻳﻦ ﻋﻤﻞ ﺑﺎﻋﺚ ﭘﻴﭽﻴﺪﻩ ﺷﺪﻥ ﺑﺮﮔﻪ ﺍﻳﻨﺪﮐﺲ ﺑﻌﻠﺖ ﻭﺟﻮﺩ ﮐﺪﻫﺎﯼ ﺑﺴﻴﺎﺭ ﻣﯽ&zwnj;ﺷﻮﺩ) ﻭ ﺑﺎ ﻳﮏ ﺟﻤﻠﻪ ﺷﺮﻃﯽ ﺗﻌﺮﻳﻒ ﮐﻨﻴﻢ ﮐﻪ ﭼﻄﻮﺭ ﺭﻓﺘﺎﺭ ﮐﻨﺪ. ﺍﻟﺒﺘﻪ ﺑﺎ ﺗﻮﺟﻪ ﺑﻪ ﺍﻳﻨﮑﻪ ﻣﺎ ﻗﺼﺪ ﺳﺎﺧﺘﻦ ﺑﺮﮔﻪ&zwnj;ﻫﺎﯼ ﺍﻓﺰﻭﺩﻧﯽ ﺩﺭ ﺩﺭﻭﺱ ﭘﻴﺶ ﺭﻭ ﺩﺍﺭﻳﻢ ﺍﺯ ﮔﻨﺠﺎﻧﺪﻥ ﻫﻤﻪ ﮐﺪﻫﺎ ﺩﺭ ﺍﻳﻦ ﻓﺎﻳﻞ ﺍﻣﺘﻨﺎ ﻣﯽ&zwnj;ﻭﺭﺯﻳﻢ. ﺍﮔﺮ ﺑﻪ ﻧﻤﻮﻧﻪ ﭘﻮﺳﺘﻪ ﮐﻪ ﻫﻤﺮﺍﻩ ﺩﻭﺭﻩ ﺑﺮﺍﯼ ﺷﻤﺎ ﺍﺭﺳﺎﻝ ﻣﯽ&zwnj;ﺷﻮﺩ ﺩﻗﺖ ﮐﻨﻴﺪ ﻓﺎﻳﻞ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">indexold.php</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺣﺎﻭﯼ ﺗﻤﺎﻡ ﮐﺪﻫﺎ ﺍﺳﺖ. ﺑﺮﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﻓﺎﻳﻞ ﺑﺎﻳﺪ ﺩﻳﮕﺮ ﻓﺎﻳﻠﻬﺎ ﺭﺍ ﭘﺎﮎ ﮐﻨﻴﺪ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">/**</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;* <span dir="RTL">ﻓﺎﻳﻞ ﺍﺻﻠﯽ ﻳﺎﻫﻤﺎﻥ ﺍﻳﻨﺪﮐﺲ</span></span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;*/</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">get_header();</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;div id=&quot;content&quot; role=&quot;main&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp; &lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div id=&quot;post-&lt;?php the_ID(); ?&gt;&quot; &lt;?php post_class(); ?&gt;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;&lt;a href=&quot;&lt;?php the_permalink(); ?&gt;&quot; title=&quot;&lt;?php the_title(); ?&gt;&quot;&gt;&lt;?php the_title();</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ?&gt;&lt;/a&gt;&lt;/h2&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;?php the_post_thumbnail(&#39;thumbnail&#39;); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php the_excerpt(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php endwhile;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp; else:</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;post&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h2&gt;<span dir="RTL">ﺧﻄﺎ</span>&lt;/h2&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<span dir="RTL">ﻣﺸﮑﻠﯽ ﭘﻴﺶ ﺁﻣﺪﻩ</span>&lt;/p&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php endif; ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/div&gt;&lt;!-- #content --&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_sidebar(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_footer(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻗﺒﻞ ﺍﺯ ﻭﺍﺭﺩ ﺷﺪﻥ ﺑﻪ ﺗﻮﺿﻴﺢ ﺩﺳﺘﻮﺭﺍﺕ ﺑﺎﻳﺪ ﻳﮏ ﻣﻔﻬﻮﻡ ﺑﺴﻴﺎﺭ ﻣﻬﻢ ﺭﺍ ﺑﺮﺍﯼ ﺷﻤﺎ ﺷﺮﺡ ﺩﻫﻴﻢ.<br />
+	<b>ﻣﻔﻬﻮﻡ ﺣﻠﻘﻪ ﻳﺎ <span dir="LTR">loop</span></b>: ﺣﻠﻘﻪ ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﺍﺯ ﻧﺎﻣﺶ ﭘﻴﺪﺍﺳﺖ ﻣﺠﻤﻮﻋﻪ&zwnj;ﺍﯼ ﺍﺯ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﺭﺍ ﺍﺯ ﭘﺎﻳﮕﺎﻩ ﺑﺮﺍﯼ ﻧﻤﺎﻳﺶ ﺁﻣﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﺪ. ﻓﺮﺽ ﮐﻨﻴﺪ ﮐﻪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﺪ ﺩﺭ ﺑﺮﮔﻪ ﻧﺨﺴﺖ ﺧﻮﺩ ﭼﻨﺪ ﻧﻮﺷﺘﻪ ﺁﺧﺮ ﺭﺍ ﻧﻤﺎﻳﺶ ﺩﻫﻴﺪ. ﺍﻳﻦ ﮐﺎﺭ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺣﻠﻘﻪ ﺻﻮﺭﺕ ﻣﯽ ﮔﻴﺮﺩ.</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺗﺮﺟﻤﻪ ﺍﻳﻦ ﮐﺪ ﺑﻪ ﺍﻳﻦ ﺷﮑﻞ ﺍﺳﺖ ﮐﻪ ﻣﯽ&zwnj;ﮔﻮﻳﺪ: ﺍﮔﺮ ﻧﻮﺷﺘﻪ ﺍﯼ ﻭﺟﻮﺩ ﺩﺍﺭﺩ، ﺗﺎ ﺯﻣﺎﻧﯽ ﮐﻪ ﻫﻤﻪ ﺁﻧﻬﺎ ﺭﺍ ﺑﮕﻴﺮﯼ (ﺗﺎ ﺯﻣﺎﻧﯽ ﮐﻪ ﻧﻮﺷﺘﻪ ﺍﯼ ﻭﺟﻮﺩ ﺩﺍﺭﺩ)، ﺁﻧﻬﺎ ﺭﺍ ﺍﺯ ﭘﺎﻳﮕﺎﻩ ﺑﮕﻴﺮ. ﺣﺎﻻ ﻧﻮﺷﺘﻪ&zwnj;ﻫﺎ ﺩﺭ ﺍﺧﺘﻴﺎﺭ ﺷﻤﺎ ﺍﺳﺖ ﻭ ﺷﻤﺎ ﺗﻨﻬﺎ ﻧﻴﺎﺯ ﺑﻪ ﭼﺎﭖ ﮐﺮﺩﻥ ﺁﻧﻬﺎ ﺩﺍﺭﻳﺪ. ﮐﻪ ﺑﺎ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎﯼ ﺯﻳﺮ ﺑﻄﻮﺭ ﺧﻼﺻﻪ ﻭ ﮐﺎﻣﻞ ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php the_excerpt(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&lt;?php the_content(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺗﻮﺿﻴﺢ ﮐﺪﻫﺎ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">get_header();</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﮔﻔﺘﻴﻢ ﮐﻪ ﻓﺎﻳﻞ ﺳﺮﺍﻳﻨﺪ ﺩﺭ ﺩﻳﮕﺮ ﺑﺮﮔﻪ&zwnj;ﻫﺎ ﮐﻪ ﻧﻘﺶ ﺑﺪﻧﻪ ﺗﺎﺭﻧﻤﺎ ﺭﺍ ﺑﺎﺯﯼ ﻣﯽ&zwnj;ﮐﻨﻨﺪ، ﻓﺮﺍﺧﻮﺍﻥ ﻣﯽ&zwnj;ﺷﻮﺩ. ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﺩﻗﻴﻘﺎ ﻫﻤﻴﻨﮑﺎﺭ ﺭﺍ ﺑﺮﺍﯼ ﻣﺎ ﻣﯽ&zwnj;ﮐﻨﺪ. ﻳﻌﻨﯽ ﻣﺎ ﻓﺎﻳﻞ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">header.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺭﺍ ﺩﺭ ﻓﺎﻳﻞ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">index.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻣﯽ&zwnj;ﮔﻨﺠﺎﻧﻴﻢ. ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﺩﺭ ﺗﻤﺎﻡ ﺩﻳﮕﺮ ﺑﺮﮔﻪ&zwnj;ﻫﺎﯼ ﺍﺻﻠﯽ ﻳﺎ ﺑﺪﻧﻪ ﺗﺎﺭﻧﻤﺎ ﻣﺎﻧﻨﺪ </span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">single.php, page.php</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"> ﻭ ﻳﺎ... ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php if (have_posts()) : while (have_posts()) : the_post(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺑﺨﺶ ﺣﻠﻘﻪ ﺑﻪ ﻋﻤﻠﮑﺮﺩ ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺍﺷﺎﺭﻩ ﺷﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&lt;div id=&rdquo;post-&lt;?php the_ID(); ?&gt;&rdquo; &lt;?php post_class(); ?&gt;&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﺩﻭ ﺑﺮﭼﺴﺐ، ﮐﺪﻫﺎﯼ ﻻﺯﻡ ﺑﺮﺍﯼ ﺷﻴﻮﻩ ﺩﻫﯽ ﺭﺍ ﺩﺭ ﺑﺮﮔﻪ ﺍﻳﻨﺪﮐﺲ ﻭﺍﺭﺩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ. ﺧﺮﻭﺟﯽ ﺍﻳﻦ ﺩﻭ ﺑﺮﭼﺴﺐ ﻧﺸﺎﻥ ﺩﻫﻨﺪﻩ ﺷﻴﻮﻩ ﻋﻤﻠﮑﺮﺩ ﺁﻧﻬﺎﺳﺖ.</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<pre style="text-align: justify;">
+<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;div id=&quot;post-1&quot; class=&quot;post-1 post type-post status-publish format-standard hentry category--&quot;&gt;</span></span></pre>
+</div>
+<p style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">the_permalink();</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;a href=&quot;&lt;?php the_permalink(); ?&gt;&quot; title=&quot;&lt;?php the_title(); ?&gt;&quot;&gt;&lt;?php the_title(); ?&gt;&lt;/a&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﻧﺸﺎﻧﯽ &laquo;ﭘﻴﻮﻧﺪ&raquo; ﻧﻮﺷﺘﻪ ﺭﺍ ﺑﺮﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ. ﮐﻪ ﺑﺎ ﮐﻤﮏ ﺑﺮﭼﺴﺐ <span dir="LTR">&lt;a&hellip;&gt; </span>&nbsp;ﺩﺭ ﺍﭺ ﺗﯽ ﺍﻡ ﺍﻝ، ﺗﻴﺘﺮ ﻧﻮﺷﺘﻪ ﺭﺍ ﺑﻪ ﺻﻮﺭﺕ ﻳﮏ ﭘﻴﻮﻧﺪ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">the_title();</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺗﻴﺘﺮ ﻧﻮﺷﺘﻪ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php the_post_thumbnail(&#39;thumbnail&#39;); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺑﺮﺍﯼ ﻧﻤﺎﻳﺶ ﻋﮑﺲ ﺍﺭﺳﺎﻝ ﻭ ﭘﻴﻮﺳﺖ ﺷﺪﻩ ﺑﻪ ﻧﻮﺷﺘﻪ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ. ﺩﺭ ﺩﺭﺱ&zwnj;ﻫﺎﯼ ﺁﻳﻨﺪﻩ (ﺩﺭﺱ ﻣﺮﺑﻮﻁ ﺑﻪ ﻓﺎﻳﻞ ﺗﻮﺍﺑﻊ) ﺩﺭ ﻣﻮﺭﺩ ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺑﻴﺸﺘﺮ ﺣﺮﻑ ﺧﻮﺍﻫﻴﻢ ﺯﺩ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&lt;?php the_excerpt(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&lt;?php the_content(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﻭ ﺑﺮﭼﺴﺐ ﺑﺎﻻ ﻣﺤﺘﻮﺍ ﻳﺎ ﺑﺪﻧﻪ ﻧﻮﺷﺘﻪ ﺭﺍ ﺑﺮﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﻨﺪ. ﺑﺮﭼﺴﺐ ﺍﺑﺘﺪﺍﻳﯽ ﺁﻥ ﺭﺍ ﺑﺼﻮﺭﺕ ﻣﺨﺘﺼﺮ ﺷﺪﻩ &ndash;ﺑﺎ ﺍﻧﺘﺨﺎﺏ ﺗﻌﺪﺍﺩ ﻣﺸﺨﺼﯽ ﺍﺯ ﻧﻮﺷﺘﻪ- ﻭ ﺩﻭﻣﯽ ﻫﻤﻪ ﻧﻮﺷﺘﻪ ﺭﺍ&nbsp; ﺑﻄﻮﺭ ﮐﺎﻣﻞ ﻧﺸﺎﻥ ﻣﯽ&zwnj;ﺩﻫﺪ. ﻣﻌﻤﻮﻻ ﺍﺯ ﺑﺮﭼﺴﺐ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">the_excerpt()&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺑﺮﺍﯼ ﻧﻤﺎﻳﺶ ﻣﺨﺘﺼﺮﯼ ﺍﺯ ﻧﻮﺷﺘﻪ ﻣﺜﻠﻦ &nbsp;ﺩﺭ ﺑﺮﮔﻪ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">index.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻭ ﺍﺯ ﺩﻳﮕﺮﯼ ﺑﺮﺍﯼ ﻧﻤﺎﻳﺶ ﮐﺎﻣﻞ ﻧﻮﺷﺘﻪ ﺩﺭ ﺑﺮﮔﻪ&zwnj;ﻫﺎﻳﯽ ﻣﺎﻧﻨﺪ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">single.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<b><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻧﮑﺘﻪ:</span></span></b><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"> ﺗﻮﺟﻪ ﮐﻨﻴﺪ ﮐﻪ ﺣﻠﻘﻪ ﺑﺎﻻ ﺑﻪ ﻫﻤﺮﺍﻩ ﻳﮏ ﺩﺳﺘﻮﺭ ﺷﺮﻃﯽ ﻧﻮﺷﺘﻪ ﺷﺪﻩ ﺍﺳﺖ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">if (have_posts())<span dir="RTL"> .</span></span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="RTL">..</span></span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">else:</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;div class=&quot;post&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp; &lt;h2&gt;<span dir="RTL">ﺧﻄﺎ</span>&lt;/h2&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<span dir="RTL">ﻣﺸﮑﻠﯽ ﭘﻴﺶ ﺁﻣﺪﻩ</span>&lt;/p&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php endif; ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺍﺻﻞ ﺍﻳﻦ ﺷﺮﻃﯽ ﺍﻳﻦ ﻃﻮﺭ ﻋﻤﻞ ﻣﯽ&zwnj;ﮐﻨﺪ ﮐﻪ ﺩﺭ ﺻﻮﺭﺕ ﻭﺟﻮﺩ ﺩﺍﺷﺘﻦ ﻧﻮﺷﺘﻪ ﺁﻥ&zwnj;ﻫﺎ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ ﻭ ﺩﺭ ﺻﻮﺭﺕ ﻋﺪﻡ ﻭﺟﻮﺩ ﻧﻮﺷﺘﻪ ﺍﯼ، ﻳﮏ ﭘﻴﻐﺎﻡ ﺧﻄﺎ ﺑﻪ ﮐﺎﺭﺑﺮ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_sidebar(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_footer(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺩﻭ ﺩﺳﺘﻮﺭ ﻫﻤﺎﻧﻨﺪ ﺩﺳﺘﻮﺭ <span dir="LTR">get_header()</span>، ﺩﺳﺘﻮﺭﻫﺎﯼ ﻭﺍﺭﺩ ﮐﺮﺩﻥ ﻓﺎﻳﻞ&zwnj;ﻫﺎﯼ ﺩﻳﮕﺮ ﺍﺳﺖ. ﺩﺳﺘﻮﺭ ﺍﺑﺘﺪﺍﻳﯽ &laquo;ﺳﺘﻮﻥ ﮐﻨﺎﺭﯼ&raquo; ﺭﺍ ﮐﻪ ﺑﺼﻮﺭﺕ ﭘﻴﺶ ﻓﺮﺽ ﺩﺭ ﻭﺭﺩﭘﺮﺱ ﻭﺟﻮﺩ ﺩﺍﺭﺩ، ﻭﺍﺭﺩ ﻣﯽ&zwnj;ﮐﻨﺪ ﻭ ﺩﺳﺘﻮﺭ ﺩﻭﻡ ﭘﺎ ﻧﻮﺷﺖ ﻳﺎ ﭘﺎﻳﻴﻦ ﺻﻔﺤﻪ ﺭﺍ ﻭﺍﺭﺩ ﻣﯽ&zwnj;ﮐﻨﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><b>ﻧﮑﺘﻪ:</b> ﺳﻪ ﺩﺳﺘﻮﺭ ﺯﻳﺮ ﮐﻪ ﺩﺭ ﻓﺎﻳﻞ ﺍﻧﺪﮐﺲ ﺁﻭﺭﺩﻩ ﺷﺪﻧﺪ ﺩﺭ ﻫﻤﻪ ﺑﺮﮔﻪ&zwnj;ﻫﺎﻳﯽ (<span dir="LTR">single.ph, page.php, category.php</span>) ﮐﻪ ﻧﻘﺶ ﺑﺪﻧﻪ ﺗﺎﺭﻧﻤﺎ ﺭﺍ ﺑﺎﺯﯼ ﻣﯽ&zwnj;ﮐﻨﻨﺪ ﺍﻓﺰﻭﺩﻩ ﺧﻮﺍﻫﺪ ﺷﺪ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_header(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_sidebar(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_footer(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><b><span dir="LTR">footer.php</span></b></span></span><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻫﻤﺎﻧﻨﺪ ﻓﺎﻳﻞ ﺳﺮﺍﻳﻨﺪ، ﻓﺎﻳﻞ &laquo;ﭘﺎﻧﻮﺷﺖ&raquo; ﺩﺭ ﺗﻤﺎﻡ ﻓﺎﻳﻞ&zwnj;ﻫﺎﯼ ﺍﺻﻠﯽ ﻳﺎ ﺍﻟﮕﻮﻫﺎ ﻭﺍﺭﺩ ﻣﯽ&zwnj;ﺷﻮﺩ. ﺍﻳﻦ ﻋﻤﻞ ﻫﻤﺎﻥ ﻃﻮﺭ ﮐﻪ ﺩﺭ ﻗﺴﻤﺖ ﻗﺒﻞ ﺗﻮﺿﻴﺢ ﺩﺍﺩﻩ ﺷﺪ، ﺗﻮﺳﻂ ﻳﮏ ﺑﺮﭼﺴﺐ ﻭﺍﺭﺩ ﮐﺮﺩﻥ ﺻﻮﺭﺕ ﻣﯽ&zwnj;ﮔﻴﺮﺩ. ﻓﺎﻳﻞ ﭘﺎﻧﻮﺷﺖ ﺩﺭ ﭘﺎﻳﻴﻦ ﺻﻔﺤﻪ ﻫﻤﻪ ﺑﺮﮔﻪ&zwnj;ﻫﺎﻳﯽ ﮐﻪ ﺑﺎﺯﺩﻳﺪ ﮐﻨﻨﺪﻩ ﻭﺍﺭﺩ ﺁﻥ ﻣﯽ&zwnj;ﺷﻮﺩ ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/div&gt;&lt;!-- #main --&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;footer id=&quot;footer&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp; &lt;?php if (has_nav_menu(&#39;secondary&#39;)) : ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;nav role=&quot;navigation&quot; class=&quot;footer-navigation&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php wp_nav_menu(array(&#39;theme_location&#39; =&gt; &#39;secondary&#39;)); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/nav&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp; &lt;?php endif; ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;feed&quot;&gt;&lt;a href=&quot;&lt;?php bloginfo(&#39;rss2_url&#39;); ?&gt;&quot; title=&quot;RSS&quot;&gt;<span dir="RTL">ﺧﻮﺭﺍﮎ</span>&lt;/a&gt;&lt;/div&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp; &lt;div class=&quot;site-info&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php echo date(&#39;Y&#39;); ?&gt; &lt;?php bloginfo(&#39;name&#39;); ?&gt; &lt;span class=&quot;sep&quot;&gt;|&lt;/span&gt; &lt;?php _e(&#39;<span dir="RTL">ﺳﺎﺧﺘﻪ ﺷﺪﻩ ﺗﻮﺳﻂ ﮔﺮﻭﻩ ﺩﺭﺳﻨﺎﻣﻪ</span>&#39;); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp; &lt;/div&gt;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/footer&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/div&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php wp_footer(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/body&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/html&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><b>ﻧﮑﺘﻪ:</b>&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻟﻄﻔﺎ ﺑﻪ ﻧﺤﻮﻩ ﭼﻴﺪﻣﺎﻥ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎﯼ ﺍﭺ ﺗﯽ ﺍﻡ ﺍﻝ ﺩﻗﺖ ﻓﺮﻣﺎﻳﻴﺪ. ﻣﺜﻠﻦ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎﯼ&nbsp;</span>html, body&nbsp;<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻭ ... ﮐﻪ ﺑﺮﭼﺴﺐ ﺷﺮﻭﻉ ﻳﺎ ﺑﺎﺯ ﺁﻥ ﺩﺭ ﻓﺎﻳﻞ ﺳﺮﺍﻳﻨﺪ ﻗﺮﺍﺭ ﺩﺍﺩﻩ ﺷﺪﻩ ﺍﺳﺖ، ﺩﺭ ﺍﻳﻦ ﻓﺎﻳﻞ ﺑﺮﭼﺴﺐ ﺑﺴﺘﻪ ﺁﻥ ﮔﺬﺍﺷﺘﻪ ﺷﺪﻩ ﺍﺳﺖ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺗﻮﺿﻴﺢ ﮐﺪ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php if (has_nav_menu(&#39;secondary&#39;)) : ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php wp_nav_menu(array(&#39;theme_location&#39; =&gt; &#39;secondary&#39;)); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&lt;?php endif; ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﻣﺠﻤﻮﻋﻪ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎ ﺭﺍ ﺩﺭ ﻓﺎﻳﻞ ﺳﺮﺍﻳﻨﺪ ﻫﻢ ﺩﺍﺷﺘﻴﻢ. ﻣﻨﺘﻬﺎ ﺩﺭ ﺍﻳﻦ ﻗﺴﻤﺖ ﺩﺭ ﺻﻮﺭﺕ ﻭﺟﻮﺩ &laquo;ﻓﻬﺮﺳﺖ&raquo; ﺑﺮﺍﯼ ﭘﺎﻧﻮﺷﺖ، ﺁﻥ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﻴﻢ. ﺩﺭ ﺍﺻﻞ ﻣﺎ ﺩﻭ &laquo;ﻓﻬﺮﺳﺖ&raquo; ﺑﺮﺍﯼ ﺍﻳﻦ ﺗﺎﺭﻧﻤﺎ ﻣﯽ&zwnj;ﺳﺎﺯﻳﻢ، ﻳﮑﯽ ﺑﺮﺍﯼ &laquo;ﺳﺮﺍﻳﻨﺪ&raquo; ﻭ ﺩﻳﮕﺮﯼ ﺑﺮﺍﯼ &laquo;ﭘﺎﻧﻮﺷﺖ&raquo; ﮐﻪ ﺑﺎ ﻧﺎﻡ&zwnj;ﻫﺎﯼ<span dir="LTR">&nbsp;primary </span>ﻭ <span dir="LTR">&nbsp;secondary</span>ﺁﻧﻬﺎ ﺭﺍ ﻧﺎﻡ&zwnj;ﮔﺬﺍﺭﯼ ﮐﺮﺩﻩ&zwnj;ﺍﻳﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php echo date(&#39;Y&#39;); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺑﺎ ﺗﻮﺟﻪ ﻋﻼﻣﺖ ﺩﺍﺧﻞ ﭘﺮﺍﻧﺘﺰ (ﺑﻪ ﻣﻨﻈﻮﺭ ﺍﻧﺘﺨﺎﺏ ﻧﻮﻉ ﺗﺎﺭﻳﺦ ﺑﺮﺍﯼ ﻧﻤﺎﻳﺶ) ﺗﺎﺭﻳﺦ ﺭﺍ ﺑﺮﺍﻳﻤﺎﻥ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php _e(&#39;<span dir="RTL">ﺳﺎﺧﺘﻪ ﺷﺪﻩ ﺗﻮﺳﻂ ﮔﺮﻭﻩ ﺩﺭﺳﻨﺎﻣﻪ</span>&#39;); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺳﺘﻮﺭ ﺑﺎﻻ ﺑﺮﺍﯼ ﭼﺎﭖ ﮐﺮﺩﻥ ﻳﮏ ﻣﺘﻦ ﺩﺭ ﺑﺮﮔﻪ ﻣﻮﺭﺩ ﺍﺳﺘﻔﺎﺩﻩ ﻗﺮﺍﺭ ﻣﯽ&zwnj;ﮔﻴﺮﺩ. ﺷﻤﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﻫﺮ ﻣﻄﻠﺒﯽ ﮐﻪ ﺧﻮﺍﺳﺘﻴﺪ ﺩﺭ ﺩﺍﺧﻞ ﭘﺮﺍﻧﺘﺰ ﻭ ﺑﻴﻦ ﺩﻭ ﻋﻼﻣﺖ <span dir="LTR">&lsquo; </span>ﻭ<span dir="LTR">&lsquo; </span>&nbsp;ﻗﺮﺍﺭ ﺩﻫﻴﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<b><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﺮﻭﺭ ﺩﺭﺱ:&nbsp;</span></span></b><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺩﺭ ﺍﻳﻦ ﺩﺭﺱ ﻣﺎ ﺳﻪ ﻓﺎﻳﻞ ﺩﻳﮕﺮ ﺭﺍ ﺑﺮﺍﯼ ﺗﺎﺭﻧﻤﺎﯼ ﺧﻮﺩ ﺳﺎﺧﺘﻴﻢ. ﺣﺎﻝ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﻧﮕﺎﻫﯽ ﺑﻪ ﺗﺎﺭﻧﻤﺎ ﺑﺼﻮﺭﺕ ﺯﻧﺪﻩ ﺑﻴﺎﻧﺪﺍﺯﻳﺪ. ﺩﺭ ﺻﻮﺭﺕ ﻫﺮ ﮔﻮﻧﻪ ﻣﺸﮑﻞ ﺍﺣﺘﻤﺎﻝ ﺍﻳﻦ ﻣﯽ&zwnj;ﺭﻭﺩ ﮐﻪ ﮐﺪﯼ ﺭﺍ ﺍﺯ ﻗﻠﻢ ﺍﻧﺪﺍﺧﺘﻪ ﺑﺎﺷﻴﺪ، ﺑﻪ ﺑﺮﮔﻪ ﺑﺮﮔﺮﺩﻳﺪ ﻭ ﻣﺸﮑﻞ ﺭﺍ ﺑﻴﺎﺑﻴﺪ. ﻳﮏ ﻗﺴﻤﺖ ﻣﻬﻢ ﺩﺭ ﺳﺎﺧﺘﻦ ﻫﺮ ﮔﻮﻧﻪ ﭘﻮﺳﺘﻪ ﻳﺎ ﺗﺎﺭﻧﻤﺎ &laquo;ﺍﺷﮑﺎﻝ ﻳﺎﺑﯽ&raquo; ﺍﺳﺖ ﮐﻪ ﻧﻴﺎﺯ ﺑﻪ ﺩﻗﺖ ﺑﻴﺸﺘﺮ ﺩﺍﺭﺩ.</span></p></body></html>

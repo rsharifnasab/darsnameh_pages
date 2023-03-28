@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'><meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<head>
+<title>ﺩﺭﺱ ﻫﺸﺘﻢ- ﺳﺎﺧﺖ comments.php ﻭ tags.php ﻭ search.php</title>
+
+			<link type="text/css" rel="stylesheet" href="style.css" />
+      <style>body {text-align: right; direction: rtl; padding-left: 5pt; padding-right: 5pt;} ul {direction: rtl;} ol { direction: rtl;}</style>
+</head>
+<body>
+<p class='headPage'>ﺩﺭﺱ ﻫﺸﺘﻢ- ﺳﺎﺧﺖ comments.php ﻭ tags.php ﻭ search.php</p><p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺍﻳﻦ ﺩﺭﺱ ﻣﺎ ﺑﺎ ﻓﺎﻳﻞ (ﺍﻟﮕﻮ)&zwnj;ﻫﺎﯼ ﺩﻳﺪﮔﺎﻩ، ﺑﺮﭼﺴﺐ ﻭ ﺟﺴﺘﺠﻮ ﮐﺎﺭ ﺧﻮﺍﻫﻴﻢ ﮐﺮﺩ. ﻫﺮ ﮐﺪﺍﻡ ﺍﺯ ﺍﻳﻦ ﺍﻟﮕﻮ&zwnj;ﻫﺎ ﻗﺎﺑﻠﻴﺖ ﺗﺎﺯﻩ ﺍﯼ ﺭﺍ ﺑﻪ ﺳﻴﺴﺘﻢ&nbsp; ﻣﺎ ﻣﯽ&zwnj;ﺍﻓﺰﺍﻳﻨﺪ ﮐﻪ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺁﻧﻬﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﻢ ﺗﺎﺭﻧﻤﺎﻳﯽ ﺑﻬﺘﺮ ﻭ ﻫﺮ ﭼﻪ ﺑﻴﺸﺘﺮ ﻣﻄﺎﺑﻖ ﻣﻴﻞ ﻭ ﺳﻠﻴﻘﻪ ﺧﻮﺩ ﺩﺍﺷﺘﻪ ﺑﺎﺷﻴﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻓﺎﻳﻞ </strong></span></span><strong style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><span dir="LTR">comments.php</span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻓﺎﻳﻞ ﺩﻳﺪﮔﺎﻩ&zwnj;ﻫﺎ ﺍﺯ ﺟﻤﻠﻪ ﺍﻟﮕﻮﻫﺎﻳﯽ ﺍﺳﺖ ﮐﻪ ﺑﻄﻮﺭ ﭘﻴﺶ ﻓﺮﺽ ﺩﺭ ﻭﺭﺩﭘﺮﺱ ﻣﻮﺟﻮﺩ ﻫﺴﺘﻨﺪ. ﻫﺪﻑ ﺍﺯ ﺳﺎﺧﺖ ﻓﺎﻳﻠﯽ ﺗﺎﺯﻩ، ﺍﻳﺠﺎﺩ ﻣﻮﻗﻌﻴﺘﯽ ﺑﺮﺍﯼ ﺷﺨﺼﯽ ﺳﺎﺯﯼ ﻓﺎﻳﻞ ﻣﺮﺑﻮﻁ ﺑﻪ ﺁﻥ ﺍﺳﺖ. ﻣﻨﻈﻮﺭ ﺍﺯ ﺷﺨﺼﯽ ﺳﺎﺯﯼ ﺩﺭ ﺍﻳﻦ ﺩﺭﺱ، ﻧﻤﺎﻳﺶ ﺩﻳﺪﮔﺎﻩ&zwnj;ﻫﺎ ﻭ ﮐﺎﺩﺭ (ﻓﺮﻡ) ﻧﻮﺷﺘﻦ ﺩﻳﺪﮔﺎﻩ ﺑﻄﻮﺭ ﺩﻟﺨﻮﺍﻩ&zwnj;ﺳﺖ. ﻓﺮﺽ ﮐﻨﻴﺪ ﮐﻪ ﺷﻤﺎ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﺪ ﺑﺨﺶ ﺩﻳﺪﮔﺎﻩ ﺧﻮﺩ ﺭﺍ ﻃﻮﺭﯼ ﺷﻴﻮﻩ ﺩﻫﯽ ﮐﻨﻴﺪ ﮐﻪ ﺩﻳﺪﮔﺎﻩ&zwnj;ﻫﺎ ﺑﻄﻮﺭ ﻳﮑﯽ ﺩﺭ ﻣﻴﺎﻥ ﺑﻪ ﺭﻧﮓ&zwnj;ﻫﺎﯼ ﺁﺑﯽ ﻭ ﺳﺒﺰ ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﺷﻮﻧﺪ ﻭ ﻳﺎ ﺯﻣﺎﻧﯽ ﮐﻪ ﺑﺨﻮﺍﻫﻴﺪ ﻧﻮﺷﺘﻪ&zwnj;ﺍﯼ ﮐﻪ ﺩﺭ ﭘﺎﺳﺦ ﻳﮏ ﺩﻳﺪﮔﺎﻩ ﺩﻳﮕﺮ ﺍﺳﺖ ﺑﺎ ﺭﻧﮕﯽ ﻣﺘﻤﺎﻳﺰ ﺍﺯ ﺩﻳﮕﺮ ﺩﻳﺪﮔﺎﻩ&zwnj;ﻫﺎ ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﺷﻮﺩ. ﺍﻧﺠﺎﻡ ﺍﻳﻦ ﭼﻨﻴﻦ ﮐﺎﺭﯼ ﺩﺭ ﺣﺎﻟﺖ ﭘﻴﺶ ﻓﺮﺽ ﻣﻤﮑﻦ ﻧﻴﺴﺖ، ﺑﺮﺍﯼ ﺍﻳﻨﮑﻪ ﺑﺘﻮﺍﻧﻴﻢ ﻗﺎﺑﻠﻴﺖ ﺗﻐﻴﻴﺮ ﻭ ﺷﺨﺼﯽ ﺳﺎﺯﯼ ﺭﺍ ﺑﻪ ﺍﻳﻦ ﺑﺨﺶ ﺑﻴﺎﻓﺰﺍﻳﻴﻢ ﺍﺑﺘﺪﺍ ﺑﺎﻳﺪ ﻳﮏ ﺍﻟﮕﻮ ﺍﺯ ﺁﻥ ﺳﺎﺧﺘﻪ ﻭ ﺑﻌﺪ ﻣﻄﺎﺑﻖ ﺳﻠﻴﻘﻪ ﺧﻮﺩ ﺁﻥ ﺭﺍ ﺗﻐﻴﻴﺮ ﺩﻫﻴﻢ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻓﺎﻳﻞ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">comments.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺭﺍ ﺩﺭ ﮐﻨﺎﺭ ﺩﻳﮕﺮ ﻓﺎﻳﻞ&zwnj;ﻫﺎ ﺩﺍﺧﻞ ﭘﻮﺷﻪ ﺍﺻﻠﯽ ﭘﻮﺳﺘﻪ ﺧﻮﺩ ﺍﻳﺠﺎﺩ ﮐﺮﺩﻩ ﻭ ﮐﺪﻫﺎﯼ ﺯﻳﺮ ﺭﺍ ﺩﺭ ﺁﻥ ﻗﺮﺍﺭ ﺩﻫﻴﺪ:</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;div id=&quot;content&quot; &gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php if ( have_comments() ) : ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;h3&gt;&lt;?php comments_number(__( &#39;<span dir="RTL">ﺩﻳﺪﮔﺎﻩ 1</span> &#39;, &#39;darsnameh&#39; ), __( &#39;% <span dir="RTL">ﺩﻳﺪﮔﺎﻩ</span>&#39;, &#39;darsnameh&#39; ) ); ?&gt;&lt;/h3&gt;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;div&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php wp_list_comments( array(&#39;avatar_size&#39; =&gt; 35) )&nbsp; ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/div&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php if ( ! comments_open() ) : ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;p&gt;&lt;?php _e( &#39;<span dir="RTL">ﺩﻳﺪﮔﺎﻩ ﺑﺴﺘﻪ ﺷﺪ</span>&#39;, &#39;darsnameh&#39; ) ?&gt;&lt;/p&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php endif; ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php endif; ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;br /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php comment_form(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/div&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺷﺮﺡ ﮐﺪﻫﺎ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php if ( have_comments() ) : ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﺠﻤﻮﻋﻪ ﮐﺪﻫﺎﯼ ﺍﻳﻦ ﻓﺎﻳﻞ ﺑﺎ ﻧﻮﺷﺘﻦ ﻳﮏ ﺩﺳﺘﻮﺭ ﺷﺮﻃﯽ ﺁﻏﺎﺯ ﻣﯽ&zwnj;ﺷﻮﺩ. ﺩﺭ ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﮔﻔﺘﻪ ﻣﯽ&zwnj;ﺷﻮﺩ ﮐﻪ ﺍﮔﺮ ﺩﻳﺪﮔﺎﻫﯽ ﻭﺟﻮﺩ ﺩﺍﺭﺩ ﺁﻧﻬﺎ ﺭﺍ ﺩﺭ ﺍﺧﺘﻴﺎﺭ ﮔﻴﺮﺩ.</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php comments_number(__( &#39;<span dir="RTL">ﺩﻳﺪﮔﺎﻩ 1</span> &#39;, &#39;darsnameh&#39; ) , __( &#39;% <span dir="RTL">ﺩﻳﺪﮔﺎﻩ</span>&#39;, &#39;darsnameh&#39; ) ); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺯﻣﺎﻧﯽ ﮐﻪ ﺩﻳﺪﮔﺎﻫﯽ ﻭﺟﻮﺩ ﺩﺍﺭﺩ ﺑﺎ ﮐﻤﮏ ﺩﺳﺘﻮﺭ ﺑﺎﻻ ﺗﻌﺪﺍﺩ ﺁﻧﻬﺎ ﺭﺍ ﮔﺮﻓﺘﻪ ﻭ ﺑﺮ ﺍﺳﺎﺱ ﺗﻌﺪﺍﺩ ﻋﺒﺎﺭﺕ ﻣﻨﺎﺳﺒﯽ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﻴﻢ. ﺍﮔﺮ ﺗﻨﻬﺎ ﻳﮏ ﺩﻳﺪﮔﺎﻩ ﻧﻮﺷﺘﻪ ﺷﺪﻩ ﺑﺎﺷﺪ ﻋﺒﺎﺭﺕ &laquo;۱ ﺩﻳﺪﮔﺎﻩ&raquo; ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ ﻭ ﺩﺭ ﺻﻮﺭﺕ ﻭﺟﻮﺩ ﺑﻴﺸﺘﺮ ﺍﺯ ﻳﮏ ﺩﻳﺪﮔﺎﻩ، ﺗﻌﺪﺍﺩ ﺁﻧﻬﺎ ﺩﺭ ﮐﻨﺎﺭ ﮐﻠﻤﻪ &laquo;ﺩﻳﺪﮔﺎﻩ&raquo; ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﺧﻮﺍﻫﺪ ﺷﺪ.</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php wp_list_comments( array(&#39;avatar_size&#39; =&gt; 35) )&nbsp; ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺣﺎﻝ ﻧﻮﺑﺖ ﺑﻪ ﻧﻤﺎﻳﺶ ﺧﻮﺩ ﺩﻳﺪﮔﺎﻩ&zwnj;ﻫﺎ ﻣﯽ&zwnj;ﺭﺳﺪ. ﺩﺳﺘﻮﺭ ﺑﺎﻻ ﺁﻧﻬﺎ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ. ﭘﺎﺭﺍﻣﺘﺮ ﻭﺭﻭﺩﯼ ﺩﺭ ﺍﻳﻦ ﺑﺮﭼﺴﺐ ﺗﺼﻮﻳﺮ ﻧﻮﻳﺴﻨﺪﻩ ﺩﻳﺪﮔﺎﻩ ﻭ ﺍﻧﺪﺍﺯﻩ ﻋﮑﺲ ﺍﻭ ﺭﺍ &ndash;ﺩﺭ ﺻﻮﺭﺕ ﻭﺟﻮﺩ- ﻣﺸﺨﺺ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺍﻳﻦ ﻗﺎﺑﻠﻴﺖ ﺩﺭ ﺻﻮﺭﺗﯽ ﮐﻪ ﻧﻮﻳﺴﻨﺪﻩ ﺩﻳﺪﮔﺎﻩ ﺩﺍﺭﺍﯼ ﻋﮑﺲ ﺩﺭ ﺳﻴﺴﺘﻢ ﺑﺎﺷﺪ ﻓﻌﺎﻝ ﺍﺳﺖ ﻭ ﻋﮑﺲ ﻧﻮﻳﺴﻨﺪﻩ ﺭﺍ ﺩﺭ ﮐﻨﺎﺭ ﺩﻳﺪﮔﺎﻩ ﭼﺎﭖ ﻣﯽ&zwnj;ﮐﻨﺪ.</span></span><br />
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php if ( ! comments_open() ) : ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;p&gt;&lt;?php _e( &#39;<span dir="RTL">ﺩﻳﺪﮔﺎﻩ ﺑﺴﺘﻪ ﺷﺪ</span>&#39;, &#39;darsnameh&#39; ) ?&gt;&lt;/p&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺳﺘﻮﺭ ﺑﺎﻻ ﻣﯽ&zwnj;ﮔﻮﻳﺪ ﮐﻪ ﺍﮔﺮ ﺩﻳﺪﮔﺎﻩ ﺑﺮﺍﯼ ﻧﻮﺷﺘﻦ ﺑﺴﺘﻪ ﺑﻮﺩ (ﺍﻧﺘﺨﺎﺏ ﺑﺴﺘﻦ ﺳﻴﺴﺘﻢ ﺩﻳﺪﮔﺎﻩ ﮔﺬﺍﺭﯼ ﺩﺭ ﺑﺨﺶ ﺗﻨﻈﻴﻤﺎﺕ ﻣﺪﻳﺮﻳﺖ ﺍﺳﺖ)، ﺍﻳﻦ ﻗﺴﻤﺖ ﺭﺍ ﻏﻴﺮ ﻓﻌﺎﻝ ﻭ ﺑﺠﺎﯼ ﺁﻥ ﻋﺒﺎﺭﺕ &laquo;ﺩﻳﺪﮔﺎﻩ ﺑﺴﺘﻪ ﺷﺪ&raquo; ﺭﺍ ﻧﻤﺎﻳﺶ ﺑﺪﻩ.</span></span><br />
+	&nbsp;</p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php comment_form(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﻌﺪ ﺍﺯ ﭼﺎﭖ ﺩﻳﺪﮔﺎﻩ&zwnj;ﻫﺎ &ndash;ﺩﺭ ﺻﻮﺭﺕ ﻭﺟﻮﺩ ﺩﻳﺪﮔﺎﻫﯽ- ﻓﺮﻡ ﻧﻮﺷﺘﻦ ﺩﻳﺪﮔﺎﻩ ﺭﺍ ﺩﺭ ﺯﻳﺮ ﺁﻧﻬﺎ ﭼﺎﭖ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺍﻳﻦ ﻓﺮﻡ ﺩﺭ ﺣﻘﻴﻘﺖ ﮐﺎﺩﺭﯼ ﺍﺳﺖ ﮐﻪ ﮐﺎﺭﺑﺮﺍﻥ ﻳﺎ ﺑﺎﺯﺩﻳﺪﮐﻨﻨﺪﮔﺎﻥ ﺩﺭ ﺁﻥ ﺩﻳﺪﮔﺎﻩ ﺧﻮﺩ ﺭﺍ ﻭﺍﺭﺩ ﻣﯽ&zwnj;ﮐﻨﻨﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﻪ ﺍﻳﻦ ﻃﺮﻳﻖ ﻓﺎﻳﻞ ﺩﻳﺪﮔﺎﻩ ﮐﻪ ﻣﺎ ﺳﺎﺧﺘﻴﻢ ﺑﺎ ﺗﻮﺟﻪ ﺑﻪ ﺑﺎﻻﺗﺮ ﺑﻮﺩﻥ ﺍﻭﻟﻮﻳﺖ ﺁﻥ -ﻧﺴﺒﺖ ﺑﻪ ﻓﺎﻳﻞ ﭘﻴﺶ ﻓﺮﺽ- ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ ﻭ ﻣﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﻢ ﺁﻥ ﺭﺍ ﺑﻪ ﻫﺮ ﻃﺮﻳﻘﯽ ﮐﻪ ﺩﻭﺳﺖ ﺩﺍﺷﺘﻴﻢ ﺷﺨﺼﯽ ﺳﺎﺯﯼ ﮐﻨﻴﻢ. ﺑﺮﺍﯼ ﺍﻳﻦ ﮐﺎﺭ ﮐﺎﻓﻴﺴﺖ ﺑﻪ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎﯼ &laquo;ﺍﭺ ﺗﯽ ﺍﻡ ﺍﻝ&raquo; ﻫﺮ ﻗﺴﻤﺖ ﺩﻳﺪﮔﺎﻩ ﺗﻮﺟﻪ ﮐﻨﻴﺪ ﻭ ﺑﻌﺪ ﻣﻄﺎﺑﻖ ﺁﻥ ﺷﻴﻮﻩ ﺩﻫﯽ ﺩﻟﺨﻮﺍﻩ ﺧﻮﺩ ﺭﺍ ﺩﺭ ﻓﺎﻳﻞ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">style.css&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﺿﺎﻓﻪ ﮐﻨﻴﺪ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><strong>ﻓﺎﻳﻞ </strong></span><font size="2"><font face="tahoma, geneva, sans-serif"><b>tag.php</b></font></font><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻟﮕﻮﯼ &laquo;ﺑﺮﭼﺴﺐ&raquo;&zwnj;ﻫﺎ ﺑﺮﺍﯼ ﻧﻤﺎﻳﺶ ﻧﻮﺷﺘﻪ&zwnj;ﻫﺎ ﺑﺮ ﺍﺳﺎﺱ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎﯼ ﺩﺍﺩﻩ ﺷﺪﻩ ﺑﻪ ﻣﻄﻠﺐ&zwnj;ﻫﺎ ﺑﮑﺎﺭﮔﺮﻓﺘﻪ ﻣﯽ&zwnj;ﺷﻮﺩ. ﺍﻳﻦ ﺍﻟﮕﻮ ﻫﻢ ﻣﺎﻧﻨﺪ ﺍﻟﮕﻮﯼ &laquo;ﺩﻳﺪﮔﺎﻩ&zwnj;ﻫﺎ&raquo; ﺑﻄﻮﺭ ﭘﻴﺶ ﻓﺮﺽ ﻣﻮﺟﻮﺩ ﺍﺳﺖ ﻭ ﻫﺪﻑ ﺍﺯ ﺳﺎﺧﺖ ﺁﻥ ﻫﻤﺎﻧﺎ ﺩﺍﺷﺘﻦ ﻗﺎﺑﻠﻴﺖ ﺷﺨﺼﯽ&zwnj;ﺳﺎﺯﯼ&zwnj;ﺳﺖ. ﺩﺭ ﺩﺭﺱ ﻗﺒﻠﯽ ﻭﻗﺘﯽ ﺩﺭ ﻣﻮﺭﺩ ﺩﺳﺘﻪ ﺑﻨﺪﯼ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">(</span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">category</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">)&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺣﺮﻑ ﻣﯽ&zwnj;ﺯﺩﻳﻢ، ﮔﻔﺘﻴﻢ ﮐﻪ ﺍﺯ ﺁﻥ ﺑﺮﺍﯼ ﻣﺮﺗﺐ ﺳﺎﺯﯼ ﻧﻮﺷﺘﻪ&zwnj;ﻫﺎ ﺑﺮ ﺍﺳﺎﺱ ﺩﺳﺘﻪ ﻣﺮﺑﻮﻁ ﺑﻪ ﻣﻄﻠﺐ ﺑﻬﺮﻩ ﻣﯽ&zwnj;ﮔﻴﺮﻳﻢ. ﻳﮏ ﺭﺍﻩ ﺩﻳﮕﺮ ﺩﺳﺘﻪ ﺑﻨﺪﯼ ﻧﻮﺷﺘﻪ&zwnj;ﻫﺎ، ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺑﺮﭼﺴﺐ ﺍﺳﺖ. ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎ ﺭﺍ ﺩﺭ ﺯﻣﺎﻥ ﻧﻮﺷﺘﻦ ﻣﻄﻠﺐ ﺩﺭ ﮐﺎﺩﺭ ﮐﻨﺎﺭﯼ ﺁﻥ ﻭﺍﺭﺩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ ﻭ ﺍﺯ ﻃﺮﻳﻖ ﺑﺮﮔﻪ &laquo;ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎ&raquo; ﻧﻮﺷﺘﻪ&zwnj;ﻫﺎﯼ ﺩﺍﺭﺍﯼ ﺑﺮﭼﺴﺐ ﻳﮑﺴﺎﻥ ﺭﺍ ﺩﺭ ﺑﺮﮔﻪ ﺍﯼ ﻣﺠﺰﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﻴﻢ. ﺑﺮﺍﯼ ﻧﻤﺎﻳﺶ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎ ﭘﻴﻮﻧﺪ ﺁﻧﻬﺎ ﺭﺍ ﺍﺯ ﻃﺮﻳﻖ ﻗﺴﻤﺖ &laquo;ﺍﺑﺰﺍﺭﮎ&raquo;ﻫﺎ ﻭ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﺑﺰﺍﺭﮎ &laquo;ﺍﺑﺮ ﺑﺮﭼﺴﺐ&raquo; ﺑﻪ ﺳﺘﻮﻥ ﮐﻨﺎﺭﯼ ﺍﺿﺎﻓﻪ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻓﺎﻳﻞ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">tag.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺭﺍ ﺩﺭ ﮐﻨﺎﺭ ﺩﻳﮕﺮ ﻓﺎﻳﻞ&zwnj;ﻫﺎ ﺍﻳﺠﺎﺩ ﻭ ﮐﺪﻫﺎﯼ ﺯﻳﺮ ﺭﺍ ﺩﺭ ﺁﻥ ﻗﺮﺍﺭ ﺩﻫﻴﺪ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">/**</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;* <span dir="RTL">ﺳﺎﺧﺖ ﻓﺎﻳﻞ ﺑﺮﭼﺴﺐ ﻫﺎ</span></span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;*/</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">get_header(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;div id=&quot;content&quot; role=&quot;main&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- <span dir="RTL">ﺁﻏﺎﺯ ﺣﻠﻘﻪ</span> --&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;?php get_template_part( &#39;loop&#39;, &#39;tag&#39; ); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- <span dir="RTL">ﭘﺎﻳﺎﻥ ﺣﻠﻘﻪ</span> --&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/div&gt;&lt;!-- #content --&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_sidebar(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_footer(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻓﮑﺮ ﻣﯽ&zwnj;ﮐﻨﻴﻢ ﮐﻪ ﻣﺠﻤﻮﻋﻪ ﮐﺪﻫﺎﯼ ﺍﻳﻦ ﻓﺎﻳﻞ ﺑﺮﺍﯼ ﺷﻤﺎ ﺁﺷﻨﺎ ﻫﺴﺘﻨﺪ ﻭ ﻧﻴﺎﺯﯼ ﺑﻪ ﺗﻮﺿﻴﺢ ﺩﺭ ﺍﻳﻦ ﺑﺨﺶ ﻧﻴﺴﺖ. ﻓﻘﻂ ﺑﻴﺎﺩ ﺩﺍﺷﺘﻪ ﺑﺎﺷﻴﺪ ﮐﻪ ﺍﻳﻦ ﻓﺎﻳﻞ ﺩﺭ ﺍﺧﺘﻴﺎﺭ ﺷﻤﺎﺳﺖ ﻭ ﺷﻤﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺑﻪ ﻫﺮ ﺷﮑﻞ ﺩﻟﺨﻮﺍﻩ ﺁﻥ ﺭﺍ ﻣﻄﺎﺑﻖ ﺳﻠﻴﻘﻪ ﻭ ﻧﻴﺎﺯ ﺧﻮﺩ ﺗﻐﻴﻴﺮ ﺩﻫﻴﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<strong><span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺟﺴﺘﺠﻮ <span dir="LTR">search.php </span>&nbsp; ﻭ <span dir="LTR">searchform.php</span></span></span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻗﺎﺑﻠﻴﺖ ﺟﺴﺘﺠﻮ ﺩﺭ ﻭﺭﺩﭘﺮﺱ ﺑﺼﻮﺭﺕ ﭘﻴﺶ ﻓﺮﺽ ﻣﻬﻴﺎ ﺷﺪﻩ ﺍﺳﺖ ﻭ ﺑﺮﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺁﻥ ﻣﯽ&zwnj;ﺗﻮﺍﻥ ﺍﺑﺰﺍﺭﮎ ﺁﻥ ﺭﺍ ﺩﺭ ﻗﺴﻤﺖ &laquo;ﺍﺑﺰﺍﺭﮎ&raquo;ﻫﺎ ﺑﻪ ﺳﺘﻮﻥ ﺗﺎﺭﻧﻤﺎﯼ ﺧﻮﺩ ﺍﺿﺎﻓﻪ ﮐﺮﺩ. ﺩﺭ ﺍﻳﻦ ﻗﺴﻤﺖ ﻣﺎ ﺑﺎ ﮐﻤﮏ ﺩﻭ ﻓﺎﻳﻞ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">search.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻭ&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">searchform.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻧﺴﺨﻪ&zwnj;ﺍﯼ ﻣﯽ&zwnj;ﺳﺎﺯﻳﻢ ﮐﻪ ﺗﻮﺳﻂ ﺁﻥ ﺑﺘﻮﺍﻧﻴﻢ ﺍﻳﻦ ﻗﺎﺑﻠﻴﺖ ﺭﺍ ﻣﻄﺎﺑﻖ ﻣﻴﻞ ﺧﻮﺩ ﻧﻤﺎﻳﺶ ﺩﻫﻴﻢ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><strong>ﻓﺎﻳﻞ </strong></span><strong><span style="font-size: 13px;"><span style="font-family: tahoma, geneva, sans-serif;"><span dir="LTR">searchform.php</span></span></span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻳﻦ ﻓﺎﻳﻞ ﺩﺍﺭﺍﯼ ﻓﺮﻡ ﺗﺸﮑﻠﻴﻞ ﺩﻫﻨﺪﻩ ﮐﺎﺩﺭ ﺟﺴﺘﺠﻮ ﺍﺳﺖ. ﺑﺎ ﺳﺎﺧﺘﻦ ﺍﻳﻦ ﻓﺎﻳﻞ ﻣﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﻢ ﮐﺎﺩﺭ ﺟﺴﺘﺠﻮ ﺭﺍ ﺑﻪ ﺷﮑﻞ ﺩﻟﺨﻮﺍﻩ ﺧﻮﺩ ﺑﺴﺎﺯﻳﻢ ﻭ ﺁﻥ ﺭﺍ ﺷﻴﻮﻩ ﺩﻫﯽ ﮐﻨﻴﻢ. ﮐﺪﻫﺎﯼ ﺯﻳﺮ ﺑﻮﺟﻮﺩ ﺁﻭﺭﻧﺪﻩ ﺍﻳﻦ ﮐﺎﺩﺭ ﻫﺴﺘﻨﺪ ﻭ ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ ﻣﺠﻤﻮﻋﻪ ﺍﯼ ﺍﺯ ﺑﺮﭼﺴﺐ&zwnj;ﻫﺎﯼ &laquo;ﺍﭺ ﺗﯽ ﺍﻡ ﺍﻝ&raquo; ﻫﺴﺘﻨﺪ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;form method=&quot;get&quot; id=&quot;searchform&quot; action=&quot;&lt;?php echo esc_url( home_url( &#39;/&#39; ) ); ?&gt;&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;fieldset&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;input type=&quot;submit&quot; class=&quot;submit&quot; name=&quot;submit&quot; id=&quot;searchsubmit&quot; value=&quot;<span dir="RTL">ﺟﺴﺘﺠﻮ</span>&quot; /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;input type=&quot;text&quot; class=&quot;field&quot; name=&quot;s&quot; id=&quot;s&quot; /&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/fieldset&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/form&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<strong><span style="font-size: 13px;"><span style="font-family: tahoma, geneva, sans-serif;"><span dir="LTR">search.php</span></span></span></strong><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻳﻦ ﺑﺮﮔﻪ ﺩﺭ ﺍﺻﻞ ﺑﺮﮔﻪ&zwnj;ﺍﯼ ﺍﺳﺖ ﮐﻪ ﻧﺘﺎﻳﺠﯽ ﺭﺍ ﮐﻪ ﺍﺯ ﻃﺮﻳﻖ ﻓﺮﻡ ﺟﺴﺘﺠﻮ ﺍﻧﺠﺎﻡ ﺷﺪﻩ، ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ. ﻫﻤﺎﻧﻨﺪ ﺩﻳﮕﺮ ﻓﺎﻳﻞ&zwnj;ﻫﺎ ﺍﻳﻦ ﻓﺎﻳﻞ ﺭﺍ ﻫﻢ ﺑﻪ ﭘﻮﺷﻪ ﻧﮕﻪ ﺩﺍﺭﻧﺪﻩ ﭘﻮﺳﺘﻪ ﺧﻮﺩ ﺍﺿﺎﻓﻪ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻓﺎﻳﻠﯽ ﺑﺎ ﻧﺎﻡ&nbsp;</span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">search.php&nbsp;</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺑﺴﺎﺯﻳﺪ ﻭ ﮐﺪﻫﺎﯼ ﺯﻳﺮ ﺭﺍ ﺩﺭ ﺁﻥ ﻗﺮﺍﺭ ﺩﻫﻴﺪ:</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_header(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;section id=&quot;content&quot;&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_template_part( &#39;loop&#39;, &#39;search&#39; ); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;/section&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_sidebar(); ?&gt;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&lt;?php get_footer(); ?&gt;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺗﺎ ﮐﻨﻮﻥ ﭼﻨﺪﻳﻦ ﺑﺎﺭ ﺍﻳﻦ ﻣﺠﻤﻮﻋﻪ ﮐﺪﻫﺎ ﺭﺍ ﺩﻳﺪﻩ ﺍﻳﺪ، ﭘﺲ ﻧﻴﺎﺯﯼ ﺑﻪ ﺷﺮﺡ ﺁﻥ ﻧﻴﺴﺖ.</span></span></p></body></html>

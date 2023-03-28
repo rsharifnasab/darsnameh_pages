@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'><meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<head>
+<title>ﺩﺭﺱ ﺍﻭﻝ- SQL</title>
+
+			<link type="text/css" rel="stylesheet" href="style.css" />
+      <style>body {text-align: right; direction: rtl; padding-left: 5pt; padding-right: 5pt;} ul {direction: rtl;} ol { direction: rtl;}</style>
+</head>
+<body>
+<p class='headPage'>ﺩﺭﺱ ﺍﻭﻝ- SQL</p><p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong style="font-size: 13px;">ﻣﻘﺪﻣﻪ</strong></span></span><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺩﺭﻭﺩ٬ ﺧﻮﺵ&zwnj; ﺁﻣﺪﻳﺪ ﺑﻪ ﺩﻭﺭﻩ ﻣﺘﻮﺳﻄﻪ&nbsp; ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ٬ ﺩﺭ ﺍﻳﻦ ﺩﻭﺭﻩ ﺗﻼﺵ ﺧﻮﺍﻫﻴﻢ ﮐﺮﺩ ﮐﻪ ﺩﺭ ﺍﺩﺍﻣﻪ ﺩﻭﺭﻩ ﻗﺒﻞ &laquo;ﺑﺮﻧﺎﻣﻪ ﻧﻮﻳﺴﯽ ﻣﻘﺪﻣﺎﺗﯽ&raquo; ﺑﺎ ﻣﺮﻭﺭﯼ ﺑﺮ ﺁﻧﭽﻪ ﮐﻪ ﻳﺎﺩ ﮔﺮﻓﺘﻴﻢ، ﻣﻔﺎﻫﻴﻢ ﭘﻴﺸﺮﻓﺘﻪ&zwnj;ﺗﺮﯼ ﺭﺍ ﺑﺮ ﺩﺍﺷﺘﻪ&zwnj;ﻫﺎﻳﻤﺎﻥ ﺍﺿﺎﻓﻪ ﮐﻨﻴﻢ. ﺗﻼﺵ ﻣﺎ ﺩﺭ ﺩﻭﺭﻩ ﻣﻘﺪﻣﺎﺗﯽ، ﺁﺷﻨﺎﻳﯽ ﺑﺎ ﻣﻔﺎﻫﻴﻢ ﺍﺑﺘﺪﺍﻳﯽ ﻭ ﭘﺎﻳﻪ&zwnj;ﺍﯼ ﺍﻳﻦ ﺯﺑﺎﻥ ﺑﻮﺩ ﻭ ﺩﺭ ﮐﻨﺎﺭ ﺁﻥ ﻣﻘﺪﺍﺭﯼ ﻫﻢ ﺑﻪ ﺗﮑﻨﻴﮏ&zwnj;ﻫﺎﯼ ﻣﻮﺭﺩ ﺍﺳﺘﻔﺎﺩﻩ ﺩﺭ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﭘﺮﺩﺍﺧﺘﻴﻢ. ﺍﺯ ﺯﺑﺎﻥ </span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">SQL</span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"> ﮔﻔﺘﻴﻢ ﻭ ﺩﺭ ﮐﺪ ﻧﻮﺷﺘﻪ&zwnj;ﻫﺎﻳﻤﺎﻥ ﺍﺯ ﺁﻥ ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩﻳﻢ. ﺣﺎﻝ ﺑﻨﺎ ﺩﺍﺭﻳﻢ ﺗﺎ ﺑﻪ ﻣﻔﺎﻫﻴﻢ ﭘﻴﺸﺮﻓﺘﻪ&zwnj; ﻫﻤﺮﺍﻩ ﺟﺰﻳﻴﺎﺕ ﺑﻴﺸﺘﺮ ﺑﭙﺮﺩﺍﺯﻳﻢ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺭ ﺍﻳﻦ ﺩﻭﺭﻩ ﺑﻨﺎ ﺑﺮ ﻧﻴﺎﺯ ﺩﺍﻧﺴﺘﻦ ﻣﻔﺎﻫﻴﻢ <span dir="LTR">SQL</span> ﺍﺑﺘﺪﺍ ﺑﻪ ﺳﺮﺍﻍ ﺁﻥ ﺭﻓﺘﻪ ﻭ ﺩﺍﻧﺶ&zwnj;ﻣﺎﻥ ﺭﺍ ﺩﺭ ﺍﻳﻦ ﺣﻮﺯﻩ ﺗﺎ ﺣﺪ ﭘﻴﺸﺮﻓﺘﻪ ﮔﺴﺘﺮﺵ ﺧﻮﺍﻫﻴﻢ ﺩﺍﺩ ﻭ ﺑﻌﺪ ﺑﻪ ﻣﻔﺎﻫﻴﻢ ﻋﻤﻴﻖ&zwnj;ﺗﺮ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﻣﯽ&zwnj;ﭘﺮﺩﺍﺯﻳﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">SQL</span></strong><br />
+	ﺣﺎﻝ ﺧﻮﺏ ﻣﯽ&zwnj;ﺩﺍﻧﻴﻢ ﮐﻪ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﺑﺮﺍﯼ ﺍﻧﺒﺎﺭ ﮐﺮﺩﻥ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﻭ ﺑﮑﺎﺭﺑﺮﺩﻥ ﺁﻥ ﺩﺭ ﺷﺮﺍﻳﻂ ﻻﺯﻡ، ﺍﺯ ﺯﺑﺎﻥ ﭘﺮﺱ&zwnj;ﻭ&zwnj;ﺟﻮ ﺷﮑﻞ، <span dir="LTR">SQL</span> ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺑﺮﺍﯼ ﺑﮑﺎﺭ ﺑﺴﺘﻦ ﻗﺎﺑﻠﻴﺖ&zwnj;ﻫﺎﯼ ﺯﺑﺎﻥ <span dir="LTR">SQL</span> ﺑﺎﻳﺪ ﺍﺯ ﻗﻮﺍﻧﻴﻦ ﺗﻌﻴﻴﻦ ﺷﺪﻩ ﺩﺭ ﺁﻥ ﭘﻴﺮﻭﯼ ﻭ ﺑﺴﺘﺮ ﻻﺯﻡ ﺭﺍ ﺁﻣﺎﺩﻩ ﮐﺮﺩ. ﺩﺭ ﺩﻭﺭﻩ ﻣﻘﺪﻣﺎﺗﯽ ﻳﺎﺩ ﮔﺮﻓﺘﻴﻢ ﮐﻪ ﺯﺑﺎﻥ <span dir="LTR">SQL </span>&nbsp;ﻭ <span dir="LTR">MySQL</span> ﺑﻪ ﻋﻨﻮﺍﻥ ﻣﺤﻴﺎ ﮐﻨﻨﺪﻩ ﻣﺤﻴﻂ ﭘﺎﻳﮕﺎﻩ ﻭ ﺑﺮﺍﯼ ﺍﻧﺠﺎﻡ ﺍﻳﻦ ﻣﻬﻢ ﺍﺯ ﻣﻔﺎﻫﻴﻤﯽ ﻣﺎﻧﻨﺪ ﭘﺎﻳﮕﺎﻩ، ﺟﺪﻭﻝ ﻭ ... ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺑﺮﺍﯼ ﻣﺮﻭﺭ ﻭ ﺁﻣﺎﺩﻩ ﺳﺎﺯﯼ ﺧﻮﺩ ﺩﺭ ﺍﻳﻨﺠﺎ ﺍﻳﻦ ﻣﻔﺎﻫﻴﻢ ﻣﻬﻢ ﺭﺍ ﺑﻪ ﻫﻤﺮﺍﻩ ﺩﻳﮕﺮ ﻓﺎﮐﺘﻮﺭ&zwnj;ﻫﺎﯼ ﺑﮑﺎﺭ ﮔﺮﻓﺘﻪ ﺷﺪﻩ ﺩﺭ <span dir="LTR">SQL</span> ﺑﻄﻮﺭ ﺗﻴﺘﺮ ﻭﺍﺭ ﺫﮐﺮ ﻣﯽ&zwnj;ﮐﻨﻴﻢ ﻭ ﺩﺭ ﺻﻮﺭﺕ ﻧﻴﺎﺯ ﻫﺮ ﮐﺪﺍﻡ ﺭﺍ ﮐﻪ ﻧﻴﺎﺯ ﺩﺍﺷﺘﻪ ﺑﺎﺷﺪ ﺑﻴﺸﺘﺮ ﺷﺮﺡ ﻣﯽ&zwnj;ﺩﻫﻴﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۱. ﺍﺑﺘﺪﺍﻳﯽ&zwnj;ﺗﺮﻳﻦ ﻣﺴﺌﻠﻪ ﺩﺭ ﺑﮑﺎﺭﮔﻴﺮﯼ ﭘﺎﻳﮕﺎﻩ ﺩﺍﺩﻩ&zwnj;ﻫﺎ، ﺷﻨﺎﺧﺖ ﻭ ﻓﻬﻢ ﺩﻗﻴﻖ ﺍﺑﺰﺍﺭ&zwnj;ﻫﺎﯼ ﺁﻥ ﻭ ﺁﮔﺎﻫﯽ ﻳﺎﻓﺘﻦ ﺍﺯ ﻧﻴﺎﺯ ﺑﺮﻧﺎﻣﻪ ﺩﺭ ﺳﺎﺧﺖ ﭘﺎﻳﮕﺎﻩ ﺍﺳﺖ. ﺍﻳﻦ ﺑﺪﻳﻦ ﻣﻌﻨﯽ ﺍﺳﺖ ﮐﻪ ﺷﻤﺎ ﻗﺒﻞ ﺍﺯ ﺷﺮﻭﻉ ﺑﻪ ﺳﺎﺧﺖ ﭘﺎﻳﮕﺎﻩ ﺑﺎﻳﺪ ﺍﻟﮕﻮﯼ ﺁﻥ ﺭﺍ ﺗﻌﻴﻴﻦ ﻭ ﺑﺮﺭﺳﯽ ﮐﻨﻴﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۲. ﺑﺮﺍﯼ ﺳﺎﺧﺖ ﭘﺎﻳﮕﺎﻩ ﻭ ﻣﺘﻌﻠﻘﺎﺗﺶ (ﺟﺪﻭﻝ، ﺳﺘﻮﻥ ...) ﺑﺎﻳﺪ ﺍﺯ ﻳﮏ ﻧﻈﺎﻡ ﻧﺎﻡ ﮔﺬﺍﺭﯼ ﮐﻪ ﺩﺭ ﺯﻳﺮ ﺁﻭﺭﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ ﭘﻴﺮﻭﯼ ﮐﺮﺩ:</span></span></p>
+<ul dir="rtl">
+	<li style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺍﺷﺘﻦ ﻓﻘﻂ ﺣﺮﻭﻑ، ﺍﻋﺪﺍﺩ ﻭ ﺯﻳﺮﻳﻦ ﺧﻂ (<span dir="LTR">underscore</span>).</span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺷﺒﺎﻫﺖ ﻧﺪﺍﺷﺘﻦ ﺑﺎ ﮐﻠﻤﺎﺕ ﺍﺯ ﭘﻴﺶ ﺗﻌﺮﻳﻒ ﺷﺪﻩ ﺩﺭ ﺯﺑﺎﻥ</span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">&nbsp;ﺗﻮﺟﻪ ﺑﻪ ﺑﺰﺭﮔﯽ ﻳﺎ ﮐﻮﭼﮑﯽ ﺣﺮﻭﻑ</span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﺤﺪﻭﺩ ﺑﻮﺩﻥ ﺑﻪ ۶۴ ﮐﺎﺭﺍﮐﺘﺮ</span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻣﻨﺤﺼﺮ ﺑﻪ ﻓﺮﺩ ﺑﻮﺩﻥ ﺩﺭ ﺣﻮﺯﻩ ﺍﺳﺘﻔﺎﺩﻩ ﺧﻮﺩ</span></span></li>
+</ul>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۳. ﺩﺭ ﺯﻣﺎﻥ ﺳﺎﺧﺖ ﺟﺪﻭﻝ ﺑﺎﻳﺪ ﻧﻮﻉ ﺩﺍﺩﻩ ﻣﻮﺭﺩ ﺍﺳﺘﻔﺎﺩﻩ ﺩﺭ ﻫﺮ ﺳﺘﻮﻥ ﺭﺍ ﻣﺸﺨﺺ ﮐﺮﺩ. ﺑﻄﻮﺭ ﮐﻠﯽ ﺍﻧﻮﺍﻉ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﺩﺭ <span dir="LTR">SQL</span> ﺑﻪ ﺳﻪ ﻗﺴﻤﺖ ﻣﺘﻦ، ﺍﻋﺪﺍﺩ ﻭ ﺯﻣﺎﻥ ﺗﻘﺴﻴﻢ ﻣﯽ&zwnj;ﺷﻮﻧﺪ ﮐﻪ ﻫﺮ ﮐﺪﺍﻡ ﺩﺍﺭﺍﯼ ﺯﻳﺮ ﻗﺴﻤﺖ&zwnj;ﻫﺎﻳﯽ ﻫﺴﺘﻨﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۴. ﻫﺮ ﺳﺘﻮﻥ ﺑﻪ ﻏﻴﺮ ﺍﺯ ﻧﺎﻡ ﻭ ﻧﻮﻉ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺩﺍﺭﺍﯼ ﺧﺼﻮﺻﻴﺖ&zwnj;ﻫﺎﻳﯽ ﺑﺎﺷﺪ ﮐﻪ ﻧﺤﻮﻩ ﻋﻤﻠﮑﺮﺩ ﺁﻥ ﺳﺘﻮﻥ ﺭﺍ ﺑﻴﺸﺘﺮ ﻣﺸﺨﺺ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺍﻳﻦ ﺧﺼﻮﺻﻴﺖ&zwnj;ﻫﺎ ﺷﺎﻣﻞ:</span></span></p>
+<ul dir="rtl">
+	<li style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">NOT NULL</span></span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">AUTO_INCREMENT</span></span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">PRIMARY KEY</span></span></span></li>
+</ul>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻭ ﻏﻴﺮﻩ ﻫﺴﺘﻨﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">۵. ﺑﺮﺍﯼ ﺩﺳﺘﻴﺎﺑﯽ ﺑﻪ ﭘﺎﻳﮕﺎﻩ، ﻧﻴﺎﺯ ﺑﻪ ﻳﮏ ﺍﺭﺗﺒﺎﻁ ﺩﻫﻨﺪﻩ ﺩﺍﺭﻳﺪ ﮐﻪ ﺩﺭ ﺩﻭﺭﻩ ﻣﻘﺪﻣﺎﺗﯽ ﺑﻪ ﺩﻭ ﻧﻮﻉ ﺁﻥ ﻳﻌﻨﯽ: <span dir="LTR">PHPMYSQL </span>&nbsp;ﻭ <span dir="LTR">&nbsp;COMMAND PROMPT </span>&nbsp;ﺍﺷﺎﺭﻩ ﮐﺮﺩﻳﻢ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻧﮑﺘﻪ:</strong> ﺍﺯ ﺍﻳﻨﺠﺎﺑﻪ ﺑﻌﺪ ﻓﺮﺽ ﺑﺮ ﺁﻥ&zwnj;ﺳﺖ ﮐﻪ ﺷﻤﺎ ﻣﺸﮑﻠﯽ ﺩﺭ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ <span dir="LTR">CMD</span> ﺑﺮﺍﯼ ﺍﺭﺗﺒﺎﻁ ﺑﺎ ﭘﺎﻳﮕﺎﻩ ﻧﺪﺍﺭﻳﺪ. ﭘﺲ ﺍﮔﺮ ﻓﮑﺮ ﻣﯽ&zwnj;ﮐﻨﻴﺪ ﻫﻨﻮﺯ ﺍﻳﺮﺍﺩﯼ ﻭﺟﻮﺩ ﺩﺍﺭﺩ ﻟﻄﻔﺎ ﺑﻪ ﺩﺭﺱ&zwnj;ﻫﺎﯼ ﺩﻭﺭﻩ ﻣﻘﺪﻣﺎﺗﯽ ﺑﺮﮔﺸﺘﻪ ﻭ ﺑﺎ ﻳﮏ ﻣﺮﻭﺭ ﺧﻮﺩ ﺭﺍ ﺁﻣﺎﺩﻩ ﺍﻳﻦ ﻗﺴﻤﺖ ﮐﻨﻴﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺩﺳﺘﻮﺭ ﻋﻤﻞ&zwnj;ﻫﺎﯼ ﺳﺎﺧﺖ ﻭ ﺍﺭﺗﺒﺎﻁ ﺑﺎ ﭘﺎﻳﮕﺎﻩ</strong></span></span><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺩﺳﺘﻮﺭﺍﺕ ﺳﺎﺧﺖ ﭘﺎﻳﮕﺎﻩ:</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">CREATE DATABASE <span dir="RTL">ﻧﺎﻡ ﭘﺎﻳﮕﺎﻩ</span>&nbsp;&nbsp; &nbsp;; </span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">USE <span dir="RTL">ﻧﺎﻡ ﭘﺎﻳﮕﺎﻩ </span>&nbsp;&nbsp;;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﺳﺘﻮﺭﺍﺕ ﺳﺎﺧﺖ ﺟﺪﻭﻝ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">CREATE&nbsp; TABLE&nbsp;&nbsp; <span dir="RTL">ﻧﺎﻡ ﺟﺪﻭﻝ</span><br />
+		(<br />
+		<span dir="RTL">ﻧﺎﻡ ﺳﺘﻮﻥ</span> <span dir="RTL">&nbsp;&nbsp;&nbsp;ﻧﻮﻉ ﺳﺘﻮﻥ&nbsp;&nbsp; </span>,<br />
+		<span dir="RTL">ﻧﺎﻡ ﺳﺘﻮﻥ</span> <span dir="RTL">&nbsp;&nbsp;&nbsp;ﻧﻮﻉ ﺳﺘﻮﻥ&nbsp;&nbsp; </span>,</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="RTL">ﻧﺎﻡ ﺳﺘﻮﻥ</span> <span dir="RTL">&nbsp;&nbsp;&nbsp;ﻧﻮﻉ ﺳﺘﻮﻥ&nbsp;&nbsp; </span></span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="RTL">...</span><br />
+		);</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SHOW TABLES ;</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SHOW COLUMNS FROM <span dir="RTL">ﻧﺎﻡ ﺟﺪﻭﻝ </span>&nbsp;;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻭﺍﺭﺩ ﮐﺮﺩﻥ ﺭﮐﻮﺭﺩ ﺩﺭ ﺟﺪﻭﻝ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">INSERT INTO <span dir="RTL">ﻧﺎﻡ ﺟﺪﻭﻝ</span> (<span dir="RTL">ﺳﺘﻮﻥ۱</span>, <span dir="RTL">ﺳﺘﻮﻥ۲</span> &nbsp;&hellip;) </span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">VALUES (<span dir="RTL">ﻣﻘﺪﺍﺭ۱</span>, <span dir="RTL">ﻣﻘﺪﺍﺭ۲</span> &hellip;)</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻧﺘﺨﺎﺏ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﺩﺭ ﭘﺎﻳﮕﺎﻩ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT <span dir="RTL">ﻧﺎﻡ ﺳﺘﻮﻥ&zwnj;ﻫﺎ </span>&nbsp;&nbsp;FROM <span dir="RTL">ﻧﺎﻡ ﺟﺪﻭﻝ</span></span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT &nbsp;*&nbsp; &nbsp;FROM <span dir="RTL">ﻧﺎﻡ ﺟﺪﻭﻝ&nbsp; </span></span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺷﺮﻃﯽ ﺩﺭ ﭘﺮﺱ&zwnj;ﻭ&zwnj;ﺟﻮ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT &nbsp;&nbsp;<span dir="RTL">ﻧﺎﻡ ﺳﺘﻮﻥ&zwnj;ﻫﺎ</span> FROM &nbsp;&nbsp;<span dir="RTL">ﻧﺎﻡ ﺟﺪﻭﻝ</span></span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">WHERE&nbsp; &nbsp;<span dir="RTL">ﺳﺘﻮﻥ ﻣﻮﺭﺩ ﻧﻈﺮ </span>&nbsp;&nbsp;&nbsp;&nbsp;= &nbsp;&#39;&nbsp; <span dir="RTL">ﻣﻘﺪﺍﺭ</span> &#39;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻓﺎﮐﺘﻮﺭ </strong><strong><span dir="LTR">LIKE </span></strong><strong>&nbsp;ﻭ </strong><strong><span dir="LTR">NOT LIKE</span> ﺩﺭ ﭘﺮﺱ&zwnj;ﻭ&zwnj;ﺟﻮ</strong></span></span><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺑﺮﺍﯼ ﺟﺴﺘﺠﻮ ﺩﺭ ﻣﻴﺎﻥ ﺳﺘﻮﻥ&zwnj;ﻫﺎﻳﯽ ﮐﻪ ﻣﺘﻦ ﺩﺭ ﺍﺧﺘﻴﺎﺭ ﺩﺍﺭﻧﺪ، ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﺩﻭ ﮔﺰﻳﻨﻪ ﻳﮏ ﺍﻟﮕﻮﻳﯽ ﺑﺮﺍﯼ ﺟﺴﺘﺠﻮ ﺑﺴﺎﺯﻳﺪ. ﺩﻗﺖ ﮐﻨﻴﺪ:</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT &nbsp;* &nbsp;FROM &nbsp;users</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">WHERE &nbsp;username LIKE &nbsp;&#39;_e%&#39;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺩﻭ ﻋﻼﻣﺖ <span dir="LTR">&nbsp;_ </span>ﻭ <span dir="LTR">% </span>ﺩﺭ ﺍﻳﻨﺠﺎ ﺑﮑﺎﺭ ﮔﺮﻓﺘﻪ ﺷﺪﻩ ﮐﻪ ﺑﻪ ﺷﺮﺡ ﺯﻳﺮ ﻫﺴﺘﻨﺪ:</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ــ : ﺍﻳﻦ ﻋﻼﻣﺖ ﻣﺸﺨﺺ ﮐﻨﻨﺪﻩ ﺗﻨﻬﺎ ﻳﮏ ﺣﺮﻑ ﺍﺳﺖ. ﻳﻌﻨﯽ ﻣﺸﺨﺼﺎ ﻳﮏ ﺣﺮﻑ ﮐﻪ ﻫﺮ ﭼﯽ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺑﺎﺷﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">%</span> : ﺍﻳﻦ ﻋﻼﻣﺖ ﻣﺸﺨﺺ ﮐﻨﻨﺪﻩ ﭼﻨﺪﻳﻦ ﺣﺮﻑ ﺍﺳﺖ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﺟﺎﺯﻩ ﺑﺪﻫﻴﺪ ﺑﺎ ﺗﻮﺿﻴﺢ ﻣﺜﺎﻝ ﺑﺎﻻ ﺍﻳﻦ ﻣﻄﻠﺐ ﺭﺍ ﺑﻴﺸﺘﺮ ﺷﺮﺡ ﺩﻫﻴﻢ. ﻣﻌﻨﯽ ﺩﺳﺘﻮﺭ ﺑﺎﻻ ﻣﯽ&zwnj;ﺷﻮﺩ:</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﺯ ﺟﺪﻭﻝ &nbsp;<span dir="LTR">users</span>ﻫﻤﻪ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﺭﺍ ﺍﻧﺘﺨﺎﺏ ﮐﻦ، ﮐﻪ ﺩﺭ ﻧﺎﻡ ﮐﺎﺭﺑﺮﯼ ﺁﻧﻬﺎ ﺣﺮﻑ ﺍﺑﺘﺪﺍﻳﯽ ﻫﺮ ﭼﻪ ﺑﺎﺷﺪ، ﺣﺮﻑ ﺩﻭﻡ <span dir="LTR">&nbsp;e</span>ﺑﺎﺷﺪ ﻭ ﺑﺎﻗﯽ ﻫﻢ ﻫﺮ ﭼﻪ ﮐﻪ ﺑﻮﺩ. ﺣﺎﻝ ﺧﺮﻭﺟﯽ ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﻣﺎﻧﻨﺪ ﺯﻳﺮ ﺑﺎﺷﺪ:</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">peyman, pejman</span> <span dir="LTR">,</span> <span dir="LTR">reza</span> ﻭ ﻳﺎ ﻫﺮ ﮐﻠﻤﻪ&zwnj;ﺍﯼ ﮐﻪ ﺣﺮﻑ ﺩﻭﻡ ﺁﻥ<span dir="LTR">e </span>&nbsp;ﺑﺎﺷﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><span dir="LTR">NOT LIKE</span> ﺑﺮﻋﮑﺲ ﻋﻤﻞ ﻣﯽ&zwnj;ﮐﻨﺪ ﻳﻌﻨﯽ ﺭﮐﻮﺭﺩﻫﺎﻳﯽ ﺭﺍ ﺑﺎﺯ ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ ﮐﻪ ﻣﻘﺪﺍﺭ ﺁﻧﻬﺎ ﺩﺭ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﻭﺟﻮﺩ ﻧﺪﺍﺷﺘﻪ ﺑﺎﺷﻨﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻣﺮﺗﺐ ﮐﺮﺩﻥ ﺩﺍﺩﻩ&zwnj;ﻫﺎﯼ ﺧﺮﻭﺟﯽ ﺩﺳﺘﻮﺭ&zwnj;ﻫﺎ</strong></span></span><br />
+	<span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺑﺮﺍﯼ ﻣﺮﺗﺐ ﮐﺮﺩﻥ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﺍﺯ </span><span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">Order By </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT * FROM users ORDER BY register_date &nbsp;ASC</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﺗﻤﺎﻡ ﺩﺍﺩﻩ&zwnj;ﻫﺎﯼ ﺟﺪﻭﻝ ﺭﺍ ﺍﻧﺘﺨﺎﺏ ﮐﺮﺩﻩ ﻭ ﺁﻧﻬﺎ ﺭﺍ ﺑﺎ ﺗﻮﺟﻪ ﺑﻪ ﺩﺍﺩﻩ&zwnj;ﻫﺎﯼ ﺳﺘﻮﻥ <span dir="LTR">register_date</span> ﺑﺼﻮﺭﺕ ﺻﻌﻮﺩﯼ ﻣﺮﺗﺐ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺑﺮﺍﯼ ﻧﻤﺎﻳﺶ ﻧﺰﻭﻟﯽ ﺑﺎﻳﺪ ﺍﺯ <span dir="LTR">DESC</span> ﺍﺳﺘﻔﺎﺩﻩ ﮐﺮﺩ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻣﺤﺪﻭﺩ ﮐﺮﺩﻥ ﺧﺮﻭﺟﯽ ﭘﺮﺱ&zwnj;ﻭ&zwnj;ﺟﻮ</strong></span></span><br />
+	<span dir="LTR" style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">Limit </span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">&nbsp;ﮐﻠﻤﻪ&zwnj;ﺍﯼ ﺍﺳﺖ ﮐﻪ ﺑﺮﺍﯼ ﻣﺤﺪﻭﺩ ﮐﺮﺩﻥ ﺧﺮﻭﺟﯽ ﭘﺮﺱ&zwnj;ﻭ&zwnj;ﺟﻮ ﺍﺳﺘﻔﺎﺩﻩ ﻣﯽ&zwnj;ﺷﻮﺩ:</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT * FROM USERS LIMIT 2</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﺗﻨﻬﺎ ﺩﻭ ﺭﮐﻮﺭﺩ ﺭﺍ ﺑﺮ ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ.</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT * FROM USERS LIMIT <span dir="RTL">0 </span>&nbsp;, 5</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﺍﺯ ﺭﮐﻮﺭﺩ 0 ﺷﺮﻭﻉ ﮐﺮﺩﻩ ﻭ 5 ﺭﮐﻮﺭﺩ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT first_name, last_name</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">FROM users ORDER BY</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">register_date DESC LIMIT 5;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺩﺳﺘﻮﺭ ﻫﻢ ﺳﺘﻮﻥ&zwnj;ﻫﺎﯼ ﻧﺎﻡ ﻭ ﻧﺎﻡ ﺧﺎﻧﻮﺍﺩﮔﯽ ﺭﺍ ﺍﻧﺘﺨﺎﺏ ﮐﺮﺩﻩ، ﺑﺎ ﺗﻮﺟﻪ ﺑﻪ ﺗﺎﺭﻳﺦ ﺛﺒﺖ ﻧﺎﻡ ﺁﻧﻬﺎ ﺭﺍ ﺑﺼﻮﺭﺕ ﻧﺰﻭﻟﯽ ﻣﺮﺗﺐ ﮐﺮﺩﻩ ﻭ ﺑﻌﺪ ۵ ﺩﺍﺩﻩ ﺁﺧﺮ ﺭﺍ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ. ﺑﻪ ﺍﻳﻦ ﺗﺮﺗﻴﺐ ۵ ﻧﻔﺮ ﺁﺧﺮ ﮐﻪ ﺛﺒﺖ ﻧﺎﻡ ﺷﺪﻩ&zwnj;ﺍﻧﺪ ﻧﻤﺎﻳﺶ ﺩﺍﺩﻩ ﻣﯽ&zwnj;ﺷﻮﻧﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﻣﻌﺮﻓﯽ ﺗﻮﺍﺑﻊ <span dir="LTR">SQL</span></strong><br />
+	ﺩﺭ ﺯﻣﺎﻥ ﺍﻧﺠﺎﻡ ﭘﺮﺱ&zwnj;ﻭ&zwnj;ﺟﻮ ﺷﻤﺎ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺍﺯ ﺗﻮﺍﺑﻌﯽ ﺑﮑﺎﺭ ﺑﺮﻳﺪ ﮐﻪ ﮐﺎﺭ ﭘﺲ&zwnj;ﻭ&zwnj;ﺟﻮ ﺭﺍ ﺑﻄﻮﺭ ﻣﻨﻈﻢ&zwnj;ﺗﺮﯼ ﻭ ﺑﺎ ﺗﻮﺟﻪ ﺑﻪ ﻧﻴﺎﺯ ﺷﻤﺎ ﮐﺎﻣﻞ ﮐﻨﻨﺪ. ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﺩﺭ ﺩﻭﺭﻩ ﻗﺒﻠﯽ ﺑﺎ ﺗﺎﺑﻌﯽ ﺑﻨﺎﻡ <span dir="LTR">&nbsp;NOW()</span>ﺁﺷﻨﺎ ﺷﺪﻳﻢ ﮐﻪ ﺯﻣﺎﻥ ﺣﺎﻝ ﮐﻪ ﺩﺭ ﺳﺮﻭﺭ ﺛﺒﺖ ﺷﺪﻩ ﺭﺍ ﺑﺮ&zwnj;ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ. ﻭ ﻳﺎ ﺗﺎﺑﻊ <span dir="LTR">&nbsp;SHA1()</span>ﮐﻪ ﺭﻣﺰ ﺭﺍ ﺑﺮﺍﯼ ﺷﻤﺎ ﮐﺪﮔﺬﺍﺭﯼ ﻣﯽ&zwnj;ﮐﻨﺪ. ﺑﻴﺸﺘﺮ ﺗﻮﺍﺑﻊ ﻫﻤﺮﺍﻩ ﺑﺎ ﺩﺳﺘﻮﺭ <span dir="LTR">SELECT</span> ﻭ ﺑﺮﺍﯼ ﺍﻧﺠﺎﻡ ﮐﺎﺭﯼ ﺭﻭﯼ ﺳﺘﻮﻥ&zwnj;ﻫﺎﯼ ﻣﻮﺭﺩ ﺍﻧﺘﺨﺎﺏ ﺷﻤﺎ ﺑﮑﺎﺭ ﻣﯽ&zwnj;ﺭﻭﻧﺪ. ﺑﻄﻮﺭ ﻣﺜﺎﻝ ﻓﺮﺽ ﮐﻨﻴﺪ ﮐﻪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﺪ ﻧﺎﻡ ﮐﺎﺭﺑﺮﺍﻥ ﺭﺍ ﭼﺎﭖ ﮐﻨﻴﺪ ﺍﻣﺎ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﺪ ﺍﻳﻦ ﮐﺎﺭ ﺑﺎ ﺣﺮﻭﻑ ﺑﺰﺭﮒ ﺍﻧﺠﺎﻡ ﺷﻮﺩ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT UPPER(first_name) FROM users</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺧﺐ، ﺍﻳﻦ ﺗﺎﺑﻊ ﺧﺮﻭﺟﯽ ﭘﺮﺱ&zwnj;ﻭ&zwnj;ﺟﻮ ﺭﺍ ﺑﻪ ﺣﺮﻭﻑ ﺑﺰﺭﮒ ﺗﺒﺪﻳﻞ ﻣﯽ&zwnj;ﮐﻨﺪ ﻭ ﺑﻌﺪ ﺩﺭ ﺍﺧﺘﻴﺎﺭ ﺷﻤﺎ ﻗﺮﺍﺭ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺗﻮﺍﺑﻊ ﻣﻌﻤﻮﻻ ﺑﺮ ﺍﺳﺎﺱ ﺍﺛﺮ ﮔﺬﺍﺭﯼ ﺧﻮﺩ ﺑﻪ ﭼﻨﺪ ﺩﺳﺘﻪ ﺗﻘﺴﻴﻢ ﻣﯽ&zwnj;ﺷﻮﻧﺪ. ﺍﻳﻦ ﺗﻘﺴﻴﻢ ﺑﻨﺪﯼ ﻣﻌﻤﻮﻻ ﺑﺮ ﺍﺳﺎﺱ ﺧﺮﻭﺟﯽ ﺗﺎﺑﻊ ﺍﺳﺖ ﻭ ﺩﺭ ﺻﻮﺭﺕ ﻭﺟﻮﺩ ﻭﺭﻭﺩﯼ (ﭘﺎﺭﺍﻣﺘﺮ) ﺑﺮ ﺍﺳﺎﺱ ﻋﻤﻠﯽ (ﺗﻐﻴﻴﺮﺍﺗﯽ) ﺍﺳﺖ ﮐﻪ ﺗﺎﺑﻊ ﺑﺮ ﺭﻭﯼ ﭘﺎﺭﺍﻣﺘﺮ ﺧﻮﺩ ﺍﻧﺠﺎﻡ ﻣﯽ&zwnj;ﺩﻫﺪ. ﻣﺜﻼ ﺍﻳﻦ ﺗﻐﻴﻴﺮﺍﺕ ﺑﺮ ﺭﻭﯼ ﻣﺘﻦ، ﺣﺮﻭﻑ ﻭ ﻳﺎ ﺍﻋﺪﺍﺩ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺑﺎﺷﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺗﻮﺍﺑﻊ ﻣﺘﻨﯽ</strong><br />
+	ﺍﻳﻦ ﺩﺳﺖ ﺍﺯ ﺗﻮﺍﺑﻊ، ﻣﺘﻦ ﺭﺍ ﺑﻪ ﻋﻨﻮﺍﻥ ﭘﺎﺭﺍﻣﺘﺮ ﮔﺮﻓﺘﻪ ﻭ ﻋﻤﻞ ﺧﻮﺩ ﺭﺍ ﺍﻧﺠﺎﻡ ﻣﯽ&zwnj;ﺩﻫﻨﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">CONCAT()</span></strong></span></span><strong>: </strong><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﺍﻳﻦ ﺗﺎﺑﻊ ﻋﻤﻞ ﭼﺴﺒﺎﻧﺪﻥ ﺩﻭ ﮐﻠﻤﻪ ﻳﺎ ﻣﺘﻦ ﺭﺍ ﺍﻧﺠﺎﻡ ﻣﯽ&zwnj;ﺩﻫﺪ. ﻣﺜﻼ ﻓﺮﺽ ﮐﻨﻴﺪ ﻣﯽ&zwnj;ﺧﻮﺍﻫﻴﻢ ﻧﺎﻡ ﻭ ﻧﺎﻡ ﺧﺎﻧﻮﺍﺩﮔﯽ ﺭﺍ ﺑﺎ ﻫﻢ ﺑﭽﺴﺒﺎﻧﻴﻢ ﻭ ﺑﻌﺪ ﻧﻤﺎﻳﺶ ﺩﻫﻴﻢ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT CONTACT(first_name, last_name ) FROM users;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">LENGTH()</span></strong></span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><strong>:</strong> ﺗﻌﺪﺍﺩ ﮐﺎﺭﺍﮐﺘﺮﻫﺎﯼ ﺩﺍﺧﻞ ﭘﺎﺭﺍﻣﺘﺮ ﺭﺍ ﺑﺮ ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ:</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT LENGTH(last_name) FROM users;</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">TRIM()</span></strong></span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><strong>:</strong> ﻓﺎﺻﻠﻪ&zwnj;ﻫﺎ ﺭﺍ ﺍﺯ ﻗﺒﻞ ﻭ ﺑﻌﺪ ﺍﺯ ﭘﺎﺭﺍﻣﺘﺮ ﺑﺮ ﻣﯽ&zwnj;ﺩﺍﺭﺩ. ﺩﺭ ﺯﺑﺎﻥ ﭘﯽ&zwnj;ﺍﭺ&zwnj;ﭘﯽ ﻫﻢ ﺗﺎﺑﻌﯽ ﺑﺎ ﻫﻤﻴﻦ ﻧﺎﻡ ﻭﺟﻮﺩ ﺩﺍﺭﺩ ﮐﻪ ﻓﺎﺻﻠﻪ&zwnj;ﻫﺎ ﺭﺍ ﺣﺬﻑ ﻣﯽ&zwnj;ﮐﻨﺪ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻟﺒﺘﻪ ﺗﻮﺍﺑﻊ ﺩﻳﮕﺮﯼ ﻫﻢ ﻫﺴﺘﻨﺪ ﮐﻪ ﻣﺎ ﺑﻪ ﻫﻤﻴﻦ&zwnj;ﻫﺎ ﺑﺴﻨﺪﻩ ﻣﯽ&zwnj;ﮐﻨﻴﻢ ﺑﺮﺍﯼ ﺍﻃﻼﻋﺎﺕ ﺑﻴﺸﺘﺮ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺑﻪ ﻭﺏ&zwnj;ﺳﺎﻳﺖ <a href="http://www.w3schools.com/sql/sql_functions.asp">W3Schools </a></span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;">ﻣﺮﺍﺟﻌﻪ ﮐﻨﻴﺪ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺗﻮﺍﺑﻊ ﺍﻋﺪﺍﺩﯼ</strong><br />
+	ﺍﺯ ﻣﻬﻢ&zwnj;ﺗﺮﻳﺖ ﺗﻮﺍﺑﻊ ﺍﻋﺪﺍﺩﯼ ﻣﯽ&zwnj;ﺗﻮﺍﻥ ﺑﻪ ﻣﻮﺍﺭﺩ ﺯﻳﺮ ﺍﺷﺎﺭﻩ &zwnj;ﮐﺮﺩ:</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">FORMAT( )</span></strong></span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><strong>:</strong> ﺍﻳﻦ ﺗﺎﺑﻊ ﻓﺮﻣﺖ ﻧﻤﺎﻳﺶ ﻋﺪﺩ ﺭﺍ ﻣﺸﺨﺺ ﻣﯽ&zwnj;ﮐﻨﺪ. ﮐﻪ ﻫﻢ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺍﻋﺪﺍﺩ ﺭﺍ ﺳﻪ ﺭﻗﻢ ﺳﻪ ﺭﻗﻢ ﺍﺯ ﻫﻢ ﺟﺪﺍ ﻭ ﺩﺭ ﺻﻮﺭﺕ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﭘﺮﺍﻣﺘﺮ ﺩﻭﻡ ﺗﻌﺪﺍﺩ ﺭﻗﻢ ﺍﻋﺸﺎﺭﯼ ﺭﺍ ﻫﻢ ﺗﻌﻴﻴﻦ ﮐﻨﺪ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">FORMAT(23056.2) // 23,056.2</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">FORMAT(23056.2, 2) // 23,056.20</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">RAND( )</span></strong></span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><strong>:</strong> ﺍﻳﻦ ﺗﺎﺑﻊ ﺭﻓﺘﺎﺭ ﺍﻧﺘﺨﺎﺏ ﺗﺼﺎﺩﻓﯽ ﺭﺍ ﺩﺍﺭﺩ. ﻣﻮﺭﺩ ﺍﺳﺘﻔﺎﺩﻩ ﺁﻥ ﻣﺜﻼ ﻣﯽ&zwnj;ﺗﻮﺍﻧﺪ ﺑﺮﺍﯼ ﻧﻤﺎﻳﺶ ﺗﺼﺎﺩﻓﯽ ﺩﺍﺩ&zwnj;ﻫﺎ ﺑﺎﺷﺪ:</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT * FROM users</span></span></p>
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ORDER BY RAND();</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">ROUND( )</span></strong></span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><strong>:</strong> ﻳﮏ ﻣﻘﺪﺍﺭ ﺭﺍ ﺑﺼﻮﺭﺕ ﻭﺭﻭﺩﯼ ﮔﺮﻓﺘﻪ ﻭ ﺁﻥ ﻋﺪﺩ ﺭﺍ ﺑﺼﻮﺭﺕ ﮔﺮﺩ ﺷﺪﻩ ﻧﻤﺎﻳﺶ ﻣﯽ&zwnj;ﺩﻫﺪ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong>ﺗﻮﺍﺑﻊ ﺯﻣﺎﻧﯽ</strong><br />
+	ﻫﻤﺎﻥ&zwnj;ﻃﻮﺭ ﮐﻪ ﺍﺯ ﻧﺎﻡ ﺍﻳﻦ ﺑﺨﺶ ﭘﻴﺪﺍﺳﺖ ﺍﻳﻦ ﺩﺳﺖ ﺗﻮﺍﺑﻊ ﺍﻋﻤﺎﻟﯽ ﺭﺍ ﺑﺮ ﺭﻭﯼ ﺩﺍﺩﻩ&zwnj;ﻫﺎﯼ ﺯﻣﺎﻧﯽ ﺍﻧﺠﺎﻡ ﻣﯽ&zwnj;ﺩﻫﻨﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">DATE( )</span></strong></span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><strong>:</strong> ﺍﻳﻦ ﺗﺎﺑﻊ ﺗﺎﺭﻳﺦ ﺩﺍﺩﻩ ﺭﺍ ﺑﺮ ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">select date(register_date) from users limit 1; //&nbsp; 2012-12-15</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">HOUR( )</span></strong></span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"><strong>:</strong> ﺍﻳﻦ ﺗﺎﺑﻊ ﺳﺎﻋﺖ ﺩﺍﺩﻩ ﺭﺍ ﺑﺮ ﻣﯽ&zwnj;ﮔﺮﺩﺍﻧﺪ.</span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">select hour(register_date) from users limit 1; // 9</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">MINUTE( )</span></strong></span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">select minute(register_date) from users limit 1; //58</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">DAYOFMONTH( )</span></strong></span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">select dayofmonth(register_date) from users limit 1; // 25</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">DAYNAME( )</span></strong></span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">select dayname(register_date) from users limit 1; // Saturday</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">CURDATE( )</span></strong></span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">select curdate() from users limit 1; // 2012-12-15</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">CURTIME( )</span></strong></span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">select curtime() from users limit 1; //&nbsp; 18:29:14</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">NOW( )</span></strong></span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">select now() from users limit 1;&nbsp;&nbsp; //&nbsp; 2012-12-15 18:29:47</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻟﺒﺘﻪ ﺑﻌﻀﯽ ﺍﺯ ﺍﻳﻦ ﺗﻮﺍﺑﻊ ﻧﻴﺎﺯ ﺑﻪ ﭘﺎﺭﺍﻣﺘﺮ ﻭﺭﻭﺩﯼ ﺩﺍﺭﻧﺪ ﻭ ﺑﻌﻀﯽ ﺑﺎﻳﺪ ﺑﺪﻭﻥ ﭘﺎﺭﺍﻣﺘﺮ ﺍﺳﺘﻔﺎﺩﻩ ﺷﻮﻧﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻋﻼﻭﻩ ﺑﺮ ﺍﻳﻦ ﺗﻮﺍﺑﻊ ﺩﻭ ﺗﺎﺑﻊ ﻣﻬﻢ ﺩﻳﮕﺮ ﺑﺮﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﺑﺎ ﺯﻣﺎﻥ ﻭ ﺗﺎﺭﻳﺦ ﻭﺟﻮﺩ ﺩﺍﺭﻧﺪ ﮐﻪ ﻗﺎﺑﻠﻴﺖ&zwnj;ﻫﺎﯼ ﺑﻴﺸﺘﺮﯼ ﺭﺍ ﺑﺮﺍﯼ ﺗﻐﻴﻴﺮﺍﺕ ﻭ ﻳﺎ ﺷﺨﺼﯽ ﺳﺎﺯﯼ ﻧﺤﻮﻩ ﻧﻤﺎﻳﺶ ﺗﺎﺭﻳﺦ ﻭ ﺯﻣﺎﻥ ﺩﺍﺭﻧﺪ. ﺍﻳﻦ ﺩﻭ ﺗﺎﺑﻊ ﻋﺒﺎﺭﺕ ﻫﺴﺘﻨﺪ ﺍﺯ <span dir="LTR">DATE_FORMAT( )</span> ﻭ&nbsp;<span dir="LTR">TIME_FORMAT( )</span> ﻗﺎﺑﻠﻴﺖ ﻓﺮﻣﺖ ﺩﻫﯽ ﺑﻪ ﺗﺎﺭﻳﺦ ﻭ ﺯﻣﺎﻥ ﺭﺍ ﺩﺍﺭﻧﺪ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">DATE_FORMAT( ) </span>:</strong> ﺍﻳﻦ ﺗﺎﺑﻊ ﻗﺎﺑﻠﻴﺖ ﻓﺮﻣﺖ ﺩﻫﯽ ﻫﻢ ﺑﻪ ﺯﻣﺎﻥ ﻭ ﻫﻢ ﺑﻪ ﺗﺎﺭﻳﺦ ﺭﺍ ﺩﺍﺭﺍ ﺍﺳﺖ ﻭ ﺍﻟﺒﺘﻪ ﺑﺮﺍﯼ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﺗﺎﺑﻊ ﺑﺎﻳﺪ ﻳﮏ ﭘﺎﺭﺍﻣﺘﺮ ﺭﺍ ﺑﻪ ﻋﻨﻮﺍﻥ ﮐﻠﻴﺪ ﻓﺮﻣﺖ ﺩﻫﯽ ﻣﺸﺨﺺ ﮐﻨﻴﺪ. ﺑﻄﻮﺭ ﻣﺜﺎﻝ:</span></span></p>
+<div style="color:#0f2249;background-color:#e9eaed;border:solid 1px #526ca2;padding:5px 10px;border-radius:3px;direction:ltr;text-align:left;">
+	<p style="text-align: justify;">
+		<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">SELECT DATE_FORMANT(register_date, &#39;<strong>%M %D, %Y</strong>&#39;) FROM users limit 1; // December 15th, 2012</span></span></p>
+</div>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺍﻳﻦ ﺗﺎﺑﻊ ﺩﻭ ﭘﺎﺭﺍﻣﺘﺮ ﻗﺒﻮﻝ ﻣﯽ&zwnj;ﮐﻨﺪ ﮐﻪ ﺍﺑﺘﺪﺍﻳﯽ ﻫﻤﺎﻥ ﺯﻣﺎﻥ ﻳﺎ ﺗﺎﺭﻳﺦ ﺍﺳﺖ (ﺯﻣﺎﻥ ﻳﺎ ﺗﺎﺭﻳﺦ ﺭﺍ ﻣﯽ&zwnj;ﺗﻮﺍﻥ ﺍﺯ ﺩﺍﺩﻩ ﺩﺍﺧﻞ ﭘﺎﻳﮕﺎﻩ ﺧﻮﺍﻧﺪ ﻣﺎﻧﻨﺪ ﻣﺜﺎﻝ ﺑﺎﻻ) ﻭ ﭘﺎﺭﺍﻣﺘﺮ ﺑﻌﺪﯼ ﺍﻟﮕﻮﯼ ﻓﺮﻣﺖ ﺩﻫﻨﺪﻩ ﺍﺳﺖ. ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﺩﺭ ﻣﺜﺎﻝ ﺑﺎﻻ ﻣﯽ&zwnj;ﺑﻴﻨﻴﺪ، ﺑﺎ ﺍﺳﺘﻔﺎﺩﻩ ﺍﺯ ﺍﻳﻦ ﺗﺎﺑﻊ ﻭ ﺩﺍﺩﻩ ﺛﺒﺖ ﺷﺪﻩ ﺩﺭ <span dir="LTR">register_date</span> ﻓﺮﻣﺖ ﺑﺎ ﻧﺎﻡ ﻣﺎﻩ، ﺭﻭﺯ ﻣﺎﻩ ﻭ ﺳﺎﻝ ﺑﺪﺳﺖ ﺁﻣﺪﻩ ﺍﺳﺖ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﺑﺮﺍﯼ ﻣﺸﺎﻫﺪﻩ ﺗﻤﺎﻡ ﺍﻳﻦ ﭘﺎﺭﺍﻣﺘﺮﻫﺎ ﮐﻪ ﺍﺟﺎﺯﻩ ﻓﺮﻣﺖ ﺩﻫﯽ ﺑﻪ ﻣﺎ ﻣﯽ&zwnj;ﺩﻫﻨﺪ ﻣﯽ&zwnj;ﺗﻮﺍﻧﻴﺪ ﺑﻪ <a href="http://dev.mysql.com/doc/refman/4.1/en/date-and-time-functions.html#function_date-format">ﺍﻳﻦ ﺁﺩﺭﺱ</a></span></span><span style="font-family: tahoma, geneva, sans-serif; font-size: 13px;"> ﻣﺮﺍﺟﻌﻪ ﮐﻨﻴﺪ.</span></p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;"><strong><span dir="LTR">TIME_FORMAT( )</span>:</strong> ﺑﺮ&nbsp; ﺧﻼﻑ ﺗﺎﺑﻊ ﻗﺒﻠﯽ ﺍﻳﻦ ﺗﺎﺑﻊ ﻓﻘﻂ ﻗﺎﺑﻠﻴﺖ ﮐﺎﺭ ﺑﺎ ﺯﻣﺎﻥ ﺭﺍ ﺩﺍﺭﺍ ﺍﺳﺖ ﺍﻣﺎ ﻧﺤﻮﻩ ﮐﺎﺭ ﺑﻪ ﻫﻤﺎﻥ ﺷﮑﻞ ﺍﺳﺖ.</span></span></p>
+<p dir="RTL" style="text-align: justify;">
+	&nbsp;</p>
+<p dir="RTL" style="text-align: justify;">
+	<span style="font-size:13px;"><span style="font-family:tahoma,geneva,sans-serif;">ﻫﻤﺎﻧﻄﻮﺭ ﮐﻪ ﮔﻔﺘﻴﻢ ﺍﻳﻦ ﺩﺭﺱ ﺑﻴﺸﺘﺮ ﺑﺮﺍﯼ ﻳﺎﺩﺁﻭﺭﯼ ﮔﻔﺘﻪ ﺷﺪﻩ&zwnj;ﻫﺎ ﻭ ﺁﺷﻨﺎﻳﯽ ﺑﺎ ﻣﻔﺎﻫﻴﻢ ﮔﻔﺘﻪ ﻧﺸﺪﻩ ﺩﺭ ﺩﻭﺭﻩ ﻣﻘﺪﻣﺎﺗﯽ ﺑﻮﺩ. ﺣﺎﻝ ﮐﻪ ﺍﻃﻼﻋﺎﺕ ﮐﺎﻓﯽ ﺩﺭ ﻣﻮﺭﺩ ﭘﺎﻳﮕﺎﻩ ﺩﺍﺩﻩ&zwnj;ﻫﺎ ﺑﺪﺳﺖ ﺁﻭﺭﺩﻳﻢ ﻭﻗﺖ ﺁﻥ ﺭﺳﻴﺪﻩ ﮐﻪ ﺑﻪ ﺷﻴﻮﻩ ﻃﺮﺍﺣﯽ ﺍﺑﺘﺪﺍﻳﯽ ﭘﺎﻳﮕﺎﻩ ﺑﭙﺮﺩﺍﺯﻳﻢ. ﺩﺭ ﺩﺭﺱ ﺑﻌﺪﯼ ﺑﻪ ﺳﺮﺍﻍ ﻧﺤﻮﻩ ﻃﺮﺍﺣﯽ ﭘﺎﻳﮕﺎﻩ ﻗﺒﻞ ﺍﺯ ﺍﻗﺪﺍﻡ ﺑﻪ ﺳﺎﺧﺖ ﺁﻥ ﻣﯽ&zwnj;ﺭﻭﻳﻢ.</span></span></p></body></html>
